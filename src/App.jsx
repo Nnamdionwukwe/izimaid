@@ -1,4 +1,4 @@
-import "./component/MainHeader";
+import MainHeader from "./component/MainHeader";
 
 function App() {
   return (
