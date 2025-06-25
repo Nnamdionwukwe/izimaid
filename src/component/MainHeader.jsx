@@ -9,6 +9,7 @@ import IziBestCleaningCar from "./IziBestCleaningCar";
 import WhyChooseUs from "./WhyChooseUse";
 import WhyChooseUsFull from "./WhyChooseUsFull";
 import Reviews from "./Reviews";
+import ReviewsFull from "./ReviewsFull";
 
 export default function MainHeader() {
   return (
@@ -40,8 +41,12 @@ export default function MainHeader() {
           <WhyChooseUsFull />
         </div>
 
-        <div>
+        <div className={styles.whyChooseUs}>
           <Reviews />
+        </div>
+
+        <div className={styles.whyChooseUsFull}>
+          <ReviewsFull />
         </div>
       </div>
     </>
