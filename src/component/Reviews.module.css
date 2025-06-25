@@ -1,0 +1,25 @@
+.main {
+  background: rgb(246, 245, 245);
+  margin-top: -30px;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+.hearMain {
+  display: flex;
+  justify-content: center;
+}
+
+.hearMainSub h1 {
+  color: rgb(190, 13, 33);
+}
+
+.hearMainSub h4 {
+  display: flex;
+  justify-content: center;
+  border: 1px solid rgb(156, 39, 53);
+  border-radius: 10px;
+  color: rgb(190, 13, 33);
+  padding: 0.9em 0em;
+  margin: 0px 15px;
+}

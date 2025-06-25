@@ -32,13 +32,17 @@ export default function Reviews() {
 
   return (
     <div onClick={(e) => handlePrevious(e)} className={styles.main}>
+      <div className={styles.hearMain}>
+        <div className={styles.hearMainSub}>
+          <h1>Hear From Our Clients</h1>
+          <h4>Read More Reviews</h4>
+        </div>
+      </div>
+
       <p>{steps[step - 1]}</p>
-      <h1>HOME</h1>
-      {/* <h1>HOME</h1> */}
-      <h1>HELLO</h1>
-      <h2>meho</h2>
-      <h2>meho</h2>
-      <h2>meho</h2>
+
+      <i class="fa fa-star" aria-hidden="true"></i>
+      <i class="fa fa-comment" aria-hidden="true"></i>
       <i className="fa fa-long-arrow-left" aria-hidden="true"></i>
       <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
     </div>
