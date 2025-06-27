@@ -81,7 +81,29 @@ export default function Reviews() {
         </h2>
       </div>
 
-      <h1>HELLO</h1>
+      <div className={styles.logoDiv}>
+        <div className={styles.logoDivDiv}>
+          <div className={styles.logoDiv1}>
+            <img
+              className={styles.logo1}
+              alt="Logo"
+              src="https://cdn3.vectorstock.com/i/1000x1000/66/62/house-cleaning-logo-vector-47536662.jpg"
+            />
+          </div>
+
+          <div className={styles.logoDiv2}>
+            <h2>
+              The IziMaid Done Right Promise? delivered by IziBest Interior, a
+              proud IziBest company.
+            </h2>
+          </div>
+
+          <div className={styles.logoDiv3}>
+            <i class="fa fa-calendar" aria-hidden="true"></i>
+            <h3>Request a Free Estimate</h3>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

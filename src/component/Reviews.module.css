@@ -39,9 +39,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    animation: 1s left;
+    /* animation: 1s left;
     opacity: 1;
-    transition: opacity 1s;
+    transition: opacity 1s; */
     margin: 5em 0.5em 2em 0.6em;
     background: #ffff;
     border-top-left-radius: 8px;
@@ -127,6 +127,55 @@
     margin: 0em 0.2em;
     border-radius: 100%;
   }
+
+  .logoDiv {
+    display: flex;
+    justify-content: center;
+    padding: 0em 1em 0em 1.3em;
+  }
+
+  .logoDiv1 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .logoDiv2 {
+    display: flex;
+    justify-content: center;
+    max-width: 400px;
+    color: rgb(88, 88, 88);
+  }
+
+  .logoDivDiv {
+    justify-items: center;
+    margin-bottom: 2em;
+  }
+
+  .logoDiv3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 230px;
+    color: #ffff;
+    background: rgb(6, 6, 65);
+    border-radius: 0.5em;
+    cursor: pointer;
+    padding: 0em 3em;
+  }
+
+  .logoDiv3:hover {
+    background: rgb(2, 2, 36);
+  }
+
+  .logoDiv3 i {
+    margin-right: 0.6em;
+    font-size: 1.3em;
+  }
+
+  .logo1 {
+    width: 5em;
+    cursor: pointer;
+  }
 }
 
 @media screen and (min-width: 577px) {
@@ -136,12 +185,70 @@
 }
 
 @media screen and (min-width: 992px) {
+  .main {
+    margin-top: 2em;
+  }
+
   .mainSub {
     display: flex;
   }
 
+  .list {
+    display: flex;
+    list-style: none;
+    padding: 0.8rem 0;
+    overflow-x: scroll;
+  }
+
+  .reviewContainer {
+    display: flex;
+    align-items: center;
+    margin: 2em 0.5em 2em 0.6em;
+    background: #ffff;
+    box-shadow: 11px 1px 14px 5px rgb(186, 185, 185);
+  }
+
+  .reviews,
+  .reviewName {
+    font-size: 10px;
+  }
+
+  .reviewFooterSub h6 {
+    margin-right: 3px;
+  }
+
+  .reviewFooterSub i {
+    font-size: 0.2em;
+  }
+
   .mainFull {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    overflow: scroll;
+  }
+
+  .logoDivDiv {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 3em;
+  }
+
+  .logoDiv2 {
+    margin: 0em 4em;
+  }
+
+  .logoDiv3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 230px;
+    color: #ffff;
+    background: rgb(6, 6, 65);
+    border-radius: 0.5em;
+    cursor: pointer;
+    height: 3.5em;
   }
 }

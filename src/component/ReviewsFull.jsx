@@ -12,7 +12,7 @@ const steps = [
 export default function ReviewsFull() {
   const [step, setStep] = useState(1);
 
-  function handleNext() {
+  function handleNextpx() {
     if (step < 5) setStep(step + 1);
     if (step >= 5) setStep(5);
   }
@@ -35,16 +35,9 @@ export default function ReviewsFull() {
         </div>
       </div>
 
-      <div className={styles.mainSub}>
-        <h2
-          onClick={handlePrevious}
-          className={step === 1 ? styles.h2 : styles.h1}
-        >
-          &lt;
-        </h2>
-
-        <div className={styles.mainFull}>
-          <div className={styles.reviewContainer}>
+      <nav className={styles.mainSub}>
+        <ul className={styles.mainFull}>
+          <li className={styles.reviewContainer}>
             <div className={styles.imageContainer}>
               <i class="fa fa-comment" aria-hidden="true"></i>
             </div>
@@ -65,7 +58,7 @@ export default function ReviewsFull() {
               )}
 
               <div className={styles.reviewFooterSub}>
-                <h2>5/5</h2>
+                <h6>5/5</h6>
 
                 <i class="fa fa-star" aria-hidden="true"></i>
                 <i class="fa fa-star" aria-hidden="true"></i>
@@ -74,58 +67,225 @@ export default function ReviewsFull() {
                 <i class="fa fa-star" aria-hidden="true"></i>
               </div>
             </div>
+          </li>
 
-            <div className={styles.reviewContainer}>
-              <div className={styles.imageContainer}>
-                <i class="fa fa-comment" aria-hidden="true"></i>
-              </div>
+          <li className={styles.reviewContainer}>
+            <div className={styles.imageContainer}>
+              <i class="fa fa-comment" aria-hidden="true"></i>
+            </div>
 
-              <p className={styles.reviews}>{steps[step - 1]}</p>
+            <p className={styles.reviews}>{steps[step + 1]}</p>
 
-              <div className={styles.reviewFooter}>
-                {step === 1 && (
-                  <p className={styles.reviewName}>Michael Solace.</p>
-                )}
-                {step === 2 && (
-                  <p className={styles.reviewName}>Johnson King.</p>
-                )}
-                {step == 3 && (
-                  <p className={styles.reviewName}>Philip Evans.</p>
-                )}
-                {step === 4 && (
-                  <p className={styles.reviewName}>Nnamdi Gideon.</p>
-                )}
-                {step === 5 && (
-                  <p className={styles.reviewName}>Muhamed Ismail.</p>
-                )}
+            <div className={styles.reviewFooter}>
+              {step === 1 && (
+                <p className={styles.reviewName}>Michael Solace.</p>
+              )}
+              {step === 2 && <p className={styles.reviewName}>Johnson King.</p>}
+              {step == 3 && <p className={styles.reviewName}>Philip Evans.</p>}
+              {step === 4 && (
+                <p className={styles.reviewName}>Nnamdi Gideon.</p>
+              )}
+              {step === 5 && (
+                <p className={styles.reviewName}>Muhamed Ismail.</p>
+              )}
 
-                <div className={styles.reviewFooterSub}>
-                  <h2>5/5</h2>
+              <div className={styles.reviewFooterSub}>
+                <h6>5/5</h6>
 
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                </div>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
               </div>
             </div>
+          </li>
+
+          <li className={styles.reviewContainer}>
+            <div className={styles.imageContainer}>
+              <i class="fa fa-comment" aria-hidden="true"></i>
+            </div>
+
+            <p className={styles.reviews}>{steps[step + 3]}</p>
+
+            <div className={styles.reviewFooter}>
+              {step === 1 && (
+                <p className={styles.reviewName}>Michael Solace.</p>
+              )}
+              {step === 2 && <p className={styles.reviewName}>Johnson King.</p>}
+              {step == 3 && <p className={styles.reviewName}>Philip Evans.</p>}
+              {step === 4 && (
+                <p className={styles.reviewName}>Nnamdi Gideon.</p>
+              )}
+              {step === 5 && (
+                <p className={styles.reviewName}>Muhamed Ismail.</p>
+              )}
+
+              <div className={styles.reviewFooterSub}>
+                <h6>5/5</h6>
+
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </div>
+            </div>
+          </li>
+
+          <li className={styles.reviewContainer}>
+            <div className={styles.imageContainer}>
+              <i class="fa fa-comment" aria-hidden="true"></i>
+            </div>
+
+            <p className={styles.reviews}>{steps[step + 2]}</p>
+
+            <div className={styles.reviewFooter}>
+              {step === 1 && (
+                <p className={styles.reviewName}>Michael Solace.</p>
+              )}
+              {step === 2 && <p className={styles.reviewName}>Johnson King.</p>}
+              {step == 3 && <p className={styles.reviewName}>Philip Evans.</p>}
+              {step === 4 && (
+                <p className={styles.reviewName}>Nnamdi Gideon.</p>
+              )}
+              {step === 5 && (
+                <p className={styles.reviewName}>Muhamed Ismail.</p>
+              )}
+
+              <div className={styles.reviewFooterSub}>
+                <h6>5/5</h6>
+
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </div>
+            </div>
+          </li>
+
+          <li className={styles.reviewContainer}>
+            <div className={styles.imageContainer}>
+              <i class="fa fa-comment" aria-hidden="true"></i>
+            </div>
+
+            <p className={styles.reviews}>{steps[step + 4]}</p>
+
+            <div className={styles.reviewFooter}>
+              {step === 1 && (
+                <p className={styles.reviewName}>Michael Solace.</p>
+              )}
+              {step === 2 && <p className={styles.reviewName}>Johnson King.</p>}
+              {step == 3 && <p className={styles.reviewName}>Philip Evans.</p>}
+              {step === 4 && (
+                <p className={styles.reviewName}>Nnamdi Gideon.</p>
+              )}
+              {step === 5 && (
+                <p className={styles.reviewName}>Muhamed Ismail.</p>
+              )}
+
+              <div className={styles.reviewFooterSub}>
+                <h6>5/5</h6>
+
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </div>
+            </div>
+          </li>
+
+          <li className={styles.reviewContainer}>
+            <div className={styles.imageContainer}>
+              <i class="fa fa-comment" aria-hidden="true"></i>
+            </div>
+
+            <p className={styles.reviews}>{steps[step - 1]}</p>
+
+            <div className={styles.reviewFooter}>
+              {step === 1 && (
+                <p className={styles.reviewName}>Michael Solace.</p>
+              )}
+              {step === 2 && <p className={styles.reviewName}>Johnson King.</p>}
+              {step == 3 && <p className={styles.reviewName}>Philip Evans.</p>}
+              {step === 4 && (
+                <p className={styles.reviewName}>Nnamdi Gideon.</p>
+              )}
+              {step === 5 && (
+                <p className={styles.reviewName}>Muhamed Ismail.</p>
+              )}
+
+              <div className={styles.reviewFooterSub}>
+                <h6>5/5</h6>
+
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </div>
+            </div>
+          </li>
+
+          <li className={styles.reviewContainer}>
+            <div className={styles.imageContainer}>
+              <i class="fa fa-comment" aria-hidden="true"></i>
+            </div>
+
+            <p className={styles.reviews}>{steps[step - 1]}</p>
+
+            <div className={styles.reviewFooter}>
+              {step === 1 && (
+                <p className={styles.reviewName}>Michael Solace.</p>
+              )}
+              {step === 2 && <p className={styles.reviewName}>Johnson King.</p>}
+              {step == 3 && <p className={styles.reviewName}>Philip Evans.</p>}
+              {step === 4 && (
+                <p className={styles.reviewName}>Nnamdi Gideon.</p>
+              )}
+              {step === 5 && (
+                <p className={styles.reviewName}>Muhamed Ismail.</p>
+              )}
+
+              <div className={styles.reviewFooterSub}>
+                <h6>5/5</h6>
+
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <div className={styles.logoDiv}>
+        <div className={styles.logoDivDiv}>
+          <div className={styles.logoDiv1}>
+            <img
+              className={styles.logo1}
+              alt="Logo"
+              src="https://cdn3.vectorstock.com/i/1000x1000/66/62/house-cleaning-logo-vector-47536662.jpg"
+            />
+          </div>
+
+          <div className={styles.logoDiv2}>
+            <h2>
+              The IziMaid Done Right Promise? delivered by IziBest Interior, a
+              proud IziBest company.
+            </h2>
+          </div>
+
+          <div className={styles.logoDiv3}>
+            <i class="fa fa-calendar" aria-hidden="true"></i>
+            <h3>Request a Free Estimate</h3>
           </div>
         </div>
-
-        <div className={styles.greaterContainer}>
-          <h2
-            onClick={handleNext}
-            className={step === 5 ? styles.h2 : styles.h1}
-          >
-            &gt;
-          </h2>
-        </div>
       </div>
-
-      <h1>HELLO</h1>
-      <h1>HELLO</h1>
-      <h1>HELLO</h1>
     </div>
   );
 }
