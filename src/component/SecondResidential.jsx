@@ -1,14 +1,24 @@
 import { useState } from "react";
-import styles from "./WhyChooseUs.module.css";
+import styles from "./SecondResidentisl.module.css";
 
 export default function SecondResidential() {
   const [isOpen1, setIsOpen1] = useState(false);
   const [isOpen2, setIsOpen2] = useState(false);
 
+  function handleClick1() {
+    setIsOpen1((prev) => !prev);
+    setIsOpen2(false);
+  }
+
+  function handleClick2() {
+    setIsOpen2((prev) => !prev);
+    setIsOpen1(false);
+  }
+
   return (
-    <h1>
+    <div>
       <div className={styles.mainSub}>
-        <div onClick={() => setIsOpen1((is) => !is)} className={styles.backed}>
+        <div onClick={handleClick1} className={styles.backed}>
           <p>&#9734;</p>
 
           <h3>Residential</h3>
@@ -18,11 +28,11 @@ export default function SecondResidential() {
 
         {isOpen1 && (
           <ul className={styles.residentialDIv}>
-            <li className={styles.hoverMainDiv1}>
+            <li className={styles.hoverMainliv1}>
               <p>Recurring Cleaning</p>
             </li>
 
-            <li className={styles.hoverMainDiv2}>
+            <li className={styles.hoverMainliv2}>
               <p>One Time Cleaning</p>
             </li>
 
@@ -58,7 +68,7 @@ export default function SecondResidential() {
       </div>
 
       <div className={styles.mainSub}>
-        <div onClick={() => setIsOpen2((is) => !is)} className={styles.backed}>
+        <div onClick={handleClick2} className={styles.backed}>
           <p>&#9734;</p>
 
           <h3>Light Commercial</h3>
@@ -82,6 +92,6 @@ export default function SecondResidential() {
           </ul>
         )}
       </div>
-    </h1>
+    </div>
   );
 }
