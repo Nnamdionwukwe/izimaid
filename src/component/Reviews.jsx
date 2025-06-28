@@ -92,10 +92,10 @@ export default function Reviews() {
           </div>
 
           <div className={styles.logoDiv2}>
-            <h2>
+            <h3>
               The IziMaid Done Right Promise? delivered by IziBest Interior, a
               proud IziBest company.
-            </h2>
+            </h3>
           </div>
 
           <div className={styles.logoDiv3}>

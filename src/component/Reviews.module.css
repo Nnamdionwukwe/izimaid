@@ -142,16 +142,16 @@
   .logoDiv2 {
     display: flex;
     justify-content: center;
-    max-width: 400px;
+    /* max-width: 400px; */
     color: rgb(88, 88, 88);
   }
 
   .logoDivDiv {
-    justify-items: center;
+    justify-content: center;
     margin-bottom: 2em;
   }
 
-  .logoDiv2 h2 {
+  .logoDiv2 h2 .logoDiv3 h3 {
     display: flex;
     justify-content: center;
   }
@@ -173,6 +173,8 @@
   }
 
   .logoDiv3 i {
+    display: flex;
+    justify-content: center;
     margin-right: 0.6em;
     font-size: 1.3em;
   }
