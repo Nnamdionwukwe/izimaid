@@ -147,6 +147,7 @@
   }
 
   .logoDivDiv {
+    justify-items: center;
     margin-bottom: 2em;
   }
 

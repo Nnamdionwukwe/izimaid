@@ -1,0 +1,46 @@
+@media screen and (min-width: 20px) {
+  .main {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+  }
+
+  .h2 {
+    display: flex;
+    justify-content: center;
+    margin: 1.4em 0em 1em 0em;
+    color: rgb(4, 4, 45);
+  }
+
+  .h1 {
+    display: flex;
+    justify-content: center;
+    color: rgb(190, 13, 33);
+  }
+
+  .p1 {
+    padding: 0em 0.5em;
+    font-size: 1.3em;
+    color: rgb(59, 59, 59);
+    margin-bottom: 2.7em;
+  }
+
+  .p2 {
+    padding: 0em 0.5em;
+    font-size: 1.3em;
+    color: rgb(59, 59, 59);
+  }
+
+  .p3 {
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    font-size: 1.3em;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .main {
+    padding: 0em 3em;
+  }
+}

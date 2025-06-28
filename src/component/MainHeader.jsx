@@ -10,6 +10,7 @@ import WhyChooseUs from "./WhyChooseUse";
 import WhyChooseUsFull from "./WhyChooseUsFull";
 import Reviews from "./Reviews";
 import ReviewsFull from "./ReviewsFull";
+import WeProvide from "./WeProvide";
 
 export default function MainHeader() {
   return (
@@ -47,6 +48,10 @@ export default function MainHeader() {
 
         <div className={styles.whyChooseUsFull}>
           <ReviewsFull />
+        </div>
+
+        <div>
+          <WeProvide />
         </div>
       </div>
     </>
