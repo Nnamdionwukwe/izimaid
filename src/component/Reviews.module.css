@@ -153,19 +153,19 @@
 
   .logoDiv2 h2 .logoDiv3 h3 {
     display: flex;
-    justify-content: center;
+    justify-items: center;
   }
 
   .logoDiv3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 230px;
+    /* max-width: 230px; */
     color: #ffff;
     background: rgb(6, 6, 65);
     border-radius: 0.5em;
     cursor: pointer;
-    padding: 0em 3em;
+    padding: 0em -3em;
   }
 
   .logoDiv3:hover {
