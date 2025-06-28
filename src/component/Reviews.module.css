@@ -165,8 +165,8 @@
     background: rgb(6, 6, 65);
     border-radius: 0.5em;
     cursor: pointer;
-    margin-right: 6em;
-    margin-left: 6em;
+    margin-right: 5em;
+    margin-left: 5em;
   }
 
   .logoDiv3:hover {
