@@ -12,19 +12,19 @@ const steps = [
 export default function ReviewsFull() {
   const [step, setStep] = useState(1);
 
-  function handleNextpx() {
-    if (step < 5) setStep(step + 1);
-    if (step >= 5) setStep(5);
-  }
+  //   function handleNextpx() {
+  //     if (step < 5) setStep(step + 1);
+  //     if (step >= 5) setStep(5);
+  //   }
 
-  //   setInterval(() => {
-  //     handleNext();
-  //   }, 6000);
+  //   //   setInterval(() => {
+  //   //     handleNext();
+  //   //   }, 6000);
 
-  function handlePrevious() {
-    if (step > 1) setStep(step - 1);
-    if (step <= 1) setStep(1);
-  }
+  //   function handlePrevious() {
+  //     if (step > 1) setStep(step - 1);
+  //     if (step <= 1) setStep(1);
+  //   }
 
   return (
     <div className={styles.main}>

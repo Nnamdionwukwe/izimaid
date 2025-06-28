@@ -9,6 +9,9 @@
     left: 0;
     background: #ffff;
     z-index: 100;
+    margin-right: -8px;
+    margin-left: -5px;
+    height: 60px;
   }
 }
 

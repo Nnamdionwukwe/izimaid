@@ -23,7 +23,7 @@ export default function FixedHeader() {
             aria-hidden="true"
           ></i>
 
-          <div classname={styles.sideBarMain}>
+          <div className={styles.sideBarMain}>
             {isOpen && <SideBar isOpen={isOpen} setIsOpen={setIsOpen} />}
           </div>
         </div>

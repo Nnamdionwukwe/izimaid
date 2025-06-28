@@ -151,6 +151,11 @@
     margin-bottom: 2em;
   }
 
+  .logoDiv2 h2 {
+    display: flex;
+    justify-content: center;
+  }
+
   .logoDiv3 {
     display: flex;
     justify-content: center;
