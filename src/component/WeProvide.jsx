@@ -4,9 +4,9 @@ export default function WeProvide() {
   return (
     <div className={styles.main}>
       <div className={styles.mainDiv}>
-        <h1 className={styles.h1}>Home Cleaning Services We Provide</h1>
+        <h2 className={styles.h1}>Home Cleaning Services We Provide</h2>
 
-        <h2 className={styles.h2}>Our Approach: Custom Home Cleaning</h2>
+        <h3 className={styles.h2}>Our Approach: Custom Home Cleaning</h3>
 
         <p className={styles.p1}>
           Looking for the best home cleaning services near you? Look no further
