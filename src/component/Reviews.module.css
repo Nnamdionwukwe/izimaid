@@ -167,6 +167,7 @@
     cursor: pointer;
     margin-right: 5em;
     margin-left: 5em;
+    font-size: 10px;
   }
 
   .logoDiv3:hover {
