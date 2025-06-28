@@ -2,8 +2,8 @@ import { useState } from "react";
 import styles from "./WhyChooseUs.module.css";
 
 export default function SecondResidential() {
-  const [isOpen1, setIsOpen1] = useState(true);
-  const [isOpen2, setIsOpen2] = useState(true);
+  const [isOpen1, setIsOpen1] = useState(false);
+  const [isOpen2, setIsOpen2] = useState(false);
 
   return (
     <h1>
