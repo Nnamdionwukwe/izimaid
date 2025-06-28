@@ -11,6 +11,7 @@ import WhyChooseUsFull from "./WhyChooseUsFull";
 import Reviews from "./Reviews";
 import ReviewsFull from "./ReviewsFull";
 import WeProvide from "./WeProvide";
+import SecondResidential from "./SecondResidential";
 
 export default function MainHeader() {
   return (
@@ -52,6 +53,10 @@ export default function MainHeader() {
 
         <div>
           <WeProvide />
+        </div>
+
+        <div>
+          <SecondResidential />
         </div>
       </div>
     </>
