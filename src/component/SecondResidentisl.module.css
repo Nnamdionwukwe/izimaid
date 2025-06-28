@@ -32,6 +32,16 @@
   margin-left: 5px;
 }
 
+.residentialDIv li:hover,
+.residentialDIv2 li:hover {
+  text-decoration: underline;
+}
+
+.residentialDIv li,
+.residentialDIv2 li {
+  cursor: pointer;
+}
+
 @media screen and (min-width: 992px) {
   .main {
     display: flex;
@@ -46,5 +56,15 @@
   .mainSub {
     margin-top: 20px;
     box-shadow: 2px 3px 4px 5px rgb(219, 216, 216);
+  }
+
+  .residentialDIv li,
+  .residentialDIv2 li {
+    cursor: pointer;
+  }
+
+  .residentialDIv li:hover,
+  .residentialDIv2 li:hover {
+    text-decoration: underline;
   }
 }
