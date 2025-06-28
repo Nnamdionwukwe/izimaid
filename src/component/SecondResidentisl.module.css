@@ -40,6 +40,7 @@
 .residentialDIv li,
 .residentialDIv2 li {
   cursor: pointer;
+  font-weight: bold;
 }
 
 @media screen and (min-width: 992px) {
