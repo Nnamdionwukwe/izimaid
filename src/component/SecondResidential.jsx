@@ -16,7 +16,7 @@ export default function SecondResidential() {
   }
 
   return (
-    <div>
+    <div className={styles.main}>
       <div className={styles.mainSub}>
         <div onClick={handleClick1} className={styles.backed}>
           <p>&#9734;</p>
