@@ -152,8 +152,8 @@ export default function SecondPractically() {
           <h3 className={styles.how}>Free Printable Kids Chore Charts</h3>
 
           <p className={styles.there}>
-            Not sure which chores are appropriate for your young kids? Use Molly
-            Maid's Age-Appropriate Chores List to help you as they grow! For
+            Not sure which chores are appropriate for your young kids? Use
+            IziMaid's Age-Appropriate Chores List to help you as they grow! For
             toddlers, chores like putting away toys, and putting books and
             magazines into a pile are a great start.
           </p>
