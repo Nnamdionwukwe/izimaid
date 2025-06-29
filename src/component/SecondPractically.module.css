@@ -15,7 +15,22 @@
   margin-right: 5px;
 }
 
+.mainh2 {
+  display: flex;
+  align-items: center;
+}
+
+.mainh2 h4 {
+  color: rgb(235, 10, 48);
+  margin-right: 5px;
+}
+
 .mainSub h1 {
+  color: rgb(235, 10, 48);
+  margin-right: 5px;
+  margin-bottom: -1px;
+}
+.mainSub2 h1 {
   color: rgb(235, 10, 48);
   margin-right: 5px;
   margin-bottom: -1px;
@@ -30,6 +45,10 @@
 }
 
 .mainh1 h4:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.mainh2 h4:hover {
   text-decoration: underline;
   cursor: pointer;
 }
@@ -50,4 +69,29 @@
 
 .arrow {
   color: rgb(235, 10, 48);
+}
+
+@media screen and (min-width: 992px) {
+  .mainMain {
+    display: flex;
+    align-items: center;
+    margin: 50px 20px;
+  }
+
+  .mainSub2 {
+    display: flex;
+    align-items: center;
+    margin: 10px 0px;
+  }
+
+  .mainh2 {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+  }
+
+  .main {
+    width: 50%;
+    height: 125em;
+  }
 }

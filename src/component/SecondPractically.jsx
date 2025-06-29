@@ -4,10 +4,10 @@ export default function SecondPractically() {
   return (
     <div className={styles.mainMain}>
       <div className={styles.main}>
-        <div className={styles.mainSub}>
+        <div className={styles.mainSub2}>
           <h1>Practically Spotless Blog</h1>
 
-          <div className={styles.mainh1}>
+          <div className={styles.mainh2}>
             <h4>View All Blog Posts</h4>
             <h5>&rarr;</h5>
           </div>
@@ -88,11 +88,11 @@ export default function SecondPractically() {
       </div>
 
       <div className={styles.main}>
-        <div className={styles.mainSub}>
+        <div className={styles.mainSub2}>
           <h1>Cleaning Tips</h1>
 
-          <div className={styles.mainh1}>
-            <h4>View All Cleaning Tips</h4>
+          <div className={styles.mainh2}>
+            <h4>View All Cleaning Tips </h4>
             <h5>&rarr;</h5>
           </div>
         </div>
