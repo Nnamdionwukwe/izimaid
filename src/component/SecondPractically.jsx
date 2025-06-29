@@ -15,7 +15,7 @@ export default function SecondPractically() {
 
         <img
           alt="clean"
-          src="https://img.freepik.com/premium-vector/housewife-cleaning-computer-table-with-duster-woman-wiping-workplace-desk-girl-dusting-housework-concept-modern-apartment-interior-female-cartoon-character_48369-25680.jpg"
+          src="https://img.freepik.com/premium-vector/man-cleaning-computer-table-with-duster-guy-wiping-workplace-desk-housework-concept-modern-living-room-interior-male-cartoon-character_48369-25689.jpg"
         />
 
         <div className={styles.mainSub}>
