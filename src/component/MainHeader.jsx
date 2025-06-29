@@ -13,6 +13,8 @@ import ReviewsFull from "./ReviewsFull";
 import WeProvide from "./WeProvide";
 import SecondResidential from "./SecondResidential";
 import SecondPractically from "./SecondPractically";
+import Questions from "./Questions";
+import Faq from "./Faq";
 
 export default function MainHeader() {
   return (
@@ -62,6 +64,14 @@ export default function MainHeader() {
 
         <div>
           <SecondPractically />
+        </div>
+
+        <div>
+          <Questions />
+        </div>
+
+        <div>
+          <Faq />
         </div>
       </div>
     </>

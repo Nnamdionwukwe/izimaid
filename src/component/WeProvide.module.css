@@ -17,9 +17,32 @@
     display: flex;
     justify-content: center;
     color: rgb(190, 13, 33);
+    margin-left: 40px;
+    margin-top: 5px;
+  }
+
+  .h222 {
+    display: flex;
+    justify-content: center;
+    color: rgb(190, 13, 33);
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 3.5em;
+    margin-bottom: 0.9em;
+    padding-bottom: 0.3em;
+    border-bottom: 1px solid rgb(204, 203, 203);
+  }
+
+  .h22 {
+    display: flex;
+    justify-content: center;
+    margin: 1.4em 0em 1em 0em;
+    color: rgb(4, 4, 45);
   }
 
   .p1 {
+    display: flex;
+    justify-content: center;
     padding: 0em 0.5em;
     font-size: 1em;
     color: rgb(59, 59, 59);

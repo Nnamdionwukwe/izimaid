@@ -4,7 +4,7 @@ export default function WeProvide() {
   return (
     <div className={styles.main}>
       <div className={styles.mainDiv}>
-        <h2 className={styles.h1}>Home Cleaning Services We Provide</h2>
+        <h1 className={styles.h1}>Home Cleaning Services We Provide</h1>
 
         <h3 className={styles.h2}>Our Approach: Custom Home Cleaning</h3>
 
