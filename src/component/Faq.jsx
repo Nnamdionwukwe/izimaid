@@ -70,7 +70,7 @@ export default function Faq() {
 
       <div className={styles.mainSub}>
         <div onClick={handleClick2} className={styles.backed}>
-          <h3>Why Choose Molly Maid?</h3>
+          <h3>Why Choose IziMaid?</h3>
 
           {isOpen2 ? <h2>&minus;</h2> : <h1>&#43;</h1>}
         </div>
