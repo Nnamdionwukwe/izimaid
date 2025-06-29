@@ -122,7 +122,7 @@ export default function SecondPractically() {
 
         <img
           alt="clean"
-          src="https://www.shutterstock.com/shutterstock/videos/1099981253/thumb/1.jpg?ip=x480"
+          src="https://i.ytimg.com/vi/spOTnZTP_V8/maxresdefault.jpg"
         />
 
         <div className={styles.mainSub}>
