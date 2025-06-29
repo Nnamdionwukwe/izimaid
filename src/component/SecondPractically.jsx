@@ -39,7 +39,7 @@ export default function SecondPractically() {
 
         <img
           alt="clean"
-          src="https://thumbs.dreamstime.com/b/kids-helping-cleaning-cartoon-poster-parents-kitchen-retro-floor-sweeping-washing-dishes-abstract-vector-illustration-211266371.jpg"
+          src="https://img.freepik.com/free-vector/smiling-woman-girl-cleaning-furniture-living-room-flat_1284-62344.jpg"
         />
 
         <div className={styles.mainSub}>
