@@ -58,7 +58,6 @@ export default function Faq() {
     setIsOpen7(false);
     setIsOpen8(false);
     setIsOpen9(false);
-    // setIsOpen1(false);
   }
 
   function handleClick5() {
@@ -67,7 +66,10 @@ export default function Faq() {
     setIsOpen2(false);
     setIsOpen3(false);
     setIsOpen4(false);
-    // setIsOpen1(false);
+    setIsOpen6(false);
+    setIsOpen7(false);
+    setIsOpen8(false);
+    setIsOpen9(false);
   }
   function handleClick6() {
     setIsOpen6((prev) => !prev);
@@ -75,14 +77,21 @@ export default function Faq() {
     setIsOpen2(false);
     setIsOpen3(false);
     setIsOpen4(false);
-    // setIsOpen1(false);
+    setIsOpen5(false);
+    setIsOpen7(false);
+    setIsOpen8(false);
+    setIsOpen9(false);
   }
   function handleClick7() {
-    setIsOpen4((prev) => !prev);
+    setIsOpen7((prev) => !prev);
     setIsOpen1(false);
     setIsOpen2(false);
     setIsOpen3(false);
-    // setIsOpen1(false);
+    setIsOpen4(false);
+    setIsOpen5(false);
+    setIsOpen6(false);
+    setIsOpen8(false);
+    setIsOpen9(false);
   }
   function handleClick8() {
     setIsOpen8((prev) => !prev);
@@ -90,7 +99,10 @@ export default function Faq() {
     setIsOpen2(false);
     setIsOpen3(false);
     setIsOpen4(false);
-    // setIsOpen1(false);
+    setIsOpen5(false);
+    setIsOpen6(false);
+    setIsOpen7(false);
+    setIsOpen9(false);
   }
   function handleClick9() {
     setIsOpen9((prev) => !prev);
@@ -98,7 +110,10 @@ export default function Faq() {
     setIsOpen2(false);
     setIsOpen3(false);
     setIsOpen4(false);
-    // setIsOpen1(false);
+    setIsOpen5(false);
+    setIsOpen6(false);
+    setIsOpen7(false);
+    setIsOpen8(false);
   }
 
   return (
