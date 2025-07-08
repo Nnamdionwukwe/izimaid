@@ -29,6 +29,11 @@ export default function Faq() {
     setIsOpen1(false);
     setIsOpen3(false);
     setIsOpen4(false);
+    setIsOpen5(false);
+    setIsOpen6(false);
+    setIsOpen7(false);
+    setIsOpen8(false);
+    setIsOpen9(false);
   }
 
   function handleClick3() {
@@ -36,6 +41,11 @@ export default function Faq() {
     setIsOpen1(false);
     setIsOpen2(false);
     setIsOpen4(false);
+    setIsOpen5(false);
+    setIsOpen6(false);
+    setIsOpen7(false);
+    setIsOpen8(false);
+    setIsOpen9(false);
   }
 
   function handleClick4() {
