@@ -53,6 +53,11 @@ export default function Faq() {
     setIsOpen1(false);
     setIsOpen2(false);
     setIsOpen3(false);
+    setIsOpen5(false);
+    setIsOpen6(false);
+    setIsOpen7(false);
+    setIsOpen8(false);
+    setIsOpen9(false);
     // setIsOpen1(false);
   }
 
