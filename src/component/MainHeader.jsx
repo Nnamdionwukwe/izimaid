@@ -15,6 +15,8 @@ import SecondResidential from "./SecondResidential";
 import SecondPractically from "./SecondPractically";
 import Questions from "./Questions";
 import Faq from "./Faq";
+import JoinOurTeamFull from "./JoinOurTeamFull";
+import JoinOurTeam from "./JoinOurTeamFull";
 
 export default function MainHeader() {
   return (
@@ -72,6 +74,14 @@ export default function MainHeader() {
 
         <div>
           <Faq />
+        </div>
+
+        <div className={styles.whyChooseUs}>
+          <JoinOurTeam />
+        </div>
+
+        <div className={styles.whyChooseUsFull}>
+          <JoinOurTeamFull />
         </div>
       </div>
     </>

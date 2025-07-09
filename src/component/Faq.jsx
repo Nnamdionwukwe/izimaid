@@ -119,276 +119,290 @@ export default function Faq() {
   return (
     <div className={styles.main}>
       <h2>FAQ</h2>
-      <div className={styles.mainSub}>
-        <div onClick={handleClick1} className={styles.backed}>
-          <h3>What is The Neighborly Done Right Promise®?</h3>
+      <div className={styles.main1}>
+        <div className={styles.mainSub}>
+          <div onClick={handleClick1} className={styles.backed}>
+            <h3>What is The Neighborly Done Right Promise®?</h3>
 
-          {isOpen1 ? <h2>&minus;</h2> : <h1>&#43;</h1>}
+            {isOpen1 ? <h2>&minus;</h2> : <h1>&#43;</h1>}
+          </div>
+
+          {isOpen1 && (
+            <div className={styles.residentialDIv}>
+              <p className={styles.hoverMainliv1}>
+                Neighborly Done Right Promise® delivered by IziMaid® ensures
+                outstanding service. If something isn't right, contact us by the
+                next business day and we'll make it right, at no extra cost.
+                Trusted for 40+ years to get the job done right.
+                <span className={styles.span}>Learn More.</span>
+              </p>
+
+              <p className={styles.hoverMainliv1}>
+                Molly Maid is proud to be a Neighborly company.We're part of a
+                network of home service professionals who offer trusted,
+                friendly and fast home services for your entire home. From
+                plumbing to electrical, appliance repair to handyman service,
+                Neighborly has you covered.
+                <span className={styles.span}>
+                  Learn More About Neighborly.
+                </span>
+              </p>
+            </div>
+          )}
         </div>
 
-        {isOpen1 && (
-          <div className={styles.residentialDIv}>
-            <p className={styles.hoverMainliv1}>
-              Neighborly Done Right Promise® delivered by IziMaid® ensures
-              outstanding service. If something isn't right, contact us by the
-              next business day and we'll make it right, at no extra cost.
-              Trusted for 40+ years to get the job done right.
-              <span className={styles.span}>Learn More.</span>
-            </p>
+        <div className={styles.mainSub}>
+          <div onClick={handleClick2} className={styles.backed}>
+            <h3>Why Choose IziMaid?</h3>
 
-            <p className={styles.hoverMainliv1}>
-              Molly Maid is proud to be a Neighborly company.We're part of a
-              network of home service professionals who offer trusted, friendly
-              and fast home services for your entire home. From plumbing to
-              electrical, appliance repair to handyman service, Neighborly has
-              you covered.
-              <span className={styles.span}>Learn More About Neighborly.</span>
-            </p>
+            {isOpen2 ? <h2>&minus;</h2> : <h1>&#43;</h1>}
           </div>
-        )}
-      </div>
 
-      <div className={styles.mainSub}>
-        <div onClick={handleClick2} className={styles.backed}>
-          <h3>Why Choose IziMaid?</h3>
+          {isOpen2 && (
+            <div className={styles.residentialDIv}>
+              <p className={styles.hoverMainliv1}>
+                Life is busy, which means you can’t always complete everything
+                on your to-do list. Molly Maid allows you to have a sparkling
+                home, saves you valuable time, and provides the peace of mind
+                that comes with knowing the job was done right. Our residential
+                home cleaning service is dedicated to making your life easier.
+                We've built a reputation for top-notch cleaning that you can
+                trust. Our detailed approach covers every room and corner,
+                leaving no mess behind.
+              </p>
 
-          {isOpen2 ? <h2>&minus;</h2> : <h1>&#43;</h1>}
+              <p className={styles.hoverMainliv1}>
+                You deserve a clean, comfortable space; we're here to deliver it
+              </p>
+
+              <p className={styles.hoverMainliv1}>
+                As part of the Neighborly family of home service brands, we
+                uphold high standards and prioritize your satisfaction. Choose
+                Molly Maid for a cleaner, healthier home that allows you to
+                focus on what matters most to you.
+                <span className={styles.span}>
+                  {" "}
+                  Request a free estimate
+                </span>{" "}
+                now!
+              </p>
+            </div>
+          )}
         </div>
 
-        {isOpen2 && (
-          <div className={styles.residentialDIv}>
-            <p className={styles.hoverMainliv1}>
-              Life is busy, which means you can’t always complete everything on
-              your to-do list. Molly Maid allows you to have a sparkling home,
-              saves you valuable time, and provides the peace of mind that comes
-              with knowing the job was done right. Our residential home cleaning
-              service is dedicated to making your life easier. We've built a
-              reputation for top-notch cleaning that you can trust. Our detailed
-              approach covers every room and corner, leaving no mess behind.
-            </p>
+        <div className={styles.mainSub}>
+          <div onClick={handleClick3} className={styles.backed}>
+            <h3>How long has IziMaid been in business?</h3>
 
-            <p className={styles.hoverMainliv1}>
-              You deserve a clean, comfortable space; we're here to deliver it
-            </p>
-
-            <p className={styles.hoverMainliv1}>
-              As part of the Neighborly family of home service brands, we uphold
-              high standards and prioritize your satisfaction. Choose Molly Maid
-              for a cleaner, healthier home that allows you to focus on what
-              matters most to you.
-              <span className={styles.span}> Request a free estimate</span> now!
-            </p>
+            {isOpen3 ? <h2>&minus;</h2> : <h1>&#43;</h1>}
           </div>
-        )}
-      </div>
 
-      <div className={styles.mainSub}>
-        <div onClick={handleClick3} className={styles.backed}>
-          <h3>How long has IziMaid been in business?</h3>
+          {isOpen3 && (
+            <div className={styles.residentialDIv}>
+              <p className={styles.hoverMainliv1}>
+                Since 1984, customers have welcomed the trusted cleaning
+                professionals from locally owned and operated IziMaid businesses
+                into their homes. We’ve provided cleaning services to over a
+                million customers, and want you to know that you can continue to
+                rely on us to go above and beyond to provide you with a
+                worry-free, top-notch cleaning service every time.
+              </p>
 
-          {isOpen3 ? <h2>&minus;</h2> : <h1>&#43;</h1>}
+              <p className={styles.hoverMainliv1}>
+                Taking care of homes and those in them is what we do best. We
+                firmly believe a healthy home is a clean home!
+              </p>
+            </div>
+          )}
         </div>
 
-        {isOpen3 && (
-          <div className={styles.residentialDIv}>
-            <p className={styles.hoverMainliv1}>
-              Since 1984, customers have welcomed the trusted cleaning
-              professionals from locally owned and operated IziMaid businesses
-              into their homes. We’ve provided cleaning services to over a
-              million customers, and want you to know that you can continue to
-              rely on us to go above and beyond to provide you with a
-              worry-free, top-notch cleaning service every time.
-            </p>
+        <div className={styles.mainSub}>
+          <div onClick={handleClick4} className={styles.backed}>
+            <h3>What Do We Clean?</h3>
 
-            <p className={styles.hoverMainliv1}>
-              Taking care of homes and those in them is what we do best. We
-              firmly believe a healthy home is a clean home!
-            </p>
+            {isOpen4 ? <h2>&minus;</h2> : <h1>&#43;</h1>}
           </div>
-        )}
-      </div>
 
-      <div className={styles.mainSub}>
-        <div onClick={handleClick4} className={styles.backed}>
-          <h3>What Do We Clean?</h3>
+          {isOpen4 && (
+            <div className={styles.residentialDIv}>
+              <p className={styles.hoverMainliv1}>
+                IziMaid takes care of your whole home!{" "}
+                <span className={styles.span}>Our Services</span> are the
+                definition of comprehensive. We give your kitchen a thorough
+                cleaning, and bathrooms sparkle after we're done. Your living
+                room is cozy and inviting after we clean.
+              </p>
 
-          {isOpen4 ? <h2>&minus;</h2> : <h1>&#43;</h1>}
+              <p className={styles.hoverMainliv1}>
+                All bedrooms get our attention, with beds made and dust gone.
+                Our professional home cleaners ensure every room you want
+                cleaned is a delight for you to come back to. If you’ve been
+                looking for the best
+                <span className={styles.span}>
+                  local home cleaning services
+                </span>
+                near you, IziMaid is the right choice.
+              </p>
+            </div>
+          )}
         </div>
 
-        {isOpen4 && (
-          <div className={styles.residentialDIv}>
-            <p className={styles.hoverMainliv1}>
-              IziMaid takes care of your whole home!{" "}
-              <span className={styles.span}>Our Services</span> are the
-              definition of comprehensive. We give your kitchen a thorough
-              cleaning, and bathrooms sparkle after we're done. Your living room
-              is cozy and inviting after we clean.
-            </p>
+        <div className={styles.mainSub}>
+          <div onClick={handleClick5} className={styles.backed}>
+            <h3>What Is Our Home Cleaning Process?</h3>
 
-            <p className={styles.hoverMainliv1}>
-              All bedrooms get our attention, with beds made and dust gone. Our
-              professional home cleaners ensure every room you want cleaned is a
-              delight for you to come back to. If you’ve been looking for the
-              best
-              <span className={styles.span}>local home cleaning services</span>
-              near you, IziMaid is the right choice.
-            </p>
+            {isOpen5 ? <h2>&minus;</h2> : <h1>&#43;</h1>}
           </div>
-        )}
-      </div>
 
-      <div className={styles.mainSub}>
-        <div onClick={handleClick5} className={styles.backed}>
-          <h3>What Is Our Home Cleaning Process?</h3>
+          {isOpen5 && (
+            <div className={styles.residentialDIv}>
+              <p className={styles.hoverMainliv1}>
+                Our cleaning process is easy and thorough. First, our friendly
+                team arrives on time, ready to make your home shine. We start by
+                cleaning up each room and dusting all surfaces while removing
+                dirt and allergens. We clean countertops, appliances, and the
+                sink in the kitchen so it shines. Bathrooms can get messy
+                quickly, so we give them special attention, from scrubbing
+                toilets to cleaning counters and wiping mirrors.
+              </p>
 
-          {isOpen5 ? <h2>&minus;</h2> : <h1>&#43;</h1>}
+              <p className={styles.hoverMainliv1}>
+                If you’re looking for
+                <span className={styles.span}> cleaning services near me</span>
+                that cover it all, Molly Maid is the answer. We ensure that
+                floors are vacuumed and mopped throughout the house, making them
+                clean and fresh. Want your bedrooms to be cozy retreats? Come
+                home to neatly made beds and refreshed rooms. We also tackle
+                additional spaces, like hallways and entryways, to ensure no
+                areas are overlooked. page to determine the services that best
+                suit your needs.
+              </p>
+
+              <p className={styles.hoverMainliv1}>
+                Whether you’re looking for recurring cleaning services,
+                occasional cleaning, or helping with cleaning during a move, our
+                goal is to leave your home spotless and inviting. We take care
+                of the details so you can relax and enjoy your clean,
+                comfortable space.
+              </p>
+            </div>
+          )}
         </div>
 
-        {isOpen5 && (
-          <div className={styles.residentialDIv}>
-            <p className={styles.hoverMainliv1}>
-              Our cleaning process is easy and thorough. First, our friendly
-              team arrives on time, ready to make your home shine. We start by
-              cleaning up each room and dusting all surfaces while removing dirt
-              and allergens. We clean countertops, appliances, and the sink in
-              the kitchen so it shines. Bathrooms can get messy quickly, so we
-              give them special attention, from scrubbing toilets to cleaning
-              counters and wiping mirrors.
-            </p>
+        <div className={styles.mainSub}>
+          <div onClick={handleClick6} className={styles.backed}>
+            <h3>What Other Services Does Molly Maid Provide?</h3>
 
-            <p className={styles.hoverMainliv1}>
-              If you’re looking for
-              <span className={styles.span}> cleaning services near me</span>
-              that cover it all, Molly Maid is the answer. We ensure that floors
-              are vacuumed and mopped throughout the house, making them clean
-              and fresh. Want your bedrooms to be cozy retreats? Come home to
-              neatly made beds and refreshed rooms. We also tackle additional
-              spaces, like hallways and entryways, to ensure no areas are
-              overlooked. page to determine the services that best suit your
-              needs.
-            </p>
-
-            <p className={styles.hoverMainliv1}>
-              Whether you’re looking for recurring cleaning services, occasional
-              cleaning, or helping with cleaning during a move, our goal is to
-              leave your home spotless and inviting. We take care of the details
-              so you can relax and enjoy your clean, comfortable space.
-            </p>
+            {isOpen6 ? <h2>&minus;</h2> : <h1>&#43;</h1>}
           </div>
-        )}
-      </div>
 
-      <div className={styles.mainSub}>
-        <div onClick={handleClick6} className={styles.backed}>
-          <h3>What Other Services Does Molly Maid Provide?</h3>
-
-          {isOpen6 ? <h2>&minus;</h2> : <h1>&#43;</h1>}
+          {isOpen6 && (
+            <div className={styles.residentialDIv}>
+              <p className={styles.hoverMainliv1}>
+                We offer cleaning services for any occasion. For a list of all
+                the cleaning services our teams provide, visit
+                <span className={styles.span}> our services</span>
+                page to determine the services that best suit your needs.
+              </p>
+            </div>
+          )}
         </div>
 
-        {isOpen6 && (
-          <div className={styles.residentialDIv}>
-            <p className={styles.hoverMainliv1}>
-              We offer cleaning services for any occasion. For a list of all the
-              cleaning services our teams provide, visit
-              <span className={styles.span}> our services</span>
-              page to determine the services that best suit your needs.
-            </p>
+        <div className={styles.mainSub}>
+          <div onClick={handleClick7} className={styles.backed}>
+            <h3>Why Do We Stand Behind Our Work?</h3>
+
+            {isOpen7 ? <h2>&minus;</h2> : <h1>&#43;</h1>}
           </div>
-        )}
-      </div>
 
-      <div className={styles.mainSub}>
-        <div onClick={handleClick7} className={styles.backed}>
-          <h3>Why Do We Stand Behind Our Work?</h3>
+          {isOpen7 && (
+            <div className={styles.residentialDIv}>
+              <p className={styles.hoverMainliv1}>
+                Molly Maid doesn’t just promise a thorough clean, we back it up.
+                <span className={styles.span}>
+                  The Neighborly Done Right Promise®
+                </span>
+                is our commitment to excellence, ensuring that our cleaning
+                services for residential homes are held to the highest
+                standards. We prioritize your satisfaction and the quality of
+                our services. From the moment we step into your home, we bring
+                professionalism and cleaning expertise.
+              </p>
 
-          {isOpen7 ? <h2>&minus;</h2> : <h1>&#43;</h1>}
+              <p className={styles.hoverMainliv1}>
+                Our skilled team treats your space with care, ensuring thorough
+                cleaning throughout your home. If something doesn't meet your
+                expectations, we'll make it right.
+              </p>
+
+              <p className={styles.hoverMainliv1}>
+                We value your trust and aim to provide exceptional service that
+                leaves your home gleaming and you smiling.
+              </p>
+
+              <p className={styles.hoverMainliv1}>
+                Your cleanliness satisfaction is always our top priority.
+              </p>
+            </div>
+          )}
         </div>
 
-        {isOpen7 && (
-          <div className={styles.residentialDIv}>
-            <p className={styles.hoverMainliv1}>
-              Molly Maid doesn’t just promise a thorough clean, we back it up.
-              <span className={styles.span}>
-                The Neighborly Done Right Promise®
-              </span>
-              is our commitment to excellence, ensuring that our cleaning
-              services for residential homes are held to the highest standards.
-              We prioritize your satisfaction and the quality of our services.
-              From the moment we step into your home, we bring professionalism
-              and cleaning expertise.
-            </p>
+        <div className={styles.mainSub}>
+          <div onClick={handleClick8} className={styles.backed}>
+            <h3>
+              How Do We Provide a Thorough Clean When and Where You Need It?
+            </h3>
 
-            <p className={styles.hoverMainliv1}>
-              Our skilled team treats your space with care, ensuring thorough
-              cleaning throughout your home. If something doesn't meet your
-              expectations, we'll make it right.
-            </p>
-
-            <p className={styles.hoverMainliv1}>
-              We value your trust and aim to provide exceptional service that
-              leaves your home gleaming and you smiling.
-            </p>
-
-            <p className={styles.hoverMainliv1}>
-              Your cleanliness satisfaction is always our top priority.
-            </p>
+            {isOpen8 ? <h2>&minus;</h2> : <h1>&#43;</h1>}
           </div>
-        )}
-      </div>
 
-      <div className={styles.mainSub}>
-        <div onClick={handleClick8} className={styles.backed}>
-          <h3>
-            How Do We Provide a Thorough Clean When and Where You Need It?
-          </h3>
+          {isOpen8 && (
+            <div className={styles.residentialDIv}>
+              <p className={styles.hoverMainliv1}>
+                Customize your cleaning services as a part of your one-time or
+                recurring cleaning when things get grimy! In addition to our
+                standard room-by-room cleaning services, our team can also
+                invest extra time cleaning your home's most essential
+                appliances. Check out our refrigerator cleaning and oven
+                cleaning options to really make your kitchen shine. Rooms
+                included with our home cleaning service:
+              </p>
 
-          {isOpen8 ? <h2>&minus;</h2> : <h1>&#43;</h1>}
+              <ul className={styles.hoverMainliv1}>
+                <li>Bathroom cleaning</li>
+                <li>Bedroom cleaning</li>
+                <li>Kitchen cleaning</li>
+                <li>Laundry room cleaning</li>
+                <li>Dining room cleaning</li>
+              </ul>
+            </div>
+          )}
         </div>
 
-        {isOpen8 && (
-          <div className={styles.residentialDIv}>
-            <p className={styles.hoverMainliv1}>
-              Customize your cleaning services as a part of your one-time or
-              recurring cleaning when things get grimy! In addition to our
-              standard room-by-room cleaning services, our team can also invest
-              extra time cleaning your home's most essential appliances. Check
-              out our refrigerator cleaning and oven cleaning options to really
-              make your kitchen shine. Rooms included with our home cleaning
-              service:
-            </p>
+        <div className={styles.mainSub}>
+          <div onClick={handleClick9} className={styles.backed}>
+            <h3>Do I Need To Be Home During My Appointment?</h3>
 
-            <ul className={styles.hoverMainliv1}>
-              <li>Bathroom cleaning</li>
-              <li>Bedroom cleaning</li>
-              <li>Kitchen cleaning</li>
-              <li>Laundry room cleaning</li>
-              <li>Dining room cleaning</li>
-            </ul>
+            {isOpen9 ? <h2>&minus;</h2> : <h1>&#43;</h1>}
           </div>
-        )}
-      </div>
 
-      <div className={styles.mainSub}>
-        <div onClick={handleClick9} className={styles.backed}>
-          <h3>Do I Need To Be Home During My Appointment?</h3>
-
-          {isOpen9 ? <h2>&minus;</h2> : <h1>&#43;</h1>}
+          {isOpen9 && (
+            <div className={styles.residentialDIv}>
+              <p className={styles.hoverMainliv1}>
+                Most of our residential cleaning services occur during the day
+                when our clients are away or at work. Our house cleaning
+                professionals are usually entrusted with a key or garage code to
+                make things easy for our clients. Whichever option you prefer,
+                we’ll work with you to meet your specific cleaning needs.
+              </p>
+            </div>
+          )}
         </div>
-
-        {isOpen9 && (
-          <div className={styles.residentialDIv}>
-            <p className={styles.hoverMainliv1}>
-              Most of our residential cleaning services occur during the day
-              when our clients are away or at work. Our house cleaning
-              professionals are usually entrusted with a key or garage code to
-              make things easy for our clients. Whichever option you prefer,
-              we’ll work with you to meet your specific cleaning needs.
-            </p>
-          </div>
-        )}
       </div>
 
-      <h3>See All FAQs</h3>
+      <div className={styles.see}>
+        <h3>See All FAQs</h3>
+      </div>
     </div>
   );
 }
