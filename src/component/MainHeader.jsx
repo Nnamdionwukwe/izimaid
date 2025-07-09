@@ -15,8 +15,8 @@ import SecondResidential from "./SecondResidential";
 import SecondPractically from "./SecondPractically";
 import Questions from "./Questions";
 import Faq from "./Faq";
+import JoinOurTeam from "./JoinOurTeam";
 import JoinOurTeamFull from "./JoinOurTeamFull";
-import JoinOurTeam from "./JoinOurTeamFull";
 
 export default function MainHeader() {
   return (
