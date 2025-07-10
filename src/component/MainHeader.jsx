@@ -17,6 +17,8 @@ import Questions from "./Questions";
 import Faq from "./Faq";
 import JoinOurTeam from "./JoinOurTeam";
 import JoinOurTeamFull from "./JoinOurTeamFull";
+import IziMaidHelp from "./IziMaidHelp";
+import IziMaidHelpFull from "./IziMaidHelpFull";
 
 export default function MainHeader() {
   return (
@@ -84,9 +86,9 @@ export default function MainHeader() {
           <JoinOurTeamFull />
         </div>
 
-        <OurCleaning />
+        <IziMaidHelp />
 
-        <PerfectGift />
+        <IziMaidHelpFull />
       </div>
     </>
   );
