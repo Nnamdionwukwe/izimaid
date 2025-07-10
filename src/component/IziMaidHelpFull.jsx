@@ -46,7 +46,7 @@ export default function IziMaidHelpFull() {
           <div className={styles.gridDiv}>
             <img
               alt="welcome"
-              src="https://img.freepik.com/premium-photo/house-cleaning-equipment-supplies-bucket_488220-3224.jpg?semt=ais_hybrid&w=740"
+              src="https://www.shutterstock.com/image-vector/illustration-cute-young-woman-washing-600nw-2466492495.jpg"
             />
             <div className={styles.subDiv}>
               <h3>One-Time Cleaning</h3>
@@ -73,7 +73,7 @@ export default function IziMaidHelpFull() {
           <div className={styles.gridDiv}>
             <img
               alt="welcome"
-              src="https://production-next-images-cdn.thumbtack.com/i/427431748070432796/width/1024.jpeg"
+              src="https://i.pinimg.com/736x/1b/99/21/1b9921c32d609637b8851a0d1ce6e691.jpg"
             />
             <div className={styles.subDiv}>
               <h3>Recurring Cleans</h3>
@@ -97,7 +97,7 @@ export default function IziMaidHelpFull() {
           <div className={styles.gridDiv}>
             <img
               alt="welcome"
-              src="https://media.istockphoto.com/id/1340208950/vector/cleaning-workers-isolated-flat-cartoon-characters-man-and-woman-in-uniform-vector.jpg?s=612x612&w=0&k=20&c=tj9dk0o4ecIrJbJ80P_LjNbI7wnlG4bAj0ISa5ZSbbM="
+              src="https://st.depositphotos.com/1742172/5013/v/450/depositphotos_50130817-stock-illustration-cartoon-woman-scrubbing-floor.jpg"
             />
             <div className={styles.subDiv}>
               <h3>Home Cleaning</h3>
@@ -122,7 +122,7 @@ export default function IziMaidHelpFull() {
           <div className={styles.gridDiv}>
             <img
               alt="welcome"
-              src="https://www.shutterstock.com/image-vector/loving-mother-hugging-her-daughter-600nw-2500342501.jpg"
+              src="https://www.shutterstock.com/image-vector/black-girl-work-clothes-washes-600nw-1329706235.jpg"
             />
 
             <div className={styles.subDiv}>
