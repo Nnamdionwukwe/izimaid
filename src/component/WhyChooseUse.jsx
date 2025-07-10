@@ -31,7 +31,7 @@ export default function WhyChooseUs() {
 
           {isOpen1 && (
             <p>
-              We’ve been around over 40 years and know how to provide the best
+              We’ve been around over 2 years and know how to provide the best
               clean within your budget and schedule, and with no term contracts.
               With our 44-point checklist, it’s a clean you can count on. If
               it’s not done right, we’ll make it right.

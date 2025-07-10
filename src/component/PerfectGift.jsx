@@ -73,7 +73,7 @@ export default function PerfectGift() {
             <div className={styles.subDiv}>
               <h3>Perfecct Gift</h3>
               <p className={styles.para}>
-                Give the gift of time with a Molly Maid gift certificate.
+                Give the gift of time with a IziMaid gift certificate.
               </p>
               <div className={styles.learnMore}>
                 <p className={styles.p}>Learn More</p>

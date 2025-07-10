@@ -15,6 +15,11 @@
     font-size: 20px;
   }
 
+  .cd h1 {
+    display: flex;
+    justify-content: center;
+  }
+
   .main2 {
     flex: 1;
     position: absolute;

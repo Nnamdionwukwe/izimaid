@@ -54,7 +54,7 @@ export default function IziMaidHelpFull() {
               <p className={styles.para}>
                 If you are preparing to host a big event, cleaning the house for
                 spring, or simply trying to get ahead on cleaning chores, you
-                can count on your local Molly Maid for a one-time professional
+                can count on your local IziMaid for a one-time professional
                 house cleaning that refreshes your home and makes it easier to
                 maintain. That way, you can spend less time cleaning and more
                 time enjoying the things you love.
