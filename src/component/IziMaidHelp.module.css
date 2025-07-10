@@ -116,6 +116,40 @@
     border-radius: 100%;
     color: rgb(243, 120, 140);
   }
+
+  .home4 {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    margin-left: 3.2em;
+    margin-top: -40px;
+  }
+
+  .home4 i {
+    font-size: 30px;
+    background: rgb(35, 12, 43);
+    padding: 12px 14px 12px 14px;
+    border-radius: 100%;
+    color: rgb(243, 120, 140);
+  }
+
+  .home5 {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    margin-left: 3.2em;
+    margin-top: -40px;
+  }
+
+  .home5 i {
+    font-size: 30px;
+    background: rgb(35, 12, 43);
+    padding: 12px 16px 12px 16px;
+    border-radius: 100%;
+    color: rgb(243, 120, 140);
+  }
 }
 
 @media screen and (max-width: 778px) {

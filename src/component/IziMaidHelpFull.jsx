@@ -14,7 +14,7 @@ export default function IziMaidHelpFull() {
         </div>
 
         <div className={styles.mainDiv2}>
-          <div className={styles.home}>
+          <div className={styles.home4}>
             <i class="fa-solid fa-calendar-days"></i>
           </div>
 
@@ -32,7 +32,7 @@ export default function IziMaidHelpFull() {
         </div>
 
         <div className={styles.mainDiv3}>
-          <div className={styles.home}>
+          <div className={styles.home5}>
             <i class="fa-solid fa-building"></i>
           </div>
 
