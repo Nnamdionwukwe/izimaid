@@ -40,6 +40,10 @@ export default function MainHeader() {
 
         <PerfectGift />
 
+        <IziMaidHelp />
+
+        <IziMaidHelpFull />
+
         <IziBestCleaningCar />
 
         <div className={styles.whyChooseUs}>
@@ -85,10 +89,6 @@ export default function MainHeader() {
         <div className={styles.whyChooseUsFull}>
           <JoinOurTeamFull />
         </div>
-
-        <IziMaidHelp />
-
-        <IziMaidHelpFull />
       </div>
     </>
   );
