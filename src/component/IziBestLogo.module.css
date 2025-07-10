@@ -29,7 +29,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 30px;
+    margin-left: 25px;
     width: 90%;
     height: 100%;
   }
@@ -41,7 +41,7 @@
   }
 
   .logo {
-    width: 130px;
+    width: 150px;
     height: auto;
     cursor: pointer;
     object-fit: cover;
@@ -87,6 +87,6 @@
   }
 
   .logo {
-    width: 200px;
+    width: 220px;
   }
 }

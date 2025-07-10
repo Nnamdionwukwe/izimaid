@@ -5,19 +5,11 @@ export default function IziBestLogo() {
     <div className={styles.container}>
       <div>
         <div className={styles.containerDiv}>
-          <img
-            className={styles.logo}
-            alt="Logo"
-            src="https://cdn3.vectorstock.com/i/1000x1000/66/62/house-cleaning-logo-vector-47536662.jpg"
-          />
+          <img className={styles.logo} alt="Logo" src="izimaid.jpg" />
 
           <p className={styles.text}></p>
 
-          <img
-            className={styles.logo}
-            alt="Logo"
-            src="https://cdn3.vectorstock.com/i/1000x1000/66/62/house-cleaning-logo-vector-47536662.jpg"
-          />
+          <img className={styles.logo} alt="Logo" src="izibest.jpg" />
         </div>
 
         <h2 className={styles.containerh2}>
