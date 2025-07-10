@@ -24,7 +24,7 @@ export default function IziMaidHelpFull() {
 
         <div className={styles.mainDiv2}>
           <div className={styles.home}>
-            <i class="fa-solid fa-house"></i>
+            <i class="fa-solid fa-spray-can"></i>
           </div>
 
           <h4>Home Cleaning</h4>
