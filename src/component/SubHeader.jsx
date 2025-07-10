@@ -32,7 +32,7 @@ export default function SubHeader() {
         <div className={styles.thirdHeader}>
           <i class="fa fa-map-marker" aria-hidden="true"></i>
 
-          <p>Find My Local IziBest Maid</p>
+          <p>Find My Local IziMaid</p>
         </div>
       </div>
 
