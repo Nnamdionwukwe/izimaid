@@ -49,10 +49,15 @@ export default function IziMaidHelpFull() {
               src="https://img.freepik.com/premium-photo/house-cleaning-equipment-supplies-bucket_488220-3224.jpg?semt=ais_hybrid&w=740"
             />
             <div className={styles.subDiv}>
-              <h3>Residential Services</h3>
+              <h3>One-Time Cleaning</h3>
 
               <p className={styles.para}>
-                Choose a plan to fit your needs—no contracts, no hassle.
+                If you are preparing to host a big event, cleaning the house for
+                spring, or simply trying to get ahead on cleaning chores, you
+                can count on your local Molly Maid for a one-time professional
+                house cleaning that refreshes your home and makes it easier to
+                maintain. That way, you can spend less time cleaning and more
+                time enjoying the things you love.
               </p>
               <div className={styles.learnMore}>
                 <p className={styles.p}>Learn More</p>
@@ -71,9 +76,12 @@ export default function IziMaidHelpFull() {
               src="https://production-next-images-cdn.thumbtack.com/i/427431748070432796/width/1024.jpeg"
             />
             <div className={styles.subDiv}>
-              <h3>Perfecct Gift</h3>
+              <h3>Recurring Cleans</h3>
               <p className={styles.para}>
-                Give the gift of time with a Molly Maid gift certificate.
+                We could all use some help around our homes, and when you choose
+                IziMaid, you can get that help as often as you need it. Our
+                regular maid services are available weekly, bi-weekly, or at a
+                frequency that fits your schedule and cleaning needs.
               </p>
               <div className={styles.learnMore}>
                 <p className={styles.p}>Learn More</p>
@@ -92,9 +100,13 @@ export default function IziMaidHelpFull() {
               src="https://media.istockphoto.com/id/1340208950/vector/cleaning-workers-isolated-flat-cartoon-characters-man-and-woman-in-uniform-vector.jpg?s=612x612&w=0&k=20&c=tj9dk0o4ecIrJbJ80P_LjNbI7wnlG4bAj0ISa5ZSbbM="
             />
             <div className={styles.subDiv}>
-              <h3>Practically Spotless Blog</h3>
+              <h3>Home Cleaning</h3>
               <p className={styles.para}>
-                Get expert advice from our team of cleaning specialists.
+                Life is busy, which means you can’t always complete everything
+                on your to-do list. IziMaid allows you to have a sparkling home,
+                saves you valuable time, and provides the peace of mind that
+                comes with knowing the job was done right. Our residential home
+                cleaning service is dedicated to making your life easier.
               </p>
               <div className={styles.learnMore}>
                 <p className={styles.p}>Learn More</p>
@@ -114,9 +126,13 @@ export default function IziMaidHelpFull() {
             />
 
             <div className={styles.subDiv}>
-              <h3>IziBest Foundation</h3>
+              <h3>Apartments and Condos</h3>
               <p className={styles.para}>
-                Get expert advice from our team of cleaning specialists.
+                Living in an apartment or condo is all about convenience and
+                perks like on-site maintenance, repair, and landscaping
+                services. What if you could make apartment living even more
+                convenient with regular apartment cleaning services? Imagine
+                what you could do with your newfound free time
               </p>
               <div className={styles.learnMore}>
                 <p className={styles.p}>Learn More</p>
