@@ -83,6 +83,10 @@ export default function MainHeader() {
         <div className={styles.whyChooseUsFull}>
           <JoinOurTeamFull />
         </div>
+
+        <OurCleaning />
+
+        <PerfectGift />
       </div>
     </>
   );

@@ -3,14 +3,14 @@ import styles from "./Faq.module.css";
 
 export default function Faq() {
   const [isOpen1, setIsOpen1] = useState(true);
-  const [isOpen2, setIsOpen2] = useState(true);
-  const [isOpen3, setIsOpen3] = useState(true);
-  const [isOpen4, setIsOpen4] = useState(true);
-  const [isOpen5, setIsOpen5] = useState(true);
-  const [isOpen6, setIsOpen6] = useState(true);
-  const [isOpen7, setIsOpen7] = useState(true);
-  const [isOpen8, setIsOpen8] = useState(true);
-  const [isOpen9, setIsOpen9] = useState(true);
+  const [isOpen2, setIsOpen2] = useState(false);
+  const [isOpen3, setIsOpen3] = useState(false);
+  const [isOpen4, setIsOpen4] = useState(false);
+  const [isOpen5, setIsOpen5] = useState(false);
+  const [isOpen6, setIsOpen6] = useState(false);
+  const [isOpen7, setIsOpen7] = useState(false);
+  const [isOpen8, setIsOpen8] = useState(false);
+  const [isOpen9, setIsOpen9] = useState(false);
 
   function handleClick1() {
     setIsOpen1((prev) => !prev);
