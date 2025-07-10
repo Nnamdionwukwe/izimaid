@@ -14,7 +14,7 @@ export default function IziBestCleaningCar() {
 
           <div className={styles.Submain}>
             <div className={styles.SubDiv}>
-              <h1>Find an IziBest Maid Near Me</h1>
+              <h1>Find an IziMaid Near Me</h1>
               <p>Let us know how we can help you today.</p>
 
               <div className={styles.SubmainFlex}>
@@ -24,12 +24,12 @@ export default function IziBestCleaningCar() {
                   <input type="text" placeholder="Enter Zip/Postal Code" />
                 </div>
 
-                <h4 className={styles.find}>Find My Izi Maid</h4>
+                <h4 className={styles.find}>Find My IziMaid</h4>
               </div>
 
               <div className={styles.Submain}>
                 <div className={styles.Submain3}>
-                  <h2>Call us at +2348037748573</h2>
+                  <h2>Call us at +2348030588774</h2>
                 </div>
               </div>
             </div>
