@@ -19,6 +19,7 @@ import JoinOurTeam from "./JoinOurTeam";
 import JoinOurTeamFull from "./JoinOurTeamFull";
 import IziMaidHelp from "./IziMaidHelp";
 import IziMaidHelpFull from "./IziMaidHelpFull";
+import Customers from "./Customers";
 
 export default function MainHeader() {
   return (
@@ -43,6 +44,8 @@ export default function MainHeader() {
         <IziMaidHelp />
 
         <IziMaidHelpFull />
+
+        <Customers />
 
         <IziBestCleaningCar />
 

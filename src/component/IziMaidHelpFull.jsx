@@ -6,7 +6,7 @@ export default function IziMaidHelpFull() {
       <div className={styles.services}>
         <div className={styles.mainDiv2}>
           <div className={styles.home}>
-            <i class="fa-solid fa-house"></i>
+            <i class="fa-solid fa-plate-wheat"></i>
           </div>
 
           <h4>One-Time Cleaning</h4>
@@ -15,7 +15,7 @@ export default function IziMaidHelpFull() {
 
         <div className={styles.mainDiv2}>
           <div className={styles.home}>
-            <i class="fa fa-gift" aria-hidden="true"></i>
+            <i class="fa-solid fa-calendar-days"></i>
           </div>
 
           <h4>Recurring Cleans</h4>
@@ -24,7 +24,7 @@ export default function IziMaidHelpFull() {
 
         <div className={styles.mainDiv2}>
           <div className={styles.home}>
-            <i class="fa-solid fa-spray-can"></i>
+            <i class="fa-solid fa-house"></i>
           </div>
 
           <h4>Home Cleaning</h4>
@@ -33,7 +33,7 @@ export default function IziMaidHelpFull() {
 
         <div className={styles.mainDiv3}>
           <div className={styles.home}>
-            <i class="fa fa-heartbeat" aria-hidden="true"></i>
+            <i class="fa-solid fa-building"></i>
           </div>
 
           <h4>Apartment and Condos</h4>
