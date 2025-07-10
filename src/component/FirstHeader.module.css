@@ -1,6 +1,6 @@
 @media screen and (min-width: 20px) {
   .header1 {
-    background-color: rgb(247, 40, 75);
+    background-color: rgb(32, 32, 65);
     padding: 5px 20px;
     color: white;
     font-style: italic;
@@ -16,11 +16,12 @@
 
 @media screen and (min-width: 992px) {
   .header2 {
-    background-color: rgb(247, 40, 75);
+    background-color: rgb(32, 32, 65);
     padding: 5px 20px;
     color: white;
     font-style: italic;
     font-weight: bold;
     cursor: pointer;
+    margin: -10px -8px 10px -8px;
   }
 }
