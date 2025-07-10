@@ -14,8 +14,7 @@
   .ThirdHeaderDiv {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0px 20px 0px 35px;
+    padding: 0px 20px 0px 15px;
   }
 
   .i {
@@ -77,6 +76,8 @@
 
   .ThirdHeader {
     display: none;
+
+    margin: 0px -8px 0px -8px;
   }
 
   .ThirdHeader2 {
@@ -86,6 +87,8 @@
     border-bottom: 4px solid gray;
     height: 80px;
     padding-top: -5px;
+
+    margin: 0px -8px 0px -8px;
   }
 
   .more {
