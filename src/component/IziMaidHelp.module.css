@@ -44,7 +44,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
-    margin: 50px 65px 0px 65px;
+    /* margin: 50px 65px 0px 65px; */
     column-gap: 15px;
   }
 

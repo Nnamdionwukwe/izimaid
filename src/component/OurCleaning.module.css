@@ -43,7 +43,7 @@
   .services {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-items: center;
+    justify-content: center;
     margin: 50px 65px 0px 65px;
     column-gap: 15px;
   }
