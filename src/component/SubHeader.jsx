@@ -39,11 +39,7 @@ export default function SubHeader() {
       <div className={styles.thirdHeaderMain}>
         <div className={styles.secondMain1}>
           <div className={styles.secondMainLogo}>
-            <img
-              className={styles.logo}
-              alt="Logo"
-              src="https://cdn3.vectorstock.com/i/1000x1000/66/62/house-cleaning-logo-vector-47536662.jpg"
-            />
+            <img className={styles.logo} alt="Logo" src="izimaid.jpg" />
           </div>
 
           <div className={styles.secondMain}>
@@ -66,7 +62,7 @@ export default function SubHeader() {
             <div className={styles.thirdHeader3}>
               <i class="fa fa-map-marker" aria-hidden="true"></i>
 
-              <p>Find My Local IziBest Maid</p>
+              <p>Find My Local IziMaid</p>
             </div>
           </div>
         </div>
@@ -134,7 +130,7 @@ export default function SubHeader() {
             </div>
 
             <div>
-              <p className={styles.number}>+234 803 0588 774</p>
+              <p className={styles.number}>0803 0588 774</p>
             </div>
           </div>
         </div>

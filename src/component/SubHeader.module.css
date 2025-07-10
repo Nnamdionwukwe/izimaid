@@ -198,7 +198,7 @@
   .secondMain1 {
     display: flex;
     align-items: center;
-    border-top: 1px solid rgb(242, 238, 238);
+    /* border-top: 1px solid rgb(242, 238, 238); */
     border-bottom: 1px solid rgb(242, 238, 238);
   }
 
@@ -254,6 +254,7 @@
     padding-right: 20px;
     font-weight: bold;
     color: rgb(61, 61, 61);
+    z-index: 100;
   }
 
   .sub3 {
@@ -325,9 +326,11 @@
   }
 
   .number {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
     color: green;
+    width: 157px;
+    z-index: 100;
   }
 
   .hoverMainDiv1 {

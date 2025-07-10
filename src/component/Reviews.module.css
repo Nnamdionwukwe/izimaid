@@ -160,7 +160,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* width: 230px; */
+    width: 80%;
     color: #ffff;
     background: rgb(6, 6, 65);
     border-radius: 0.5em;
@@ -254,7 +254,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 230px;
+    max-width: 300px;
     color: #ffff;
     background: rgb(6, 6, 65);
     border-radius: 0.5em;
