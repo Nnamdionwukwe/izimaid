@@ -3,6 +3,7 @@
     position: relative;
     width: 100%;
     height: 25em;
+    margin: 0px -8px 0px -8px;
   }
 
   .main img {
@@ -34,7 +35,7 @@
   }
 
   .main2 h1 {
-    color: rgb(75, 65, 5);
+    color: rgb(187, 19, 47);
   }
 
   .izibest {
