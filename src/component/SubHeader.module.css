@@ -48,7 +48,7 @@
 
   .sub1 {
     display: flex;
-    background-color: rgb(247, 40, 75);
+    background-color: rgb(187, 19, 47);
     font-size: 11px;
     font-weight: bold;
     color: white;
@@ -70,7 +70,7 @@
 
   .sub2 {
     display: flex;
-    background-color: rgb(247, 40, 75);
+    background-color: rgb(187, 19, 47);
     font-size: 11px;
     font-weight: bold;
     color: white;
@@ -101,7 +101,7 @@
   .thirdHeader {
     display: flex;
     align-items: center;
-    color: rgb(150, 107, 7);
+    color: rgb(187, 19, 47);
     margin-left: 20px;
     margin-top: 20px;
     padding-bottom: 20px;
@@ -111,7 +111,7 @@
   .thirdHeader i {
     margin-right: 10px;
     font-size: 25px;
-    color: rgb(152, 26, 26);
+    color: rgb(187, 19, 47);
   }
 
   .thirdHeader p {
@@ -151,7 +151,7 @@
   .thirdHeader2 {
     display: flex;
     align-items: center;
-    color: rgb(150, 107, 7);
+    color: rgb(187, 19, 47);
     margin-left: 20px;
     margin-top: 20px;
     padding-bottom: 20px;
@@ -161,7 +161,7 @@
   .thirdHeader2 i {
     margin-right: 10px;
     font-size: 25px;
-    color: rgb(152, 26, 26);
+    color: rgb(187, 19, 47);
   }
 
   .thirdHeader2 p {
@@ -172,7 +172,7 @@
   .thirdHeader3 {
     display: flex;
     align-items: center;
-    color: rgb(150, 107, 7);
+    color: rgb(187, 19, 47);
     padding-right: 20px;
     padding-left: 20px;
     margin-top: 20px;
@@ -258,7 +258,7 @@
 
   .sub3 {
     display: flex;
-    background-color: rgb(150, 107, 7);
+    background-color: rgb(187, 19, 47);
     font-size: 16px;
     font-weight: bold;
     color: white;
@@ -272,7 +272,7 @@
   }
 
   .sub3:hover {
-    background-color: rgb(90, 65, 8);
+    background-color: rgb(187, 19, 47);
   }
 
   .sub3 i {
@@ -358,7 +358,7 @@
   .thirdHeader2 {
     display: flex;
     align-items: center;
-    color: rgb(150, 107, 7);
+    color: rgb(187, 19, 47);
     margin-left: 20px;
     margin-top: 20px;
     padding-bottom: 20px;
