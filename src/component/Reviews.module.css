@@ -184,6 +184,7 @@
   .logo1 {
     width: 5em;
     cursor: pointer;
+    border-radius: 5px;
   }
 }
 
