@@ -11,6 +11,10 @@
     object-fit: cover;
   }
 
+  .cd p {
+    font-size: 20px;
+  }
+
   .main2 {
     flex: 1;
     position: absolute;

@@ -32,7 +32,7 @@ export default function OurCleaning() {
         <div className={styles.cd}>
           <h1>How Izi Maid Can Meet Your Cleaning Needs</h1>
           <p>
-            At Izi Maid®, we take great pride in delivering the highest-quality
+            At IziMaid®, we take great pride in delivering the highest-quality
             residential cleaning services near you. We offer cleaning services
             and home cleaning tips to homeowners with the help of our
             well-trained home cleaning pros. Izi Maid does everything we can to
