@@ -84,11 +84,7 @@ export default function Reviews() {
       <div className={styles.logoDiv}>
         <div className={styles.logoDivDiv}>
           <div className={styles.logoDiv1}>
-            <img
-              className={styles.logo1}
-              alt="Logo"
-              src="https://cdn3.vectorstock.com/i/1000x1000/66/62/house-cleaning-logo-vector-47536662.jpg"
-            />
+            <img className={styles.logo1} alt="Logo" src="izimaid.jpg" />
           </div>
 
           <div className={styles.logoDiv2}>

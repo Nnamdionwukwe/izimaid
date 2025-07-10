@@ -9,11 +9,7 @@ export default function FixedHeader() {
     <>
       <div className={styles.SubHeader1}>
         <div>
-          <img
-            className={styles.logo}
-            alt="Logo"
-            src="https://cdn3.vectorstock.com/i/1000x1000/66/62/house-cleaning-logo-vector-47536662.jpg"
-          />
+          <img className={styles.logo} alt="Logo" src="izimaid.jpg" />
         </div>
 
         <div className={styles.hamburger}>
