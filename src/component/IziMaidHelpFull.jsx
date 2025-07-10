@@ -9,7 +9,7 @@ export default function IziMaidHelpFull() {
             <i class="fa-solid fa-house"></i>
           </div>
 
-          <h5>One-Time Cleaning</h5>
+          <h4>One-Time Cleaning</h4>
           <h4>&rarr;</h4>
         </div>
 
@@ -18,7 +18,7 @@ export default function IziMaidHelpFull() {
             <i class="fa fa-gift" aria-hidden="true"></i>
           </div>
 
-          <h5>Recurring Cleans</h5>
+          <h4>Recurring Cleans</h4>
           <h4>&rarr;</h4>
         </div>
 
@@ -27,7 +27,7 @@ export default function IziMaidHelpFull() {
             <i class="fa-solid fa-house"></i>
           </div>
 
-          <h5>Home Cleaning</h5>
+          <h4>Home Cleaning</h4>
           <h4>&rarr;</h4>
         </div>
 
@@ -36,7 +36,7 @@ export default function IziMaidHelpFull() {
             <i class="fa fa-heartbeat" aria-hidden="true"></i>
           </div>
 
-          <h5>Apartment and Condos</h5>
+          <h4>Apartment and Condos</h4>
           <h4>&rarr;</h4>
         </div>
       </div>
