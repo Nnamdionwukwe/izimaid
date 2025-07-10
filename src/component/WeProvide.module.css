@@ -6,6 +6,10 @@
     margin-bottom: 1em;
   }
 
+  .mainDiv {
+    justify-content: center;
+  }
+
   .h2 {
     display: flex;
     justify-content: center;
