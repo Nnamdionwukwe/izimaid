@@ -9,8 +9,8 @@ export default function JoinOurTeamFull() {
 
           <p>
             The moment you put on a IziMaid® uniform, you become part of a
-            family, a team of people committed to supporting one another. Molly
-            Maid values taking care of our employees and proudly offers the
+            family, a team of people committed to supporting one another.
+            IziMaid values taking care of our employees and proudly offers the
             opportunity to grow from a job into a career and a work culture of
             respect, integrity, and fun.
           </p>
