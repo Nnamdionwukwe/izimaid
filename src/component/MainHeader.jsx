@@ -21,6 +21,7 @@ import IziMaidHelp from "./IziMaidHelp";
 import IziMaidHelpFull from "./IziMaidHelpFull";
 import Customers from "./Customers";
 import IziBestLogo from "./IziBestLogo";
+import Footer from "./Footer";
 
 export default function MainHeader() {
   return (
@@ -96,6 +97,10 @@ export default function MainHeader() {
 
         <div>
           <IziBestLogo />
+        </div>
+
+        <div>
+          <Footer />
         </div>
       </div>
     </>

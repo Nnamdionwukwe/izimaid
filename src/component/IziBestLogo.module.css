@@ -154,14 +154,14 @@
     border-bottom-left-radius: 5px;
   }
 
-  .store2 {
+  .store3 {
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
   }
 
-  .store2 h4 {
+  .store3 h4 {
     padding: 1em 2.8em 1em 2.8em;
     background-color: rgb(13, 13, 82);
     margin-right: 0px;
@@ -170,7 +170,7 @@
     cursor: pointer;
   }
 
-  .store2 i {
+  .store3 i {
     padding: 1.1em 1.2em 1.1em 1.3em;
     background-color: rgb(235, 10, 48);
     margin-left: -10px;
