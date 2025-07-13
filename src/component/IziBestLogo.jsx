@@ -37,22 +37,24 @@ export default function IziBestLogo() {
             </div>
           </div>
 
-          <p className={styles.app}></p>
+          <p className={styles.app1}></p>
 
           <div className={styles.download}>
-            <h4>Download the App</h4>
+            <div>
+              <h4>Download the App</h4>
 
-            <div className={styles.google}>
-              <div className={styles.store}>
-                <i class="fa-brands fa-apple"></i>
-                <h4>App Store</h4>
-              </div>
+              <div className={styles.google}>
+                <div className={styles.store}>
+                  <i class="fa-brands fa-apple"></i>
+                  <h4>App Store</h4>
+                </div>
 
-              <p className={styles.app}></p>
+                <p className={styles.app2}></p>
 
-              <div className={styles.store}>
-                <i class="fa-brands fa-google-play"></i>
-                <h4>Google Play Store</h4>
+                <div className={styles.store}>
+                  <i class="fa-brands fa-google-play"></i>
+                  <h4>Google Play Store</h4>
+                </div>
               </div>
             </div>
           </div>
