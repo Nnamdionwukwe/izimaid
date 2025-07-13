@@ -83,10 +83,11 @@
 
   .iziMaid h4 {
     padding: 1em;
-    background-color: red;
+    background-color: rgb(13, 13, 82);
     margin-right: 0px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
+    cursor: pointer;
   }
 
   .iziMaid h2 {
