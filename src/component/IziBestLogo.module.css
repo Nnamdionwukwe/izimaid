@@ -46,6 +46,49 @@
     cursor: pointer;
     object-fit: cover;
   }
+
+  .containerDiv2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    flex-direction: column;
+  }
+
+  .googleDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 10px;
+  }
+
+  .googleDiv div {
+    background: rgb(225, 225, 225);
+    width: 100%;
+  }
+
+  .download1 h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .iziMaid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(6, 6, 189);
+    color: #ffff;
+  }
+
+  .iziMaid h4 {
+    margin-right: 10px;
+  }
+
+  .store {
+    display: flex;
+    align-items: center;
+  }
 }
 
 @media screen and (min-width: 577px) {
@@ -88,5 +131,43 @@
 
   .logo {
     width: 220px;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .googleDivMain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .googleDiv div {
+    background: rgb(231, 230, 230);
+    width: 448px;
+    height: 60px;
+  }
+
+  .googleDiv div h4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .app {
+    margin: 0px 15px;
+  }
+
+  .google {
+    display: flex;
+    align-items: center;
+  }
+
+  .store {
+    display: flex;
+    align-items: center;
+    background: blue;
+    padding: 1em;
   }
 }
