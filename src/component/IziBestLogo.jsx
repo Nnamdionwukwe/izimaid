@@ -44,7 +44,7 @@ export default function IziBestLogo() {
               <h4>Download the App</h4>
 
               <div className={styles.google}>
-                <div className={styles.store}>
+                <div className={styles.store2}>
                   <i class="fa-brands fa-apple"></i>
                   <h4>App Store</h4>
                 </div>

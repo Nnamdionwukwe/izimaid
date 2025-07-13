@@ -138,8 +138,36 @@
     cursor: pointer;
   }
 
+  .app2 {
+    margin: -25px 0px;
+  }
+
   .store i {
     padding: 1.1em 1.2em 1em 1.2em;
+    background-color: rgb(235, 10, 48);
+    margin-left: -10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+
+  .store2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+
+  .store2 h4 {
+    padding: 1em 2.8em 1em 2.8em;
+    background-color: rgb(13, 13, 82);
+    margin-right: 0px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+  }
+
+  .store2 i {
+    padding: 1.1em 1.2em 1.1em 1.3em;
     background-color: rgb(235, 10, 48);
     margin-left: -10px;
     border-top-left-radius: 5px;
