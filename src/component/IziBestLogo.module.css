@@ -77,12 +77,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(6, 6, 189);
     color: #ffff;
+    margin-top: -20px;
   }
 
   .iziMaid h4 {
-    margin-right: 10px;
+    padding: 1em;
+    background-color: red;
+    margin-right: 0px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+
+  .iziMaid h2 {
+    padding: 0.48em;
+    background-color: red;
+    margin-left: -10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
   }
 
   .store {
