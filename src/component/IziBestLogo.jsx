@@ -13,7 +13,7 @@ export default function IziBestLogo() {
         </div>
 
         <h2 className={styles.containerh2}>
-          IziMaid is part of the IziBest group of companies family of home
+          IziMaid is part of the IziBest group of companies, family of home
           service providers.
         </h2>
 

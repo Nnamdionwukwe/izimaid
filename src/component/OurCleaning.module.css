@@ -62,8 +62,12 @@
     height: 75px;
     cursor: pointer;
     margin-bottom: 60px;
-    color: red;
+    color: blue;
     box-shadow: 2px 2px 19px 3px rgb(202, 200, 200);
+  }
+
+  .mainDiv2 h5 {
+    font-size: 15px;
   }
 
   .mainDiv3 {
