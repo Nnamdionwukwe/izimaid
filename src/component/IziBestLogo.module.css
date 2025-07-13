@@ -228,13 +228,19 @@
     align-items: center;
     justify-content: center;
     margin-top: 20px;
-    width: 100%;
+    /* width: 100%; */
   }
 
   .googleDiv div {
     background: rgb(231, 230, 230);
     width: 448px;
-    height: 60px;
+    height: 90px;
+  }
+
+  .download div {
+    background: rgb(231, 230, 230);
+    width: 448px;
+    height: 90px;
   }
 
   .googleDiv div h4 {
@@ -243,11 +249,22 @@
     justify-content: center;
   }
 
-  .app {
-    margin: 0px 15px;
+  .app1 {
+    margin: 0px 5px;
+  }
+
+  .app2 {
+    /* margin: 0px 5px; */
   }
 
   .google {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -20px;
+  }
+
+  .store {
     display: flex;
     align-items: center;
   }
@@ -255,7 +272,53 @@
   .store {
     display: flex;
     align-items: center;
-    background: blue;
-    padding: 1em;
+    justify-content: center;
+    color: white;
+  }
+
+  .store h4 {
+    padding: 1em 1em 1em 1em;
+    background-color: rgb(13, 13, 82);
+    margin-right: 0px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+  }
+
+  .app2 {
+    margin: -25px 0px;
+  }
+
+  .store i {
+    padding: 1.1em 1em 1.1em 1em;
+    background-color: rgb(235, 10, 48);
+    margin-left: -10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+
+  .store3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-right: -60px;
+  }
+
+  .store3 h4 {
+    padding: 1em 0.8em 1em 0.8em;
+    background-color: rgb(13, 13, 83);
+    margin-right: 0px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+  }
+
+  .store3 i {
+    padding: 1.1em 1em 1.1em 1em;
+    background-color: rgb(235, 10, 48);
+    margin-left: -10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
   }
 }
