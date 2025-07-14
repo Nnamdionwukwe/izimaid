@@ -122,7 +122,7 @@ export default function Faq() {
       <div className={styles.main1}>
         <div className={styles.mainSub}>
           <div onClick={handleClick1} className={styles.backed}>
-            <h3>What is The Neighborly Done Right Promise®?</h3>
+            <h3>What is The IziBest Done Right Promise®?</h3>
 
             {isOpen1 ? <h2>&minus;</h2> : <h1>&#43;</h1>}
           </div>
@@ -130,22 +130,22 @@ export default function Faq() {
           {isOpen1 && (
             <div className={styles.residentialDIv}>
               <p className={styles.hoverMainliv1}>
-                Neighborly Done Right Promise® delivered by IziMaid® ensures
+                IziBest Done Right Promise® delivered by IziMaid® ensures
                 outstanding service. If something isn't right, contact us by the
                 next business day and we'll make it right, at no extra cost.
-                Trusted for 40+ years to get the job done right.
+                Trusted for 5+ years to get the job done right.
                 <span className={styles.span}>Learn More.</span>
               </p>
 
               <p className={styles.hoverMainliv1}>
-                Molly Maid is proud to be a Neighborly company.We're part of a
-                network of home service professionals who offer trusted,
+                Molly Maid is proud to be an IziBest Interior company.We're part
+                of a network of home service professionals who offer trusted,
                 friendly and fast home services for your entire home. From
                 plumbing to electrical, appliance repair to handyman service,
-                Neighborly has you covered.
-                <span className={styles.span}>
-                  Learn More About Neighborly.
-                </span>
+                IziBest has you covered.
+                <a href="http://izibest.com">
+                  <span className={styles.span}>Learn More About IziBest.</span>
+                </a>
               </p>
             </div>
           )}
