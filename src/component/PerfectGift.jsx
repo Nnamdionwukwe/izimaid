@@ -116,7 +116,7 @@ export default function PerfectGift() {
             <div className={styles.subDiv}>
               <h3>IziBest Foundation</h3>
               <p className={styles.para}>
-                Get expert advice from our team of cleaning specialists.
+                Supporting victims of domestic violence.
               </p>
               <div className={styles.learnMore}>
                 <p className={styles.p}>Learn More</p>
