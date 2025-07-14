@@ -67,12 +67,11 @@ export default function Footer() {
 
             <p className={styles.para2}>Gift Certificate</p>
           </div>
-
-          <p className={styles.border}></p>
         </div>
       </div>
 
       <div className={styles.footerDiv4}>
+        <p className={styles.border}></p>
         <p className={styles.border2}>
           This information is not intended as an offer to sell, or the
           solicitation of an offer to buy, a franchise. It is for information
