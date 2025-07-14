@@ -12,6 +12,11 @@
   .header2 {
     display: none;
   }
+
+  .headerP {
+    text-decoration: none;
+    color: white;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -23,5 +28,10 @@
     font-weight: bold;
     cursor: pointer;
     margin: -10px -8px 10px -8px;
+  }
+
+  .headerP {
+    text-decoration: none;
+    color: white;
   }
 }

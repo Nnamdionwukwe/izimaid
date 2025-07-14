@@ -8,8 +8,9 @@ export default function IziBestLogo() {
           <img className={styles.logo} alt="Logo" src="izimaid.jpg" />
 
           <p className={styles.text}></p>
-
-          <img className={styles.logo} alt="Logo" src="izibest.jpg" />
+          <a className={styles.headerP} href="http://izibest.com">
+            <img className={styles.logo} alt="Logo" src="izibest.jpg" />
+          </a>
         </div>
 
         <h2 className={styles.containerh2}>
