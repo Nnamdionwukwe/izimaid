@@ -142,7 +142,7 @@ export default function Faq() {
                 of a network of home service professionals who offer trusted,
                 friendly and fast home services for your entire home. From
                 plumbing to electrical, appliance repair to handyman service,
-                IziBest has you covered.
+                IziBest Group of Companies has you covered.
                 <a href="http://izibest.com">
                   <span className={styles.span}>Learn More About IziBest.</span>
                 </a>
@@ -162,13 +162,13 @@ export default function Faq() {
             <div className={styles.residentialDIv}>
               <p className={styles.hoverMainliv1}>
                 Life is busy, which means you can’t always complete everything
-                on your to-do list. Molly Maid allows you to have a sparkling
-                home, saves you valuable time, and provides the peace of mind
-                that comes with knowing the job was done right. Our residential
-                home cleaning service is dedicated to making your life easier.
-                We've built a reputation for top-notch cleaning that you can
-                trust. Our detailed approach covers every room and corner,
-                leaving no mess behind.
+                on your to-do list. IziMaid allows you to have a sparkling home,
+                saves you valuable time, and provides the peace of mind that
+                comes with knowing the job was done right. Our residential home
+                cleaning service is dedicated to making your life easier. We've
+                built a reputation for top-notch cleaning that you can trust.
+                Our detailed approach covers every room and corner, leaving no
+                mess behind.
               </p>
 
               <p className={styles.hoverMainliv1}>
@@ -176,14 +176,11 @@ export default function Faq() {
               </p>
 
               <p className={styles.hoverMainliv1}>
-                As part of the Neighborly family of home service brands, we
-                uphold high standards and prioritize your satisfaction. Choose
-                Molly Maid for a cleaner, healthier home that allows you to
-                focus on what matters most to you.
-                <span className={styles.span}>
-                  {" "}
-                  Request a free estimate
-                </span>{" "}
+                As part of the IziBest family of home service brands, we uphold
+                high standards and prioritize your satisfaction. Choose IziMaid
+                for a cleaner, healthier home that allows you to focus on what
+                matters most to you.
+                <span className={styles.span}>Request a free estimate</span>
                 now!
               </p>
             </div>
@@ -200,7 +197,7 @@ export default function Faq() {
           {isOpen3 && (
             <div className={styles.residentialDIv}>
               <p className={styles.hoverMainliv1}>
-                Since 1984, customers have welcomed the trusted cleaning
+                Since 2020, customers have welcomed the trusted cleaning
                 professionals from locally owned and operated IziMaid businesses
                 into their homes. We’ve provided cleaning services to over a
                 million customers, and want you to know that you can continue to
@@ -269,13 +266,13 @@ export default function Faq() {
               <p className={styles.hoverMainliv1}>
                 If you’re looking for
                 <span className={styles.span}> cleaning services near me</span>
-                that cover it all, Molly Maid is the answer. We ensure that
-                floors are vacuumed and mopped throughout the house, making them
-                clean and fresh. Want your bedrooms to be cozy retreats? Come
-                home to neatly made beds and refreshed rooms. We also tackle
-                additional spaces, like hallways and entryways, to ensure no
-                areas are overlooked. page to determine the services that best
-                suit your needs.
+                that cover it all, IziMaid is the answer. We ensure that floors
+                are vacuumed and mopped throughout the house, making them clean
+                and fresh. Want your bedrooms to be cozy retreats? Come home to
+                neatly made beds and refreshed rooms. We also tackle additional
+                spaces, like hallways and entryways, to ensure no areas are
+                overlooked. page to determine the services that best suit your
+                needs.
               </p>
 
               <p className={styles.hoverMainliv1}>
@@ -291,7 +288,7 @@ export default function Faq() {
 
         <div className={styles.mainSub}>
           <div onClick={handleClick6} className={styles.backed}>
-            <h3>What Other Services Does Molly Maid Provide?</h3>
+            <h3>What Other Services Does IziMaid Provide?</h3>
 
             {isOpen6 ? <h2>&minus;</h2> : <h1>&#43;</h1>}
           </div>
@@ -318,9 +315,9 @@ export default function Faq() {
           {isOpen7 && (
             <div className={styles.residentialDIv}>
               <p className={styles.hoverMainliv1}>
-                Molly Maid doesn’t just promise a thorough clean, we back it up.
+                IziMaid doesn’t just promise a thorough clean, we back it up.
                 <span className={styles.span}>
-                  The Neighborly Done Right Promise®
+                  The IziBest Done Right Promise®
                 </span>
                 is our commitment to excellence, ensuring that our cleaning
                 services for residential homes are held to the highest
