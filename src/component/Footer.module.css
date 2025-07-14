@@ -1,0 +1,19 @@
+.footerDiv {
+  background-color: #f1f1f1;
+  margin-top: 30px;
+  margin-right: -8px;
+  margin-left: -8px;
+  padding-left: 10px;
+  border-top: 3px solid rgb(204, 25, 55);
+}
+
+.logo {
+  width: 150px;
+  padding-top: 35px;
+  border-radius: 5px;
+}
+
+.footerDiv h2 {
+  color: rgb(204, 25, 55);
+  margin-left: 30px;
+}
