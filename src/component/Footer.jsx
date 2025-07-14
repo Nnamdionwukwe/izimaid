@@ -85,6 +85,16 @@ export default function Footer() {
       <h4>Do Not Sell My Info</h4>
 
       <h4>Your Privacy Rights</h4>
+
+      <p className={styles.border2}>
+        © 2025 Neighborly Company and its affiliates. All rights reserved.
+        Neighborly is a registered trademark of Neighborly Assetco LLC. Molly
+        Maid is a registered trademark of Molly Maid SPV LLC. This site and all
+        of its content is protected under applicable law, including laws of the
+        U.S. and other countries. Each location is independently owned and
+        operated. Services may vary by location. Please contact the franchise
+        location for additional information.
+      </p>
     </div>
   );
 }
