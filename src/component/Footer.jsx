@@ -69,19 +69,21 @@ export default function Footer() {
           </div>
 
           <p className={styles.border}></p>
-
-          <p className={styles.border2}>
-            This information is not intended as an offer to sell, or the
-            solicitation of an offer to buy, a franchise. It is for information
-            purposes only. Currently, the following states regulate the offer
-            and sale of franchises: Lagos, Abuja. If you are a resident of or
-            want to locate a franchise in one of these states, we will not offer
-            you a franchise unless and until we have complied with applicable
-            pre-sale registration and disclosure requirements in your state.
-          </p>
-
-          <p className={styles.border3}>A clean you can count on.®</p>
         </div>
+      </div>
+
+      <div className={styles.footerDiv4}>
+        <p className={styles.border2}>
+          This information is not intended as an offer to sell, or the
+          solicitation of an offer to buy, a franchise. It is for information
+          purposes only. Currently, the following states regulate the offer and
+          sale of franchises: Lagos, Abuja. If you are a resident of or want to
+          locate a franchise in one of these states, we will not offer you a
+          franchise unless and until we have complied with applicable pre-sale
+          registration and disclosure requirements in your state.
+        </p>
+
+        <p className={styles.border3}>A clean you can count on.®</p>
       </div>
 
       <div className={styles.h4Div}>

@@ -7,6 +7,14 @@
   border-top: 4px solid rgb(204, 25, 55);
 }
 
+.footerDiv4 {
+  padding-top: 20px;
+  padding-left: 20px;
+  margin-right: -8px;
+  margin-left: -8px;
+  background-color: #f1f1f1;
+}
+
 .logo {
   width: 150px;
   padding-top: 35px;
@@ -72,7 +80,7 @@
 
 .border {
   border: 1px solid black;
-  margin-bottom: 50px;
+  margin-bottom: 0px;
   margin-right: 10px;
 }
 
@@ -102,4 +110,30 @@
 
 .h4Div {
   margin-top: 40px;
+}
+
+@media screen and (min-width: 992px) {
+  .footerDiv {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footerDiv2 {
+    margin-right: 20px;
+  }
+
+  .footerDiv3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 90px;
+  }
+
+  .border {
+    border: 1px solid black;
+    margin-bottom: 0px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
 }
