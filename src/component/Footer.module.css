@@ -73,5 +73,7 @@
 
 .h4 {
   color: rgb(204, 25, 55);
+  margin-top: 40px;
   margin-left: 10px;
+  cursor: pointer;
 }
