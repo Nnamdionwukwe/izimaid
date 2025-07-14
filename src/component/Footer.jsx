@@ -63,13 +63,10 @@ export default function Footer() {
             This information is not intended as an offer to sell, or the
             solicitation of an offer to buy, a franchise. It is for information
             purposes only. Currently, the following states regulate the offer
-            and sale of franchises: California, Hawaii, Illinois, Indiana,
-            Maryland, Michigan, Minnesota, New York, North Dakota, Oregon, Rhode
-            Island, South Dakota, Virginia, Washington, and Wisconsin. If you
-            are a resident of or want to locate a franchise in one of these
-            states, we will not offer you a franchise unless and until we have
-            complied with applicable pre-sale registration and disclosure
-            requirements in your state.
+            and sale of franchises: Lagos, Abuja. If you are a resident of or
+            want to locate a franchise in one of these states, we will not offer
+            you a franchise unless and until we have complied with applicable
+            pre-sale registration and disclosure requirements in your state.
           </p>
 
           <p className={styles.border3}>A clean you can count on.®</p>
@@ -86,14 +83,14 @@ export default function Footer() {
 
       <h4>Your Privacy Rights</h4>
 
-      <p className={styles.border2}>
-        © 2025 Neighborly Company and its affiliates. All rights reserved.
-        Neighborly is a registered trademark of Neighborly Assetco LLC. Molly
-        Maid is a registered trademark of Molly Maid SPV LLC. This site and all
-        of its content is protected under applicable law, including laws of the
-        U.S. and other countries. Each location is independently owned and
-        operated. Services may vary by location. Please contact the franchise
-        location for additional information.
+      <p className={styles.border4}>
+        © 2025 IziBest Company and its affiliates. All rights reserved. IziBest
+        is a registered trademark of IziBest Assetco LLC. IziMaid is a
+        registered trademark of IziMaidMaid SPV LLC. This site and all of its
+        content is protected under applicable law, including laws of the U.S.
+        and other countries. Each location is independently owned and operated.
+        Services may vary by location. Please contact the franchise location for
+        additional information.
       </p>
     </div>
   );
