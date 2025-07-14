@@ -10,12 +10,35 @@
 .logo {
   width: 150px;
   padding-top: 35px;
-  border-radius: 5px;
+}
+
+.icons i {
+  cursor: pointer;
+  color: blue;
+  margin-right: 20px;
+  font-size: 30px;
+}
+
+.footerDiv2 {
+  margin-left: 10px;
+}
+
+.footerDiv2 h2 {
+  cursor: pointer;
 }
 
 .footerDiv div h2 {
   color: rgb(204, 25, 55);
-  /* margin-left: 30px; */
+}
+
+.call {
+  display: flex;
+  align-items: center;
+  color: rgb(204, 25, 55);
+}
+
+.call i {
+  margin-right: 5px;
 }
 
 .footerDiv3 {

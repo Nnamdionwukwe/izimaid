@@ -7,7 +7,18 @@ export default function Footer() {
         <div className={styles.footerDiv2}>
           <img className={styles.logo} alt="Logo" src="izimaid.jpg" />
 
-          <h2>0803 058 8779</h2>
+          <div className={styles.call}>
+            <i class="fa-solid fa-phone"></i>
+            <h2>0803 058 8779</h2>
+          </div>
+
+          <div className={styles.icons}>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
         </div>
 
         <div className={styles.footerDiv3}>
