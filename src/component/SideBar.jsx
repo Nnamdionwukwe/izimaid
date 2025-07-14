@@ -373,13 +373,15 @@ export default function SideBar({ isOpen, setIsOpen }) {
               <p>Find My Local IziMaid</p>
             </div>
 
-            <div className={styles.icons}>
-              <i class="fa-brands fa-facebook"></i>
-              <i class="fa-brands fa-instagram"></i>
-              <i class="fa-brands fa-x-twitter"></i>
-              <i class="fa-brands fa-youtube"></i>
-              <i class="fa-brands fa-linkedin"></i>
-            </div>
+            {isOpenFotter && (
+              <div className={styles.icons}>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-linkedin"></i>
+              </div>
+            )}
 
             {isOpenFotter && (
               <div className={styles.giftsDiv}>
