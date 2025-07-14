@@ -45,17 +45,29 @@ export default function ReviewsFull() {
             <p className={styles.reviews}>{steps[step - 1]}</p>
 
             <div className={styles.reviewFooter}>
-              {step === 1 && (
-                <p className={styles.reviewName}>Michael Solace.</p>
-              )}
-              {step === 2 && <p className={styles.reviewName}>Johnson King.</p>}
-              {step == 3 && <p className={styles.reviewName}>Philip Evans.</p>}
-              {step === 4 && (
-                <p className={styles.reviewName}>Nnamdi Gideon.</p>
-              )}
-              {step === 5 && (
-                <p className={styles.reviewName}>Muhamed Ismail.</p>
-              )}
+              <p className={styles.reviewName}>Michael Solace.</p>
+
+              <div className={styles.reviewFooterSub}>
+                <h6>5/5</h6>
+
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </div>
+            </div>
+          </li>
+
+          <li className={styles.reviewContainer}>
+            <div className={styles.imageContainer}>
+              <i class="fa fa-comment" aria-hidden="true"></i>
+            </div>
+
+            <p className={styles.reviews}>{steps[step]}</p>
+
+            <div className={styles.reviewFooter}>
+              <p className={styles.reviewName}>Johnson King.</p>
 
               <div className={styles.reviewFooterSub}>
                 <h6>5/5</h6>
@@ -77,49 +89,7 @@ export default function ReviewsFull() {
             <p className={styles.reviews}>{steps[step + 1]}</p>
 
             <div className={styles.reviewFooter}>
-              {step === 1 && (
-                <p className={styles.reviewName}>Michael Solace.</p>
-              )}
-              {step === 2 && <p className={styles.reviewName}>Johnson King.</p>}
-              {step == 3 && <p className={styles.reviewName}>Philip Evans.</p>}
-              {step === 4 && (
-                <p className={styles.reviewName}>Nnamdi Gideon.</p>
-              )}
-              {step === 5 && (
-                <p className={styles.reviewName}>Muhamed Ismail.</p>
-              )}
-
-              <div className={styles.reviewFooterSub}>
-                <h6>5/5</h6>
-
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-              </div>
-            </div>
-          </li>
-
-          <li className={styles.reviewContainer}>
-            <div className={styles.imageContainer}>
-              <i class="fa fa-comment" aria-hidden="true"></i>
-            </div>
-
-            <p className={styles.reviews}>{steps[step + 3]}</p>
-
-            <div className={styles.reviewFooter}>
-              {step === 1 && (
-                <p className={styles.reviewName}>Michael Solace.</p>
-              )}
-              {step === 2 && <p className={styles.reviewName}>Johnson King.</p>}
-              {step == 3 && <p className={styles.reviewName}>Philip Evans.</p>}
-              {step === 4 && (
-                <p className={styles.reviewName}>Nnamdi Gideon.</p>
-              )}
-              {step === 5 && (
-                <p className={styles.reviewName}>Muhamed Ismail.</p>
-              )}
+              <p className={styles.reviewName}>Philip Evans.</p>
 
               <div className={styles.reviewFooterSub}>
                 <h6>5/5</h6>
@@ -141,17 +111,7 @@ export default function ReviewsFull() {
             <p className={styles.reviews}>{steps[step + 2]}</p>
 
             <div className={styles.reviewFooter}>
-              {step === 1 && (
-                <p className={styles.reviewName}>Michael Solace.</p>
-              )}
-              {step === 2 && <p className={styles.reviewName}>Johnson King.</p>}
-              {step == 3 && <p className={styles.reviewName}>Philip Evans.</p>}
-              {step === 4 && (
-                <p className={styles.reviewName}>Nnamdi Gideon.</p>
-              )}
-              {step === 5 && (
-                <p className={styles.reviewName}>Muhamed Ismail.</p>
-              )}
+              <p className={styles.reviewName}>Nnamdi Gideon.</p>
 
               <div className={styles.reviewFooterSub}>
                 <h6>5/5</h6>
@@ -170,84 +130,10 @@ export default function ReviewsFull() {
               <i class="fa fa-comment" aria-hidden="true"></i>
             </div>
 
-            <p className={styles.reviews}>{steps[step + 4]}</p>
+            <p className={styles.reviews}>{steps[step + 3]}</p>
 
             <div className={styles.reviewFooter}>
-              {step === 1 && (
-                <p className={styles.reviewName}>Michael Solace.</p>
-              )}
-              {step === 2 && <p className={styles.reviewName}>Johnson King.</p>}
-              {step == 3 && <p className={styles.reviewName}>Philip Evans.</p>}
-              {step === 4 && (
-                <p className={styles.reviewName}>Nnamdi Gideon.</p>
-              )}
-              {step === 5 && (
-                <p className={styles.reviewName}>Muhamed Ismail.</p>
-              )}
-
-              <div className={styles.reviewFooterSub}>
-                <h6>5/5</h6>
-
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-              </div>
-            </div>
-          </li>
-
-          <li className={styles.reviewContainer}>
-            <div className={styles.imageContainer}>
-              <i class="fa fa-comment" aria-hidden="true"></i>
-            </div>
-
-            <p className={styles.reviews}>{steps[step - 1]}</p>
-
-            <div className={styles.reviewFooter}>
-              {step === 1 && (
-                <p className={styles.reviewName}>Michael Solace.</p>
-              )}
-              {step === 2 && <p className={styles.reviewName}>Johnson King.</p>}
-              {step == 3 && <p className={styles.reviewName}>Philip Evans.</p>}
-              {step === 4 && (
-                <p className={styles.reviewName}>Nnamdi Gideon.</p>
-              )}
-              {step === 5 && (
-                <p className={styles.reviewName}>Muhamed Ismail.</p>
-              )}
-
-              <div className={styles.reviewFooterSub}>
-                <h6>5/5</h6>
-
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-              </div>
-            </div>
-          </li>
-
-          <li className={styles.reviewContainer}>
-            <div className={styles.imageContainer}>
-              <i class="fa fa-comment" aria-hidden="true"></i>
-            </div>
-
-            <p className={styles.reviews}>{steps[step - 1]}</p>
-
-            <div className={styles.reviewFooter}>
-              {step === 1 && (
-                <p className={styles.reviewName}>Michael Solace.</p>
-              )}
-              {step === 2 && <p className={styles.reviewName}>Johnson King.</p>}
-              {step == 3 && <p className={styles.reviewName}>Philip Evans.</p>}
-              {step === 4 && (
-                <p className={styles.reviewName}>Nnamdi Gideon.</p>
-              )}
-              {step === 5 && (
-                <p className={styles.reviewName}>Muhamed Ismail.</p>
-              )}
+              <p className={styles.reviewName}>Muhamed Ismail.</p>
 
               <div className={styles.reviewFooterSub}>
                 <h6>5/5</h6>
