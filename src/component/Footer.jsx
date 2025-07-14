@@ -41,7 +41,7 @@ export default function Footer() {
         <div className={styles.footerDivSub}>
           <h3>RESOURCES</h3>
 
-          <p className={styles.para}></p>
+          <p className={styles.para4}></p>
 
           <p className={styles.para2}>Practically Spotless Blog</p>
 

@@ -29,7 +29,14 @@
 }
 
 .para {
-  width: 65px;
+  width: 94px;
+  margin-top: -15px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid rgb(200, 198, 198);
+}
+
+.para4 {
+  width: 115px;
   margin-top: -15px;
   margin-bottom: 25px;
   border-bottom: 1px solid rgb(200, 198, 198);
