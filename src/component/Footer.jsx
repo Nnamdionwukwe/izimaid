@@ -73,15 +73,15 @@ export default function Footer() {
         </div>
       </div>
 
-      <h4>Terms of Use</h4>
+      <h4 className={styles.h4}>Terms of Use</h4>
 
-      <h4>Privacy Policy</h4>
+      <h4 className={styles.h4}>Privacy Policy</h4>
 
-      <h4>Accessibilty</h4>
+      <h4 className={styles.h4}>Accessibilty</h4>
 
-      <h4>Do Not Sell My Info</h4>
+      <h4 className={styles.h4}>Do Not Sell My Info</h4>
 
-      <h4>Your Privacy Rights</h4>
+      <h4 className={styles.h4}>Your Privacy Rights</h4>
 
       <p className={styles.border4}>
         © 2025 IziBest Company and its affiliates. All rights reserved. IziBest
