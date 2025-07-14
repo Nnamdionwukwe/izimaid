@@ -4,7 +4,7 @@
   margin-right: -8px;
   margin-left: -8px;
   padding-left: 10px;
-  border-top: 3px solid rgb(204, 25, 55);
+  border-top: 4px solid rgb(204, 25, 55);
 }
 
 .logo {
@@ -13,7 +13,29 @@
   border-radius: 5px;
 }
 
-.footerDiv h2 {
+.footerDiv div h2 {
   color: rgb(204, 25, 55);
   margin-left: 30px;
+}
+
+.footerDiv3 {
+  margin-top: 60px;
+
+  margin-left: 10px;
+}
+
+.footerDivSub {
+  margin-bottom: 60px;
+}
+
+.para {
+  width: 65px;
+  margin-top: -15px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid rgb(200, 198, 198);
+}
+
+.para2 {
+  color: rgb(75, 74, 74);
+  cursor: pointer;
 }
