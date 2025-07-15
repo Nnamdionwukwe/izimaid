@@ -23,9 +23,10 @@ import Customers from "./Customers";
 import IziBestLogo from "./IziBestLogo";
 import Footer from "./Footer";
 
-export default function MainHeader() {
+export default function HomePage() {
   return (
     <>
+    
       <div className={styles.main}>
         <FirstHeader />
 

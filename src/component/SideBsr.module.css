@@ -52,6 +52,7 @@
   height: 50px;
   margin-right: 20px;
   cursor: pointer;
+  text-decoration: none
 }
 
 .sub1:hover,

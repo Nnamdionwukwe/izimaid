@@ -1,3 +1,5 @@
+import {Link} from "react-router-dom"
+
 import { useState } from "react";
 import styles from "./SideBsr.module.css";
 import ResidentialSideBar from "./ResidentialSideBar";
@@ -156,11 +158,11 @@ export default function SideBar({ isOpen, setIsOpen }) {
           </div>
 
           <div className={styles.SubHeader2}>
-            <div className={styles.sub1}>
+            <Link to="request-a-free-estimate" className={styles.sub1}>
               <i class="fa fa-calendar" aria-hidden="true"></i>
 
               <p className={styles.subP}>Request a Free Estimate</p>
-            </div>
+            </Link>
 
             <div className={styles.sub2}>
               <i class="fa fa-phone" aria-hidden="true"></i>

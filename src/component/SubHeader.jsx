@@ -1,3 +1,5 @@
+import {Link} from "react-router-dom"
+
 import AboutUs from "./AboutUs";
 import CleaningTips from "./CleaningTips";
 import LightCommercial from "./LightCommercial";
@@ -12,11 +14,11 @@ export default function SubHeader() {
       <div className={styles.header}>
         <div className={styles.SubMain}>
           <div className={styles.SubHeader2}>
-            <div className={styles.sub1}>
+            <Link to="/request-a-free-estimate" className={styles.sub1}>
               <i class="fa fa-calendar" aria-hidden="true"></i>
 
               <p className={styles.subP}>Request a Free Estimate</p>
-            </div>
+            </Link>
 
             <div className={styles.sub2}>
               <i class="fa fa-phone" aria-hidden="true"></i>
@@ -118,11 +120,11 @@ export default function SubHeader() {
 
           <div className={styles.SubMain}>
             <div className={styles.SubHeader3}>
-              <div className={styles.sub3}>
+              <Link to="/request-a-free-estimate" className={styles.sub3}>
                 <i class="fa fa-calendar" aria-hidden="true"></i>
 
                 <p className={styles.subP3}>Request a Free Estimate</p>
-              </div>
+              </Link>
 
               <div className={styles.minsDi}>
                 <p className={styles.mins}>In under 2 mins</p>

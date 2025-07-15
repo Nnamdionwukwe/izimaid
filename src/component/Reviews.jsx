@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styles from "./Reviews.module.css";
+import { Link } from "react-router-dom";
 
 const steps = [
   "I was extremely pleased with the service that the staff did for me. The office was attentive to my request and was great with communication. They were thorough and were able to tackle a messy situation. I would highly recommend their service.",
@@ -94,10 +95,10 @@ export default function Reviews() {
             </h3>
           </div>
 
-          <div className={styles.logoDiv3}>
+          <Link to="request-a-free-estimate" className={styles.logoDiv3}>
             <i class="fa fa-calendar" aria-hidden="true"></i>
             <h3>Request a Free Estimate</h3>
-          </div>
+          </Link>
         </div>
       </div>
     </div>
