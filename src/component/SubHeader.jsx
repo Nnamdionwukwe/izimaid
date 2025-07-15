@@ -123,11 +123,11 @@ export default function SubHeader() {
 
           <div className={styles.SubMain}>
             <div className={styles.SubHeader3}>
-              <Link to="/request-a-free-estimate" className={styles.sub3}>
+              <a href="/request-a-free-estimate" className={styles.sub3}>
                 <i class="fa fa-calendar" aria-hidden="true"></i>
 
                 <p className={styles.subP3}>Request a Free Estimate</p>
-              </Link>
+              </a>
 
               <div className={styles.minsDi}>
                 <p className={styles.mins}>In under 2 mins</p>
