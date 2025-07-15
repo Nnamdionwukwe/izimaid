@@ -14,11 +14,11 @@ export default function SubHeader() {
       <div className={styles.header}>
         <div className={styles.SubMain}>
           <div className={styles.SubHeader2}>
-            <a href="/request-a-free-estimate" className={styles.sub1}>
+            <Link to="/request-a-free-estimate" className={styles.sub1}>
               <i class="fa fa-calendar" aria-hidden="true"></i>
 
               <p className={styles.subP}>Request a Free Estimate</p>
-            </a>
+            </Link>
 
             <div className={styles.sub2}>
               <i class="fa fa-phone" aria-hidden="true"></i>
