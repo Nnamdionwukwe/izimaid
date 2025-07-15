@@ -9,6 +9,10 @@ export default function FreeEstimateHeader() {
         </a>
 
         <div className={styles.hamburger}>
+          <div className={styles.number}>
+            <h1>0803 058 8774</h1>
+          </div>
+
           <div className={styles.sub2}>
             <i class="fa fa-phone" aria-hidden="true"></i>
             <p>Call Us</p>
