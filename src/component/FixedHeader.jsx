@@ -1,6 +1,7 @@
 import { useState } from "react";
 import styles from "./FixedHeader.module.css";
 import SideBar from "./SideBar";
+import { Link } from "react-router-dom";
 
 export default function FixedHeader() {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,9 +9,9 @@ export default function FixedHeader() {
   return (
     <>
       <div className={styles.SubHeader1}>
-        <div>
+        <Link to="https://izimaid-sage.vercel.app">
           <img className={styles.logo} alt="Logo" src="izimaid.jpg" />
-        </div>
+        </Link>
 
         <div className={styles.hamburger}>
           <i

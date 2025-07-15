@@ -1,4 +1,4 @@
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 
 import AboutUs from "./AboutUs";
 import CleaningTips from "./CleaningTips";
@@ -40,9 +40,12 @@ export default function SubHeader() {
 
       <div className={styles.thirdHeaderMain}>
         <div className={styles.secondMain1}>
-          <div className={styles.secondMainLogo}>
+          <Link
+            to="https://izimaid-sage.vercel.app"
+            className={styles.secondMainLogo}
+          >
             <img className={styles.logo} alt="Logo" src="izimaid.jpg" />
-          </div>
+          </Link>
 
           <div className={styles.secondMain}>
             <div className={styles.thirdPara1}>

@@ -152,7 +152,10 @@ export default function ReviewsFull() {
 
       <div className={styles.logoDiv}>
         <div className={styles.logoDivDiv}>
-          <Link to="/" className={styles.logoDiv1}>
+          <Link
+            to="https://izimaid-sage.vercel.app"
+            className={styles.logoDiv1}
+          >
             <img className={styles.logo1} alt="Logo" src="izimaid.jpg" />
           </Link>
 

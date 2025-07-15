@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "./Footer.module.css";
 
 export default function Footer() {
@@ -5,13 +6,13 @@ export default function Footer() {
     <div>
       <div className={styles.footerDiv}>
         <div className={styles.footerDiv2}>
-          <img className={styles.logo} alt="Logo" src="izimaid.jpg" />
-
+          <Link to="https://izimaid-sage.vercel.app">
+            <img className={styles.logo} alt="Logo" src="izimaid.jpg" />
+          </Link>
           <div className={styles.call}>
             <i class="fa-solid fa-phone"></i>
             <h2>0803 058 8779</h2>
           </div>
-
           <div className={styles.icons}>
             <i class="fa-brands fa-facebook"></i>
             <i class="fa-brands fa-instagram"></i>
