@@ -161,6 +161,7 @@
     justify-content: center;
     align-items: center;
     width: 80%;
+    height: 3.8em;
     color: #ffff;
     background: rgb(6, 6, 65);
     border-radius: 0.5em;
@@ -168,6 +169,7 @@
     margin-right: 5em;
     margin-left: 5em;
     font-size: 10px;
+    text-decoration: none;
   }
 
   .logoDiv3:hover {
@@ -267,6 +269,7 @@
     background: rgb(6, 6, 65);
     border-radius: 0.5em;
     cursor: pointer;
-    height: 3.5em;
+    height: 3.8em;
+    text-decoration: none;
   }
 }

@@ -1,4 +1,4 @@
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 
 import { useState } from "react";
 import styles from "./SideBsr.module.css";
@@ -152,10 +152,9 @@ export default function SideBar({ isOpen, setIsOpen }) {
             </div>
           </div>
 
-          <div>
-            <div></div>
+          <Link to="/">
             <img className={styles.logo} alt="Logo" src="izimaid.jpg" />
-          </div>
+          </Link>
 
           <div className={styles.SubHeader2}>
             <Link to="request-a-free-estimate" className={styles.sub1}>
