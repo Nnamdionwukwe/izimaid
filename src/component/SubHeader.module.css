@@ -1,12 +1,16 @@
 @media screen and (min-width: 20px) {
   .header {
     background-color: white;
-    color: black;
+    /* color: black;
     margin-left: -8px;
-    margin-right: -8px;
+    margin-right: -8px; */
   }
 
   .SubMain {
+    border-top: 1px solid rgb(230, 226, 226);
+    margin-left: -8px;
+    margin-right: -8px;
+    padding-top: 10px;
     border-bottom: 1px solid rgb(230, 226, 226);
     margin-top: 10px;
   }
@@ -23,6 +27,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-left: -8px;
+    margin-right: -8px;
   }
 
   .SubHeader2 div {
@@ -61,6 +67,8 @@
     border-radius: 10px;
     height: 50px;
     margin-right: 20px;
+    margin-bottom: 5px;
+    margin-left: 20px;
     cursor: pointer;
     text-decoration: none;
   }

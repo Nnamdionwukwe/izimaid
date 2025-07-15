@@ -1,6 +1,7 @@
 import FirstHeader from "./FirstHeader";
 import FixedHeader from "./FixedHeader";
 import FreeEstimateHeader from "./FreeEstimateHeader";
+import OtherFooter from "./OtherFooter";
 import styles from "./RequestEstimate.module.css";
 
 export default function RequestEstimate() {
@@ -8,9 +9,11 @@ export default function RequestEstimate() {
     <div>
       <FirstHeader />
 
-      <div className={styles.fixedHeade}>
+      <div className={styles.fixedHeader}>
         <FreeEstimateHeader />
       </div>
+
+      <OtherFooter />
     </div>
   );
 }
