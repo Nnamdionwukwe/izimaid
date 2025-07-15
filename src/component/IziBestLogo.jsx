@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "./IziBestLogo.module.css";
 
 export default function IziBestLogo() {
@@ -5,7 +6,9 @@ export default function IziBestLogo() {
     <div className={styles.container}>
       <div>
         <div className={styles.containerDiv}>
-          <img className={styles.logo} alt="Logo" src="izimaid.jpg" />
+          <a href="https://izimaid-sage.vercel.app">
+            <img className={styles.logo} alt="Logo" src="izimaid.jpg" />
+          </a>
 
           <p className={styles.text}></p>
           <a className={styles.headerP} href="http://izibest.com">
