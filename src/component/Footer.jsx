@@ -6,9 +6,9 @@ export default function Footer() {
     <div>
       <div className={styles.footerDiv}>
         <div className={styles.footerDiv2}>
-          <Link to="https://izimaid-sage.vercel.app">
+          <a href="https://izimaid-sage.vercel.app">
             <img className={styles.logo} alt="Logo" src="izimaid.jpg" />
-          </Link>
+          </a>
           <div className={styles.call}>
             <i class="fa-solid fa-phone"></i>
             <h2>0803 058 8779</h2>
