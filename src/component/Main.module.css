@@ -161,6 +161,12 @@
   border-radius: 5px;
 }
 
+.oneTime2 {
+  padding: 0px 15px;
+  margin-top: 15px;
+  border-radius: 5px;
+}
+
 .select {
   display: flex;
   align-items: center;

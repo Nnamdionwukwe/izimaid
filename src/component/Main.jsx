@@ -14,7 +14,20 @@ export default function Main() {
   const [residential, setResidential] = useState(true);
   const [recurring, setRecurring] = useState(true);
   const [oneTime, setOneTime] = useState(false);
+  const [lightCommercial, setLightCommercial] = useState(false);
   const [moveInOut, setMoveInOut] = useState(true);
+
+  function handleResidential() {
+    setResidential(true);
+    setLightCommercial(false);
+  }
+
+  function handleCommercial() {
+    setResidential(false);
+    setOneTime(false);
+    // setRecurring(false);
+    setLightCommercial(true);
+  }
 
   function handleClickOneTime() {
     setOneTime(true);
@@ -24,6 +37,16 @@ export default function Main() {
   function handleRecurring() {
     setOneTime(false);
     setRecurring(true);
+  }
+
+  function handleClickOneTime2() {
+    // setOneTime(true);
+    // setRecurring(false);
+  }
+
+  function handleRecurring2() {
+    // setOneTime(false);
+    // setRecurring(true);
   }
 
   //BEDROOM
@@ -244,7 +267,7 @@ export default function Main() {
           <div className={styles.typeOfCleaning}>
             <div className={styles.radioButton}>
               <p
-                onClick={() => setResidential(true)}
+                onClick={handleResidential}
                 className={residential ? styles.radio2 : styles.radio}
               ></p>
 
@@ -253,8 +276,8 @@ export default function Main() {
 
             <div className={styles.radioButton}>
               <p
-                onClick={() => setResidential(false)}
-                className={styles.radio}
+                onClick={handleCommercial}
+                className={residential ? styles.radio : styles.radio2}
               ></p>
 
               <p>Light Commercial</p>
@@ -510,6 +533,256 @@ export default function Main() {
                   </div>
                 </div>
               </div>
+            </div>
+          )}
+
+          {lightCommercial && (
+            <div className={styles.oneTime2}>
+              <div>
+                <h3>Office Details</h3>
+              </div>
+
+              <div>
+                <div className={styles.name}>
+                  <h4>Square Feet*</h4>
+                </div>
+
+                <div className={styles.inputField}>
+                  <input
+                    type="text"
+                    placeholder="2000"
+                    className={styles.inputField}
+                  />
+                </div>
+              </div>
+
+              <div className={styles.bedroomsDivMain}>
+                <div className={styles.bedroomsDiv}>
+                  <div className={styles.name}>
+                    <h4>Offices*</h4>
+                  </div>
+
+                  <div>
+                    <div
+                      onClick={handleSelectBedRooms}
+                      className={styles.select}
+                    >
+                      <>{selectBedRoomsValue === "" && <p>Select</p>}</>
+
+                      <>
+                        {selectBedRoomsValue === 1 && (
+                          <p>{selectBedRoomsValue}</p>
+                        )}
+                      </>
+
+                      <>
+                        {selectBedRoomsValue === 2 && (
+                          <p>{selectBedRoomsValue}</p>
+                        )}
+                      </>
+
+                      <>
+                        {selectBedRoomsValue === 3 && (
+                          <p>{selectBedRoomsValue}</p>
+                        )}
+                      </>
+
+                      <>
+                        {selectBedRoomsValue === 4 && (
+                          <p>{selectBedRoomsValue}</p>
+                        )}
+                      </>
+
+                      <>
+                        {selectBedRoomsValue === 5 && (
+                          <p>{selectBedRoomsValue}</p>
+                        )}
+                      </>
+
+                      {selectBedRooms ? <p>&uarr;</p> : <p> &darr;</p>}
+                    </div>
+
+                    {selectBedRooms && (
+                      <div className={styles.selectBedRoomsMain}>
+                        <div className={styles.selectBedRooms}>
+                          <p
+                            onClick={handleSelectedBedRoomsValue1}
+                            value={selectBedRoomsValue}
+                          >
+                            1
+                          </p>
+
+                          <p
+                            onClick={handleSelectedBedRoomsValue2}
+                            value={selectBedRoomsValue}
+                          >
+                            2
+                          </p>
+
+                          <p
+                            onClick={handleSelectedBedRoomsValue3}
+                            value={selectBedRoomsValue}
+                          >
+                            3
+                          </p>
+                          <p
+                            onClick={handleSelectedBedRoomsValue4}
+                            value={selectBedRoomsValue}
+                          >
+                            4
+                          </p>
+                          <p
+                            onClick={handleSelectedBedRoomsValue5}
+                            value={selectBedRoomsValue}
+                          >
+                            5
+                          </p>
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                </div>
+
+                {/* BATHROOM */}
+                {/* BATHROOM */}
+                {/* BATHROOM */}
+                {/* BATHROOM */}
+                {/* BATHROOM */}
+                {/* BATHROOM */}
+                {/* BATHROOM */}
+                {/* BATHROOM */}
+
+                <div className={styles.bathroomsDiv}>
+                  <div className={styles.name}>
+                    <h4>Bathrooms*</h4>
+                  </div>
+
+                  <div>
+                    <div
+                      onClick={handleSelectBathRooms}
+                      className={styles.select}
+                    >
+                      <>{selectBathRoomsValue === "" && <p>Select</p>}</>
+
+                      <>
+                        {selectBathRoomsValue === 1 && (
+                          <p>{selectBathRoomsValue}</p>
+                        )}
+                      </>
+
+                      <>
+                        {selectBathRoomsValue === 2 && (
+                          <p>{selectBathRoomsValue}</p>
+                        )}
+                      </>
+
+                      <>
+                        {selectBathRoomsValue === 3 && (
+                          <p>{selectBathRoomsValue}</p>
+                        )}
+                      </>
+
+                      <>
+                        {selectBathRoomsValue === 4 && (
+                          <p>{selectBathRoomsValue}</p>
+                        )}
+                      </>
+
+                      <>
+                        {selectBathRoomsValue === 5 && (
+                          <p>{selectBathRoomsValue}</p>
+                        )}
+                      </>
+
+                      {selectBathRooms ? <p>&uarr;</p> : <p> &darr;</p>}
+                    </div>
+
+                    {selectBathRooms && (
+                      <div className={styles.selectBedRoomsMain}>
+                        <div className={styles.selectBedRooms}>
+                          <p
+                            onClick={handleSelectedBathRoomsValue1}
+                            value={selectBathRoomsValue}
+                          >
+                            1
+                          </p>
+
+                          <p
+                            onClick={handleSelectedBathRoomsValue2}
+                            value={selectBathRoomsValue}
+                          >
+                            2
+                          </p>
+
+                          <p
+                            onClick={handleSelectedBathRoomsValue3}
+                            value={selectBathRoomsValue}
+                          >
+                            3
+                          </p>
+                          <p
+                            onClick={handleSelectedBathRoomsValue4}
+                            value={selectBathRoomsValue}
+                          >
+                            4
+                          </p>
+                          <p
+                            onClick={handleSelectedBathRoomsValue5}
+                            value={selectBathRoomsValue}
+                          >
+                            5
+                          </p>
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div className={styles.type}>
+                  <h4>Frequency of Cleaning*</h4>
+                </div>
+                <div className={styles.typeOfCleaning}>
+                  <div className={styles.radioButton}>
+                    <p
+                      onClick={handleRecurring2}
+                      className={recurring ? styles.radio2 : styles.radio}
+                    ></p>
+
+                    <p>Recurring</p>
+                  </div>
+
+                  <div className={styles.radioButton}>
+                    <p
+                      onClick={handleClickOneTime2}
+                      className={oneTime ? styles.radio2 : styles.radio}
+                    ></p>
+
+                    <p>One-Time Clean</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* <div className={styles.typeOfCleaning}>
+                <div className={styles.radioButton1}>
+                  <p
+                    onClick={() => setMoveInOut(true)}
+                    className={moveInOut ? styles.radio2 : styles.radio}
+                  ></p>
+
+                  <p>One-Time Clean</p>
+                </div>
+
+                <div className={styles.radioButton2}>
+                  <p
+                    onClick={() => setMoveInOut(false)}
+                    className={moveInOut ? styles.radio : styles.radio2}
+                  ></p>
+
+                  <p>Move In/Move Out Clean</p>
+                </div>
+              // </div> */}
             </div>
           )}
         </div>
