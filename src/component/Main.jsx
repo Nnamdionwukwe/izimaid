@@ -291,7 +291,7 @@ export default function Main() {
           {oneTime && (
             <div className={styles.oneTime}>
               <div className={styles.typeOfCleaning}>
-                <div className={styles.radioButton}>
+                <div className={styles.radioButton1}>
                   <p
                     onClick={() => setMoveInOut(true)}
                     className={moveInOut ? styles.radio2 : styles.radio}
@@ -300,7 +300,7 @@ export default function Main() {
                   <p>One-Time Clean</p>
                 </div>
 
-                <div className={styles.radioButton}>
+                <div className={styles.radioButton2}>
                   <p
                     onClick={() => setMoveInOut(false)}
                     className={moveInOut ? styles.radio : styles.radio2}
