@@ -61,6 +61,20 @@
   /* padding-left: 10px; */
 }
 
+.bedroomsDivMain {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.bedroomsDiv {
+  width: 50%;
+  margin-right: 20px;
+}
+.bathroomsDiv {
+  width: 50%;
+}
+
 .inputField::placeholder {
   padding-left: 10px;
   font-size: 15px;
@@ -130,7 +144,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 50%;
   height: 45px;
   border-radius: 5px;
   border: 1px solid rgb(228, 228, 228);
@@ -154,9 +167,6 @@
 
 .selectBedRoomsMain {
   background: rgb(227, 224, 224);
-  width: 48%;
-  margin-left: 5px;
-  margin-right: -5px;
   margin-top: -1px;
   padding: 0px 12px 12px 12px;
   border-radius: 5px;

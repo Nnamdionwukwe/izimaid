@@ -8,8 +8,12 @@ export default function Main() {
   const [recurring, setRecurring] = useState(true);
   const [oneTime, setOneTime] = useState(false);
   const [moveInOut, setMoveInOut] = useState(true);
+
   const [selectBedRooms, setSelectBedRooms] = useState(false);
   const [selectBedRoomsValue, setSelectBedRoomsValue] = useState("");
+
+  const [selectBathRooms, setSelectBathRooms] = useState(false);
+  const [selectBathRoomsValue, setSelectBathRoomsValue] = useState("");
 
   function handleClickOneTime() {
     setOneTime(true);
@@ -21,8 +25,15 @@ export default function Main() {
     setRecurring(true);
   }
 
+  //BEDROOM
+  //BEDROOM
+  //BEDROOM
+  //BEDROOM
+  //BEDROOM
+
   function handleSelectBedRooms() {
     setSelectBedRooms((is) => !is);
+    setSelectBathRooms(false);
   }
 
   function handleSelectedBedRoomsValue1() {
@@ -44,6 +55,39 @@ export default function Main() {
   function handleSelectedBedRoomsValue5() {
     setSelectBedRoomsValue(5);
     setSelectBedRooms(false);
+  }
+
+  //BATHROOM
+  //BATHROOM
+  //BATHROOM
+  //BATHROOM
+  //BATHROOM
+  //BATHROOM
+
+  function handleSelectBathRooms() {
+    setSelectBathRooms((is) => !is);
+    setSelectBedRooms(false);
+  }
+
+  function handleSelectedBathRoomsValue1() {
+    setSelectBathRoomsValue(1);
+    setSelectBathRooms(false);
+  }
+  function handleSelectedBathRoomsValue2() {
+    setSelectBathRoomsValue(2);
+    setSelectBathRooms(false);
+  }
+  function handleSelectedBathRoomsValue3() {
+    setSelectBathRoomsValue(3);
+    setSelectBathRooms(false);
+  }
+  function handleSelectedBathRoomsValue4() {
+    setSelectBathRoomsValue(4);
+    setSelectBathRooms(false);
+  }
+  function handleSelectedBathRoomsValue5() {
+    setSelectBathRoomsValue(5);
+    setSelectBathRooms(false);
   }
 
   return (
@@ -283,86 +327,186 @@ export default function Main() {
                 </div>
               </div>
 
-              <div>
-                <div className={styles.name}>
-                  <h4>Bedrooms*</h4>
-                </div>
-
-                <div>
-                  <div onClick={handleSelectBedRooms} className={styles.select}>
-                    <>{selectBedRoomsValue === "" && <p>Select</p>}</>
-
-                    <>
-                      {selectBedRoomsValue === 1 && (
-                        <p>{selectBedRoomsValue}</p>
-                      )}
-                    </>
-
-                    <>
-                      {selectBedRoomsValue === 2 && (
-                        <p>{selectBedRoomsValue}</p>
-                      )}
-                    </>
-
-                    <>
-                      {selectBedRoomsValue === 3 && (
-                        <p>{selectBedRoomsValue}</p>
-                      )}
-                    </>
-
-                    <>
-                      {selectBedRoomsValue === 4 && (
-                        <p>{selectBedRoomsValue}</p>
-                      )}
-                    </>
-
-                    <>
-                      {selectBedRoomsValue === 5 && (
-                        <p>{selectBedRoomsValue}</p>
-                      )}
-                    </>
-
-                    {selectBedRooms ? <p>&uarr;</p> : <p> &darr;</p>}
+              <div className={styles.bedroomsDivMain}>
+                <div className={styles.bedroomsDiv}>
+                  <div className={styles.name}>
+                    <h4>Bedrooms*</h4>
                   </div>
 
-                  {selectBedRooms && (
-                    <div className={styles.selectBedRoomsMain}>
-                      <div className={styles.selectBedRooms}>
-                        <p
-                          onClick={handleSelectedBedRoomsValue1}
-                          value={selectBedRoomsValue}
-                        >
-                          1
-                        </p>
+                  <div>
+                    <div
+                      onClick={handleSelectBedRooms}
+                      className={styles.select}
+                    >
+                      <>{selectBedRoomsValue === "" && <p>Select</p>}</>
 
-                        <p
-                          onClick={handleSelectedBedRoomsValue2}
-                          value={selectBedRoomsValue}
-                        >
-                          2
-                        </p>
+                      <>
+                        {selectBedRoomsValue === 1 && (
+                          <p>{selectBedRoomsValue}</p>
+                        )}
+                      </>
 
-                        <p
-                          onClick={handleSelectedBedRoomsValue3}
-                          value={selectBedRoomsValue}
-                        >
-                          3
-                        </p>
-                        <p
-                          onClick={handleSelectedBedRoomsValue4}
-                          value={selectBedRoomsValue}
-                        >
-                          4
-                        </p>
-                        <p
-                          onClick={handleSelectedBedRoomsValue5}
-                          value={selectBedRoomsValue}
-                        >
-                          5
-                        </p>
-                      </div>
+                      <>
+                        {selectBedRoomsValue === 2 && (
+                          <p>{selectBedRoomsValue}</p>
+                        )}
+                      </>
+
+                      <>
+                        {selectBedRoomsValue === 3 && (
+                          <p>{selectBedRoomsValue}</p>
+                        )}
+                      </>
+
+                      <>
+                        {selectBedRoomsValue === 4 && (
+                          <p>{selectBedRoomsValue}</p>
+                        )}
+                      </>
+
+                      <>
+                        {selectBedRoomsValue === 5 && (
+                          <p>{selectBedRoomsValue}</p>
+                        )}
+                      </>
+
+                      {selectBedRooms ? <p>&uarr;</p> : <p> &darr;</p>}
                     </div>
-                  )}
+
+                    {selectBedRooms && (
+                      <div className={styles.selectBedRoomsMain}>
+                        <div className={styles.selectBedRooms}>
+                          <p
+                            onClick={handleSelectedBedRoomsValue1}
+                            value={selectBedRoomsValue}
+                          >
+                            1
+                          </p>
+
+                          <p
+                            onClick={handleSelectedBedRoomsValue2}
+                            value={selectBedRoomsValue}
+                          >
+                            2
+                          </p>
+
+                          <p
+                            onClick={handleSelectedBedRoomsValue3}
+                            value={selectBedRoomsValue}
+                          >
+                            3
+                          </p>
+                          <p
+                            onClick={handleSelectedBedRoomsValue4}
+                            value={selectBedRoomsValue}
+                          >
+                            4
+                          </p>
+                          <p
+                            onClick={handleSelectedBedRoomsValue5}
+                            value={selectBedRoomsValue}
+                          >
+                            5
+                          </p>
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                </div>
+
+                {/* BATHROOM */}
+                {/* BATHROOM */}
+                {/* BATHROOM */}
+                {/* BATHROOM */}
+                {/* BATHROOM */}
+                {/* BATHROOM */}
+                {/* BATHROOM */}
+                {/* BATHROOM */}
+
+                <div className={styles.bathroomsDiv}>
+                  <div className={styles.name}>
+                    <h4>Bathrooms*</h4>
+                  </div>
+
+                  <div>
+                    <div
+                      onClick={handleSelectBathRooms}
+                      className={styles.select}
+                    >
+                      <>{selectBathRoomsValue === "" && <p>Select</p>}</>
+
+                      <>
+                        {selectBathRoomsValue === 1 && (
+                          <p>{selectBathRoomsValue}</p>
+                        )}
+                      </>
+
+                      <>
+                        {selectBathRoomsValue === 2 && (
+                          <p>{selectBathRoomsValue}</p>
+                        )}
+                      </>
+
+                      <>
+                        {selectBathRoomsValue === 3 && (
+                          <p>{selectBathRoomsValue}</p>
+                        )}
+                      </>
+
+                      <>
+                        {selectBathRoomsValue === 4 && (
+                          <p>{selectBathRoomsValue}</p>
+                        )}
+                      </>
+
+                      <>
+                        {selectBathRoomsValue === 5 && (
+                          <p>{selectBathRoomsValue}</p>
+                        )}
+                      </>
+
+                      {selectBathRooms ? <p>&uarr;</p> : <p> &darr;</p>}
+                    </div>
+
+                    {selectBathRooms && (
+                      <div className={styles.selectBedRoomsMain}>
+                        <div className={styles.selectBedRooms}>
+                          <p
+                            onClick={handleSelectedBathRoomsValue1}
+                            value={selectBathRoomsValue}
+                          >
+                            1
+                          </p>
+
+                          <p
+                            onClick={handleSelectedBathRoomsValue2}
+                            value={selectBathRoomsValue}
+                          >
+                            2
+                          </p>
+
+                          <p
+                            onClick={handleSelectedBathRoomsValue3}
+                            value={selectBathRoomsValue}
+                          >
+                            3
+                          </p>
+                          <p
+                            onClick={handleSelectedBathRoomsValue4}
+                            value={selectBathRoomsValue}
+                          >
+                            4
+                          </p>
+                          <p
+                            onClick={handleSelectedBathRoomsValue5}
+                            value={selectBathRoomsValue}
+                          >
+                            5
+                          </p>
+                        </div>
+                      </div>
+                    )}
+                  </div>
                 </div>
               </div>
             </div>
