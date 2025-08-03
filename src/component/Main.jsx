@@ -326,39 +326,41 @@ export default function Main() {
                   </div>
 
                   {selectBedRooms && (
-                    <div>
-                      <p
-                        onClick={handleSelectedBedRoomsValue1}
-                        value={selectBedRoomsValue}
-                      >
-                        1
-                      </p>
+                    <div className={styles.selectBedRoomsMain}>
+                      <div className={styles.selectBedRooms}>
+                        <p
+                          onClick={handleSelectedBedRoomsValue1}
+                          value={selectBedRoomsValue}
+                        >
+                          1
+                        </p>
 
-                      <p
-                        onClick={handleSelectedBedRoomsValue2}
-                        value={selectBedRoomsValue}
-                      >
-                        2
-                      </p>
+                        <p
+                          onClick={handleSelectedBedRoomsValue2}
+                          value={selectBedRoomsValue}
+                        >
+                          2
+                        </p>
 
-                      <p
-                        onClick={handleSelectedBedRoomsValue3}
-                        value={selectBedRoomsValue}
-                      >
-                        3
-                      </p>
-                      <p
-                        onClick={handleSelectedBedRoomsValue4}
-                        value={selectBedRoomsValue}
-                      >
-                        4
-                      </p>
-                      <p
-                        onClick={handleSelectedBedRoomsValue5}
-                        value={selectBedRoomsValue}
-                      >
-                        5
-                      </p>
+                        <p
+                          onClick={handleSelectedBedRoomsValue3}
+                          value={selectBedRoomsValue}
+                        >
+                          3
+                        </p>
+                        <p
+                          onClick={handleSelectedBedRoomsValue4}
+                          value={selectBedRoomsValue}
+                        >
+                          4
+                        </p>
+                        <p
+                          onClick={handleSelectedBedRoomsValue5}
+                          value={selectBedRoomsValue}
+                        >
+                          5
+                        </p>
+                      </div>
                     </div>
                   )}
                 </div>
