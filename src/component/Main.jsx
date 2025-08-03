@@ -893,6 +893,28 @@ export default function Main() {
           <p>And much more!</p>
         </div>
       </div>
+
+      <div className={styles.privacy}>
+        <p>
+          By entering your email address, you agree to receive emails about
+          services, updates or promotions, and you agree to the{" "}
+          <span className={styles.span}>Terms</span> and{" "}
+          <span className={styles.span}> Privacy Policy</span>. You may
+          unsubscribe at any time.
+        </p>
+      </div>
+
+      <div className={styles.submitButton}>
+        <h4>Submit and Continue</h4>
+
+        <p>&rarr;</p>
+      </div>
+
+      <div>
+        <p className={styles.term}>
+          No longer-term contracts. No pressure. Cancel anytime!
+        </p>
+      </div>
     </div>
   );
 }

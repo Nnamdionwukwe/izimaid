@@ -231,6 +231,7 @@
   background: rgb(249, 228, 231);
   padding: 1px 20px 5px 20px;
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .full {
@@ -250,4 +251,30 @@
   color: white;
   margin-right: 10px;
   font-size: 8px;
+}
+
+.submitButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  background: rgb(19, 19, 103);
+  margin-top: 20px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+.submitButton:hover {
+  background: rgb(15, 15, 70);
+}
+
+.submitButton h4 {
+  margin-right: 10px;
+}
+
+.term {
+  color: gray;
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
