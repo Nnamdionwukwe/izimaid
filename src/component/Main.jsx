@@ -846,6 +846,13 @@ export default function Main() {
       </div>
 
       <div className={styles.fullMain}>
+        <div>
+          <img
+            className={styles.image}
+            src="https://i.pinimg.com/736x/49/dd/29/49dd29ae47323d64550d02d174cd765e.jpg"
+          />
+        </div>
+
         <div className={styles.full}>
           <h4>Our full house cleaning includes everything on this list:</h4>
         </div>
