@@ -768,7 +768,7 @@ export default function Main() {
                   <div className={styles.radioButton}>
                     <p
                       onClick={handleOneTimeClean}
-                      className={oneTime ? styles.radio2 : styles.radio}
+                      className={oneTimeClean ? styles.radio2 : styles.radio}
                     ></p>
 
                     <p>One-Time Clean</p>
@@ -842,6 +842,16 @@ export default function Main() {
               )}
             </div>
           )}
+        </div>
+      </div>
+
+      <div>
+        <div>
+          <h4>Our full house cleaning includes everything on this list:</h4>
+        </div>
+
+        <div>
+          <p>&#100004;</p>
         </div>
       </div>
     </div>
