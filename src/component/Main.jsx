@@ -845,13 +845,15 @@ export default function Main() {
         </div>
       </div>
 
-      <div>
-        <div>
+      <div className={styles.fullMain}>
+        <div className={styles.full}>
           <h4>Our full house cleaning includes everything on this list:</h4>
         </div>
 
-        <div>
-          <p>&#100004;</p>
+        <div className={styles.checkMarkFooterDiv}>
+          <p className={styles.checkMarkFooter}>&#10004;</p>
+
+          <p>Dust baseboards, light fixtures, furniture, sills</p>
         </div>
       </div>
     </div>

@@ -218,3 +218,27 @@
   color: white;
   cursor: pointer;
 }
+
+.fullMain {
+  background: rgb(249, 228, 231);
+  padding: 1px 20px 5px 20px;
+  margin-top: 30px;
+}
+
+.full {
+  margin-bottom: -20px;
+}
+
+.checkMarkFooterDiv {
+  display: flex;
+  align-items: center;
+}
+
+.checkMarkFooter {
+  padding: 3px 5.5px 3px 5.5px;
+  background: rgb(203, 14, 140);
+  border-radius: 100%;
+  color: white;
+  margin-right: 10px;
+  font-size: 8px;
+}
