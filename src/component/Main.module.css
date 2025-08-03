@@ -51,6 +51,7 @@
 
 .inputField {
   display: flex;
+  align-items: center;
   flex: 1;
   height: 40px;
   border: none;
@@ -64,13 +65,19 @@
 .bedroomsDivMain {
   display: flex;
   align-items: center;
-  width: 100%;
+  padding-bottom: 15px;
+  /* width: 100%; */
 }
 
 .bedroomsDiv {
   width: 50%;
   margin-right: 20px;
 }
+
+.name {
+  margin-bottom: -15px;
+}
+
 .bathroomsDiv {
   width: 50%;
 }
@@ -115,6 +122,7 @@
   display: flex;
   align-items: center;
   margin-right: 20px;
+  width: 100%;
 }
 
 .radio2 {

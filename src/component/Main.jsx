@@ -2,18 +2,19 @@ import { useState } from "react";
 import styles from "./Main.module.css";
 
 export default function Main() {
+  //SENDING TO BACKEND
   const [firstName, setFirstName] = useState("");
+  const [selectBedRoomsValue, setSelectBedRoomsValue] = useState("");
+  const [selectBathRoomsValue, setSelectBathRoomsValue] = useState("");
+
+  //NORMAL TOGGLE STATE
+  const [selectBedRooms, setSelectBedRooms] = useState(false);
+  const [selectBathRooms, setSelectBathRooms] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [residential, setResidential] = useState(true);
   const [recurring, setRecurring] = useState(true);
   const [oneTime, setOneTime] = useState(false);
   const [moveInOut, setMoveInOut] = useState(true);
-
-  const [selectBedRooms, setSelectBedRooms] = useState(false);
-  const [selectBedRoomsValue, setSelectBedRoomsValue] = useState("");
-
-  const [selectBathRooms, setSelectBathRooms] = useState(false);
-  const [selectBathRoomsValue, setSelectBathRoomsValue] = useState("");
 
   function handleClickOneTime() {
     setOneTime(true);
@@ -321,7 +322,7 @@ export default function Main() {
                 <div className={styles.inputField}>
                   <input
                     type="text"
-                    placeholder="ex. mike.nnamdi@example.com"
+                    placeholder="2000"
                     className={styles.inputField}
                   />
                 </div>
