@@ -7,9 +7,27 @@ export default function Main() {
   const [selectBedRoomsValue, setSelectBedRoomsValue] = useState("");
   const [selectBathRoomsValue, setSelectBathRoomsValue] = useState("");
 
+  const [
+    lightCommercialSelectedOfficeValue,
+    setLightCommercialSelectedOfficeValue,
+  ] = useState("");
+
+  const [
+    lightCommercialSelectedOfficeBathRoomsValue,
+    setLightCommercialSelectedOfficeBathRoomsValue,
+  ] = useState("");
+
+  const [lightCommercialRecurring, setLightCommercialRecurring] =
+    useState("weekly");
+
+  const [lightCommercialOneTimeClean, setLightCommercialOneTimeClean] =
+    useState("yes");
+
   //NORMAL TOGGLE STATE
   const [selectBedRooms, setSelectBedRooms] = useState(false);
   const [selectBathRooms, setSelectBathRooms] = useState(false);
+  const [selectedOffice, setSelectedOffice] = useState(false);
+  const [selectedOfficeBathRooms, setSelectedOfficeBathRooms] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [residential, setResidential] = useState(true);
   const [recurring, setRecurring] = useState(true);
@@ -124,6 +142,77 @@ export default function Main() {
   function handleSelectedBathRoomsValue5() {
     setSelectBathRoomsValue(5);
     setSelectBathRooms(false);
+  }
+
+  //LIGHT COMMERCIAL OFFICES
+  //LIGHT COMMERCIAL OFFICES
+  //LIGHT COMMERCIAL OFFICES
+  //LIGHT COMMERCIAL OFFICES
+  //LIGHT COMMERCIAL OFFICES
+
+  function handleLightCommercialSelectedOffice() {
+    setSelectedOffice((is) => !is);
+    // setSelectedOffice(false);
+  }
+
+  function lightCommercialSelectedOfficeValue1() {
+    setLightCommercialSelectedOfficeValue(1);
+    setSelectedOffice(false);
+  }
+  function lightCommercialSelectedOfficeValue2() {
+    setLightCommercialSelectedOfficeValue(2);
+    setSelectedOffice(false);
+  }
+  function lightCommercialSelectedOfficeValue3() {
+    setLightCommercialSelectedOfficeValue(3);
+    setSelectedOffice(false);
+  }
+  function lightCommercialSelectedOfficeValue4() {
+    setLightCommercialSelectedOfficeValue(4);
+    setSelectedOffice(false);
+  }
+  function lightCommercialSelectedOfficeValue5() {
+    setLightCommercialSelectedOfficeValue(5);
+    setSelectedOffice(false);
+  }
+
+  //LIGHT COMMERCIAL RECURRING
+  //LIGHT COMMERCIAL RECURRING
+  //LIGHT COMMERCIAL RECURRING
+  //LIGHT COMMERCIAL RECURRING
+  //LIGHT COMMERCIAL RECURRING
+  //LIGHT COMMERCIAL RECURRING
+  function handleWeekly() {
+    setLightCommercialRecurring("weekly");
+    setLightCommercialOneTimeClean("");
+    setLightCommercialOneTimeClean("");
+  }
+
+  function handleOtherWeek() {
+    setLightCommercialRecurring("everyOtherWeek");
+    setLightCommercialOneTimeClean("");
+    setLightCommercialOneTimeClean("");
+  }
+  function handle4Weeks() {
+    setLightCommercialRecurring("onceIn4Weeks");
+    setLightCommercialOneTimeClean("");
+    setLightCommercialOneTimeClean("");
+  }
+
+  //ONE TIME CLEAN
+  //ONE TIME CLEAN
+  //ONE TIME CLEAN
+  function handleYes() {
+    setLightCommercialOneTimeClean("yes");
+    setLightCommercialRecurring("");
+    setLightCommercialRecurring("");
+    setLightCommercialRecurring("");
+  }
+  function handleNo() {
+    setLightCommercialOneTimeClean("no");
+    setLightCommercialRecurring("");
+    setLightCommercialRecurring("");
+    setLightCommercialRecurring("");
   }
 
   return (
@@ -572,80 +661,87 @@ export default function Main() {
                 <div className={styles.bedroomsDiv}>
                   <div className={styles.name}>
                     <h4>Offices*</h4>
+                    {/* <p>{selectBathRoomsValue}</p>
+
+                    <p>{selectBedRoomsValue}</p> */}
                   </div>
 
                   <div>
                     <div
-                      onClick={handleSelectBedRooms}
+                      onClick={handleLightCommercialSelectedOffice}
                       className={styles.select}
                     >
-                      <>{selectBedRoomsValue === "" && <p>Select</p>}</>
-
                       <>
-                        {selectBedRoomsValue === 1 && (
-                          <p>{selectBedRoomsValue}</p>
+                        {lightCommercialSelectedOfficeValue === "" && (
+                          <p>Select</p>
                         )}
                       </>
 
                       <>
-                        {selectBedRoomsValue === 2 && (
-                          <p>{selectBedRoomsValue}</p>
+                        {lightCommercialSelectedOfficeValue === 1 && (
+                          <p>{lightCommercialSelectedOfficeValue}</p>
                         )}
                       </>
 
                       <>
-                        {selectBedRoomsValue === 3 && (
-                          <p>{selectBedRoomsValue}</p>
+                        {lightCommercialSelectedOfficeValue === 2 && (
+                          <p>{lightCommercialSelectedOfficeValue}</p>
                         )}
                       </>
 
                       <>
-                        {selectBedRoomsValue === 4 && (
-                          <p>{selectBedRoomsValue}</p>
+                        {lightCommercialSelectedOfficeValue === 3 && (
+                          <p>{lightCommercialSelectedOfficeValue}</p>
                         )}
                       </>
 
                       <>
-                        {selectBedRoomsValue === 5 && (
-                          <p>{selectBedRoomsValue}</p>
+                        {lightCommercialSelectedOfficeValue === 4 && (
+                          <p>{lightCommercialSelectedOfficeValue}</p>
                         )}
                       </>
 
-                      {selectBedRooms ? <p>&uarr;</p> : <p> &darr;</p>}
+                      <>
+                        {lightCommercialSelectedOfficeValue === 5 && (
+                          <p>{lightCommercialSelectedOfficeValue}</p>
+                        )}
+                      </>
+
+                      {selectedOffice ? <p>&uarr;</p> : <p> &darr;</p>}
                     </div>
 
-                    {selectBedRooms && (
+                    {selectedOffice && (
                       <div className={styles.selectBedRoomsMain}>
                         <div className={styles.selectBedRooms}>
                           <p
-                            onClick={handleSelectedBedRoomsValue1}
-                            value={selectBedRoomsValue}
+                            onClick={lightCommercialSelectedOfficeValue1}
+                            value={lightCommercialSelectedOfficeValue}
                           >
                             1
                           </p>
 
                           <p
-                            onClick={handleSelectedBedRoomsValue2}
-                            value={selectBedRoomsValue}
+                            onClick={lightCommercialSelectedOfficeValue2}
+                            value={lightCommercialSelectedOfficeValue}
                           >
                             2
                           </p>
 
                           <p
-                            onClick={handleSelectedBedRoomsValue3}
-                            value={selectBedRoomsValue}
+                            onClick={lightCommercialSelectedOfficeValue3}
+                            value={lightCommercialSelectedOfficeValue}
                           >
                             3
                           </p>
                           <p
-                            onClick={handleSelectedBedRoomsValue4}
-                            value={selectBedRoomsValue}
+                            onClick={lightCommercialSelectedOfficeValue4}
+                            value={lightCommercialSelectedOfficeValue}
                           >
                             4
                           </p>
                           <p
-                            onClick={handleSelectedBedRoomsValue5}
-                            value={selectBedRoomsValue}
+                            onClick={lightCommercialSelectedOfficeValue5}
+                            value={lightCommercialSelectedOfficeValue}
                           >
                             5
                           </p>
@@ -785,8 +881,13 @@ export default function Main() {
                   <div className={styles.typeOfCleaning2}>
                     <div className={styles.radioButton}>
                       <p
-                        onClick={handleRecurring2}
-                        className={recurring ? styles.radio2 : styles.radio}
+                        onClick={handleWeekly}
+                        value={lightCommercialRecurring}
+                        className={
+                          lightCommercialRecurring === "weekly"
+                            ? styles.radio2
+                            : styles.radio
+                        }
                       ></p>
 
                       <p>Weekly</p>
@@ -794,8 +895,13 @@ export default function Main() {
 
                     <div className={styles.radioButton}>
                       <p
-                        onClick={handleClickOneTime2}
-                        className={oneTime ? styles.radio2 : styles.radio}
+                        onClick={handleOtherWeek}
+                        value={lightCommercialRecurring}
+                        className={
+                          lightCommercialRecurring === "everyOtherWeek"
+                            ? styles.radio2
+                            : styles.radio
+                        }
                       ></p>
 
                       <p>Every Other Week</p>
@@ -803,8 +909,13 @@ export default function Main() {
 
                     <div className={styles.radioButton}>
                       <p
-                        onClick={handleClickOneTime2}
-                        className={oneTime ? styles.radio2 : styles.radio}
+                        onClick={handle4Weeks}
+                        value={lightCommercialRecurring}
+                        className={
+                          lightCommercialRecurring === "onceIn4Weeks"
+                            ? styles.radio2
+                            : styles.radio
+                        }
                       ></p>
 
                       <p>Once Every 4 Weeks</p>
@@ -822,8 +933,13 @@ export default function Main() {
                   <div className={styles.typeOfCleaning}>
                     <div className={styles.radioButton}>
                       <p
-                        onClick={handleRecurring2}
-                        className={recurring ? styles.radio2 : styles.radio}
+                        onClick={handleYes}
+                        value={lightCommercialOneTimeClean}
+                        className={
+                          lightCommercialOneTimeClean === "yes"
+                            ? styles.radio2
+                            : styles.radio
+                        }
                       ></p>
 
                       <p>Yes</p>
@@ -831,8 +947,13 @@ export default function Main() {
 
                     <div className={styles.radioButton}>
                       <p
-                        onClick={handleClickOneTime2}
-                        className={oneTime ? styles.radio2 : styles.radio}
+                        onClick={handleNo}
+                        value={lightCommercialOneTimeClean}
+                        className={
+                          lightCommercialOneTimeClean === "no"
+                            ? styles.radio2
+                            : styles.radio
+                        }
                       ></p>
 
                       <p>No</p>
