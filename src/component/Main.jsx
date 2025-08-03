@@ -16,6 +16,8 @@ export default function Main() {
   const [oneTime, setOneTime] = useState(false);
   const [lightCommercial, setLightCommercial] = useState(false);
   const [moveInOut, setMoveInOut] = useState(true);
+  const [oneWeek, setOneWeek] = useState(true);
+  const [oneTimeClean, setOneTimeClean] = useState(false);
 
   function handleResidential() {
     setResidential(true);
@@ -47,6 +49,16 @@ export default function Main() {
   function handleRecurring2() {
     // setOneTime(false);
     // setRecurring(true);
+  }
+
+  function handleOneWeek() {
+    setOneWeek(true);
+    setOneTimeClean(false);
+  }
+
+  function handleOneTimeClean() {
+    setOneTimeClean(true);
+    setOneWeek(false);
   }
 
   //BEDROOM
@@ -746,8 +758,8 @@ export default function Main() {
                 <div className={styles.typeOfCleaning}>
                   <div className={styles.radioButton}>
                     <p
-                      onClick={handleRecurring2}
-                      className={recurring ? styles.radio2 : styles.radio}
+                      onClick={handleOneWeek}
+                      className={oneWeek ? styles.radio2 : styles.radio}
                     ></p>
 
                     <p>Recurring</p>
@@ -755,7 +767,7 @@ export default function Main() {
 
                   <div className={styles.radioButton}>
                     <p
-                      onClick={handleClickOneTime2}
+                      onClick={handleOneTimeClean}
                       className={oneTime ? styles.radio2 : styles.radio}
                     ></p>
 
@@ -764,25 +776,70 @@ export default function Main() {
                 </div>
               </div>
 
-              {/* <div className={styles.typeOfCleaning}>
-                <div className={styles.radioButton1}>
-                  <p
-                    onClick={() => setMoveInOut(true)}
-                    className={moveInOut ? styles.radio2 : styles.radio}
-                  ></p>
+              {oneWeek && (
+                <div>
+                  <div className={styles.type}>
+                    <h4>Frequency*</h4>
+                  </div>
 
-                  <p>One-Time Clean</p>
+                  <div className={styles.typeOfCleaning2}>
+                    <div className={styles.radioButton}>
+                      <p
+                        onClick={handleRecurring2}
+                        className={recurring ? styles.radio2 : styles.radio}
+                      ></p>
+
+                      <p>Weekly</p>
+                    </div>
+
+                    <div className={styles.radioButton}>
+                      <p
+                        onClick={handleClickOneTime2}
+                        className={oneTime ? styles.radio2 : styles.radio}
+                      ></p>
+
+                      <p>Every Other Week</p>
+                    </div>
+
+                    <div className={styles.radioButton}>
+                      <p
+                        onClick={handleClickOneTime2}
+                        className={oneTime ? styles.radio2 : styles.radio}
+                      ></p>
+
+                      <p>Once Every 4 Weeks</p>
+                    </div>
+                  </div>
                 </div>
+              )}
 
-                <div className={styles.radioButton2}>
-                  <p
-                    onClick={() => setMoveInOut(false)}
-                    className={moveInOut ? styles.radio : styles.radio2}
-                  ></p>
+              {oneTimeClean && (
+                <div>
+                  <div className={styles.type}>
+                    <h4>Is this a move-in/move-out clean?*</h4>
+                  </div>
 
-                  <p>Move In/Move Out Clean</p>
+                  <div className={styles.typeOfCleaning}>
+                    <div className={styles.radioButton}>
+                      <p
+                        onClick={handleRecurring2}
+                        className={recurring ? styles.radio2 : styles.radio}
+                      ></p>
+
+                      <p>Yes</p>
+                    </div>
+
+                    <div className={styles.radioButton}>
+                      <p
+                        onClick={handleClickOneTime2}
+                        className={oneTime ? styles.radio2 : styles.radio}
+                      ></p>
+
+                      <p>No</p>
+                    </div>
+                  </div>
                 </div>
-              // </div> */}
+              )}
             </div>
           )}
         </div>
