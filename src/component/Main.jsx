@@ -3,6 +3,9 @@ import styles from "./Main.module.css";
 
 export default function Main() {
   const [isOpen, setIsOpen] = useState(false);
+  const [residential, setResidential] = useState(true);
+  const [recurring, setRecurring] = useState(true);
+  const [oneTime, setOneTime] = useState(false);
 
   return (
     <div className={styles.mainDiv}>
@@ -147,6 +150,54 @@ export default function Main() {
               />
             </div>
           </div>
+
+          <div className={styles.type}>
+            <h4>Type of Cleaning*</h4>
+          </div>
+
+          <div className={styles.typeOfCleaning}>
+            <div className={styles.radioButton}>
+              <p
+                onClick={() => setResidential(true)}
+                className={residential ? styles.radio2 : styles.radio}
+              ></p>
+
+              <p>Residential</p>
+            </div>
+
+            <div className={styles.radioButton}>
+              <p
+                onClick={() => setResidential(false)}
+                className={styles.radio}
+              ></p>
+
+              <p>Light Commercial</p>
+            </div>
+          </div>
+
+          {residential && (
+            <div>
+              <div className={styles.type}>
+                <h4>Frequency of Cleaning*</h4>
+              </div>
+              <div className={styles.typeOfCleaning}>
+                <div className={styles.radioButton}>
+                  <p
+                    onClick={() => setRecurring(true)}
+                    className={recurring ? styles.radio2 : styles.radio}
+                  ></p>
+
+                  <p>Recurring</p>
+                </div>
+
+                <div className={styles.radioButton}>
+                  <p className={styles.radio}></p>
+
+                  <p>One-Time Clean</p>
+                </div>
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </div>

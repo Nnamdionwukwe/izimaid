@@ -18,8 +18,6 @@ export default function RequestEstimate() {
       </div>
 
       <OtherFooter />
-      <OtherFooter />
-      <OtherFooter />
     </div>
   );
 }
