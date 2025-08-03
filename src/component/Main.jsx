@@ -6,6 +6,17 @@ export default function Main() {
   const [residential, setResidential] = useState(true);
   const [recurring, setRecurring] = useState(true);
   const [oneTime, setOneTime] = useState(false);
+  const [moveInOut, setMoveInOut] = useState(true);
+
+  function handleClickOneTime() {
+    setOneTime(true);
+    setRecurring(false);
+  }
+
+  function handleRecurring() {
+    setOneTime(false);
+    setRecurring(true);
+  }
 
   return (
     <div className={styles.mainDiv}>
@@ -183,7 +194,7 @@ export default function Main() {
               <div className={styles.typeOfCleaning}>
                 <div className={styles.radioButton}>
                   <p
-                    onClick={() => setRecurring(true)}
+                    onClick={handleRecurring}
                     className={recurring ? styles.radio2 : styles.radio}
                   ></p>
 
@@ -191,9 +202,36 @@ export default function Main() {
                 </div>
 
                 <div className={styles.radioButton}>
-                  <p className={styles.radio}></p>
+                  <p
+                    onClick={handleClickOneTime}
+                    className={oneTime ? styles.radio2 : styles.radio}
+                  ></p>
 
                   <p>One-Time Clean</p>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {oneTime && (
+            <div>
+              <div className={styles.typeOfCleaning}>
+                <div className={styles.radioButton}>
+                  <p
+                    onClick={() => setMoveInOut(true)}
+                    className={moveInOut ? styles.radio2 : styles.radio}
+                  ></p>
+
+                  <p>One-Time Clean</p>
+                </div>
+
+                <div className={styles.radioButton}>
+                  <p
+                    onClick={() => setMoveInOut(false)}
+                    className={moveInOut ? styles.radio : styles.radio2}
+                  ></p>
+
+                  <p>Move In/Move Out Clean</p>
                 </div>
               </div>
             </div>
