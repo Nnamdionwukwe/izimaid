@@ -855,6 +855,36 @@ export default function Main() {
 
           <p>Dust baseboards, light fixtures, furniture, sills</p>
         </div>
+
+        <div className={styles.checkMarkFooterDiv}>
+          <p className={styles.checkMarkFooter}>&#10004;</p>
+
+          <p>Vacuum/Mop all floors, carpets, and stairs</p>
+        </div>
+
+        <div className={styles.checkMarkFooterDiv}>
+          <p className={styles.checkMarkFooter}>&#10004;</p>
+
+          <p>Clean showers, tubs, toilets, and sinks</p>
+        </div>
+
+        <div className={styles.checkMarkFooterDiv}>
+          <p className={styles.checkMarkFooter}>&#10004;</p>
+
+          <p>Clean mirrors, glass, counters, and tile</p>
+        </div>
+
+        <div className={styles.checkMarkFooterDiv}>
+          <p className={styles.checkMarkFooter}>&#10004;</p>
+
+          <p>Dust all furniture and furnishings</p>
+        </div>
+
+        <div className={styles.checkMarkFooterDiv}>
+          <p className={styles.checkMarkFooter}>&#10004;</p>
+
+          <p>And much more!</p>
+        </div>
       </div>
     </div>
   );
