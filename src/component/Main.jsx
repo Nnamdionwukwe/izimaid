@@ -2,12 +2,14 @@ import { useState } from "react";
 import styles from "./Main.module.css";
 
 export default function Main() {
+  const [firstName, setFirstName] = useState("");
   const [isOpen, setIsOpen] = useState(false);
   const [residential, setResidential] = useState(true);
   const [recurring, setRecurring] = useState(true);
   const [oneTime, setOneTime] = useState(false);
   const [moveInOut, setMoveInOut] = useState(true);
-  const [selsctBedRooms, setSelectBedRooms] = useState(false);
+  const [selectBedRooms, setSelectBedRooms] = useState(false);
+  const [selectBedRoomsValue, setSelectBedRoomsValue] = useState("");
 
   function handleClickOneTime() {
     setOneTime(true);
@@ -21,6 +23,27 @@ export default function Main() {
 
   function handleSelectBedRooms() {
     setSelectBedRooms((is) => !is);
+  }
+
+  function handleSelectedBedRoomsValue1() {
+    setSelectBedRoomsValue(1);
+    setSelectBedRooms(false);
+  }
+  function handleSelectedBedRoomsValue2() {
+    setSelectBedRoomsValue(2);
+    setSelectBedRooms(false);
+  }
+  function handleSelectedBedRoomsValue3() {
+    setSelectBedRoomsValue(3);
+    setSelectBedRooms(false);
+  }
+  function handleSelectedBedRoomsValue4() {
+    setSelectBedRoomsValue(4);
+    setSelectBedRooms(false);
+  }
+  function handleSelectedBedRoomsValue5() {
+    setSelectBedRoomsValue(5);
+    setSelectBedRooms(false);
   }
 
   return (
@@ -56,6 +79,8 @@ export default function Main() {
               <input
                 type="text"
                 placeholder="ex. Mike"
+                value={firstName}
+                onChange={(e) => setFirstName(e.target.value)}
                 className={styles.inputField}
               />
             </div>
@@ -265,16 +290,77 @@ export default function Main() {
 
                 <div>
                   <div onClick={handleSelectBedRooms} className={styles.select}>
-                    {selsctBedRooms && (
-                      <>
-                        <p value="1">1</p>
-                        <p value="2">2</p>
-                        <p value="3">3</p>
-                        <p value="4">4</p>
-                        <p value="5">5</p>
-                      </>
-                    )}
+                    <>{selectBedRoomsValue === "" && <p>Select</p>}</>
+
+                    <>
+                      {selectBedRoomsValue === 1 && (
+                        <p>{selectBedRoomsValue}</p>
+                      )}
+                    </>
+
+                    <>
+                      {selectBedRoomsValue === 2 && (
+                        <p>{selectBedRoomsValue}</p>
+                      )}
+                    </>
+
+                    <>
+                      {selectBedRoomsValue === 3 && (
+                        <p>{selectBedRoomsValue}</p>
+                      )}
+                    </>
+
+                    <>
+                      {selectBedRoomsValue === 4 && (
+                        <p>{selectBedRoomsValue}</p>
+                      )}
+                    </>
+
+                    <>
+                      {selectBedRoomsValue === 5 && (
+                        <p>{selectBedRoomsValue}</p>
+                      )}
+                    </>
+
+                    {selectBedRooms ? <p>&uarr;</p> : <p> &darr;</p>}
                   </div>
+
+                  {selectBedRooms && (
+                    <div>
+                      <p
+                        onClick={handleSelectedBedRoomsValue1}
+                        value={selectBedRoomsValue}
+                      >
+                        1
+                      </p>
+
+                      <p
+                        onClick={handleSelectedBedRoomsValue2}
+                        value={selectBedRoomsValue}
+                      >
+                        2
+                      </p>
+
+                      <p
+                        onClick={handleSelectedBedRoomsValue3}
+                        value={selectBedRoomsValue}
+                      >
+                        3
+                      </p>
+                      <p
+                        onClick={handleSelectedBedRoomsValue4}
+                        value={selectBedRoomsValue}
+                      >
+                        4
+                      </p>
+                      <p
+                        onClick={handleSelectedBedRoomsValue5}
+                        value={selectBedRoomsValue}
+                      >
+                        5
+                      </p>
+                    </div>
+                  )}
                 </div>
               </div>
             </div>
