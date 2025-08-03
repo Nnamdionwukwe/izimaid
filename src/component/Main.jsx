@@ -7,6 +7,7 @@ export default function Main() {
   const [recurring, setRecurring] = useState(true);
   const [oneTime, setOneTime] = useState(false);
   const [moveInOut, setMoveInOut] = useState(true);
+  const [selsctBedRooms, setSelectBedRooms] = useState(false);
 
   function handleClickOneTime() {
     setOneTime(true);
@@ -16,6 +17,10 @@ export default function Main() {
   function handleRecurring() {
     setOneTime(false);
     setRecurring(true);
+  }
+
+  function handleSelectBedRooms() {
+    setSelectBedRooms((is) => !is);
   }
 
   return (
@@ -214,7 +219,7 @@ export default function Main() {
           )}
 
           {oneTime && (
-            <div>
+            <div className={styles.oneTime}>
               <div className={styles.typeOfCleaning}>
                 <div className={styles.radioButton}>
                   <p
@@ -232,6 +237,44 @@ export default function Main() {
                   ></p>
 
                   <p>Move In/Move Out Clean</p>
+                </div>
+              </div>
+
+              <div>
+                <h3>Home Details</h3>
+              </div>
+
+              <div>
+                <div className={styles.name}>
+                  <h4>Square Feet*</h4>
+                </div>
+
+                <div className={styles.inputField}>
+                  <input
+                    type="text"
+                    placeholder="ex. mike.nnamdi@example.com"
+                    className={styles.inputField}
+                  />
+                </div>
+              </div>
+
+              <div>
+                <div className={styles.name}>
+                  <h4>Bedrooms*</h4>
+                </div>
+
+                <div>
+                  <div onClick={handleSelectBedRooms} className={styles.select}>
+                    {selsctBedRooms && (
+                      <>
+                        <p value="1">1</p>
+                        <p value="2">2</p>
+                        <p value="3">3</p>
+                        <p value="4">4</p>
+                        <p value="5">5</p>
+                      </>
+                    )}
+                  </div>
                 </div>
               </div>
             </div>
