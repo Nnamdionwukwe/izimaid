@@ -374,7 +374,7 @@ export default function Main() {
               />
             </div>
 
-            {isOpen1 && <p className={styles.error}>Enter the first name</p>}
+            {isOpen1 && <p className={styles.error}>Enter the last name</p>}
           </div>
 
           <div>
