@@ -4,6 +4,9 @@ import styles from "./Main.module.css";
 export default function Main() {
   //SENDING TO BACKEND
   const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
   const [selectBedRoomsValue, setSelectBedRoomsValue] = useState("");
   const [selectBathRoomsValue, setSelectBathRoomsValue] = useState("");
 
@@ -294,12 +297,12 @@ export default function Main() {
 
           <div>
             <div className={styles.name}>
-              <h4>First Name*</h4>
+              <h4>First Name* {firstName} </h4>
             </div>
 
             <div className={styles.inputField}>
               <input
-                type="text"
+                type="name"
                 placeholder="ex. Mike"
                 value={firstName}
                 onChange={(e) => setFirstName(e.target.value)}
@@ -310,13 +313,15 @@ export default function Main() {
 
           <div>
             <div className={styles.name}>
-              <h4>Last Name*</h4>
+              <h4>Last Name* {lastName} </h4>
             </div>
 
             <div className={styles.inputField}>
               <input
-                type="text"
+                type="name"
                 placeholder="ex. Nnamdi"
+                value={lastName}
+                onChange={(e) => setLastName(e.target.value)}
                 className={styles.inputField}
               />
             </div>
@@ -324,13 +329,15 @@ export default function Main() {
 
           <div>
             <div className={styles.name}>
-              <h4>Email*</h4>
+              <h4>Email* {email} </h4>
             </div>
 
             <div className={styles.inputField}>
               <input
-                type="text"
+                type="email"
                 placeholder="ex. mike.nnamdi@example.com"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 className={styles.inputField}
               />
             </div>
@@ -338,13 +345,15 @@ export default function Main() {
 
           <div>
             <div className={styles.name}>
-              <h4>Phone Number*</h4>
+              <h4>Phone Number* {phoneNumber} </h4>
             </div>
 
             <div className={styles.inputField}>
               <input
-                type="text"
+                type="number"
                 placeholder="ex. +234 555 555 5555"
+                value={phoneNumber}
+                onChange={(e) => setPhoneNumber(e.target.value)}
                 className={styles.inputField}
               />
             </div>
