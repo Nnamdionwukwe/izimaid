@@ -94,6 +94,10 @@ export default function Main() {
     setSelectBathRooms(false);
   }
 
+  function handleSelectedBedRoomsValueNone() {
+    setSelectBedRoomsValue("none");
+    setSelectBedRooms(false);
+  }
   function handleSelectedBedRoomsValue1() {
     setSelectBedRoomsValue(1);
     setSelectBedRooms(false);
@@ -127,6 +131,10 @@ export default function Main() {
     setSelectBedRooms(false);
   }
 
+  function handleSelectedBathRoomsValueNone() {
+    setSelectBathRoomsValue("none");
+    setSelectBathRooms(false);
+  }
   function handleSelectedBathRoomsValue1() {
     setSelectBathRoomsValue(1);
     setSelectBathRooms(false);
@@ -159,6 +167,10 @@ export default function Main() {
     setSelectedOfficeBathRooms(false);
   }
 
+  function lightCommercialSelectedOfficeValueNone() {
+    setLightCommercialSelectedOfficeValue("none");
+    setSelectedOffice(false);
+  }
   function lightCommercialSelectedOfficeValue1() {
     setLightCommercialSelectedOfficeValue(1);
     setSelectedOffice(false);
@@ -192,6 +204,10 @@ export default function Main() {
     setSelectedOffice(false);
   }
 
+  function handlelightCommercialSelectedOfficeBathRoomsValueNone() {
+    setLightCommercialSelectedOfficeBathRoomsValue("None");
+    setSelectedOfficeBathRooms(false);
+  }
   function handlelightCommercialSelectedOfficeBathRoomsValue1() {
     setLightCommercialSelectedOfficeBathRoomsValue(1);
     setSelectedOfficeBathRooms(false);
@@ -502,6 +518,8 @@ export default function Main() {
                     >
                       <>{selectBedRoomsValue === "" && <p>Select</p>}</>
 
+                      <>{selectBedRoomsValue === "none" && <p>None</p>}</>
+
                       <>
                         {selectBedRoomsValue === 1 && (
                           <p>{selectBedRoomsValue}</p>
@@ -538,6 +556,13 @@ export default function Main() {
                     {selectBedRooms && (
                       <div className={styles.selectBedRoomsMain}>
                         <div className={styles.selectBedRooms}>
+                          <p
+                            onClick={handleSelectedBedRoomsValueNone}
+                            value={selectBedRoomsValue}
+                          >
+                            None
+                          </p>
+
                           <p
                             onClick={handleSelectedBedRoomsValue1}
                             value={selectBedRoomsValue}
@@ -597,6 +622,8 @@ export default function Main() {
                     >
                       <>{selectBathRoomsValue === "" && <p>Select</p>}</>
 
+                      <>{selectBathRoomsValue === "none" && <p>None</p>}</>
+
                       <>
                         {selectBathRoomsValue === 1 && (
                           <p>{selectBathRoomsValue}</p>
@@ -633,6 +660,13 @@ export default function Main() {
                     {selectBathRooms && (
                       <div className={styles.selectBedRoomsMain}>
                         <div className={styles.selectBedRooms}>
+                          <p
+                            onClick={handleSelectedBathRoomsValueNone}
+                            value={selectBathRoomsValue}
+                          >
+                            None
+                          </p>
+
                           <p
                             onClick={handleSelectedBathRoomsValue1}
                             value={selectBathRoomsValue}
@@ -694,6 +728,15 @@ export default function Main() {
                 </div>
               </div>
 
+              {/*LIGHT COMMERCIAL  OFFICES */}
+              {/*LIGHT COMMERCIAL  OFFICES */}
+              {/*LIGHT COMMERCIAL  OFFICES */}
+              {/*LIGHT COMMERCIAL  OFFICES */}
+              {/*LIGHT COMMERCIAL  OFFICES */}
+              {/*LIGHT COMMERCIAL  OFFICES */}
+              {/*LIGHT COMMERCIAL  OFFICES */}
+              {/*LIGHT COMMERCIAL OFFICES */}
+
               <div className={styles.bedroomsDivMain}>
                 <div className={styles.bedroomsDiv}>
                   <div className={styles.name}>
@@ -708,6 +751,12 @@ export default function Main() {
                       <>
                         {lightCommercialSelectedOfficeValue === "" && (
                           <p>Select</p>
+                        )}
+                      </>
+
+                      <>
+                        {lightCommercialSelectedOfficeValue === "none" && (
+                          <p>None</p>
                         )}
                       </>
 
@@ -748,6 +797,13 @@ export default function Main() {
                       <div className={styles.selectBedRoomsMain}>
                         <div className={styles.selectBedRooms}>
                           <p
+                            onClick={lightCommercialSelectedOfficeValueNone}
+                            value={lightCommercialSelectedOfficeValue}
+                          >
+                            None
+                          </p>
+
+                          <p
                             onClick={lightCommercialSelectedOfficeValue1}
                             value={lightCommercialSelectedOfficeValue}
                           >
@@ -785,14 +841,14 @@ export default function Main() {
                   </div>
                 </div>
 
-                {/* BATHROOM */}
-                {/* BATHROOM */}
-                {/* BATHROOM */}
-                {/* BATHROOM */}
-                {/* BATHROOM */}
-                {/* BATHROOM */}
-                {/* BATHROOM */}
-                {/* BATHROOM */}
+                {/*LIGHT COMMERCIAL  BATHROOM */}
+                {/*LIGHT COMMERCIAL  BATHROOM */}
+                {/*LIGHT COMMERCIAL  BATHROOM */}
+                {/*LIGHT COMMERCIAL  BATHROOM */}
+                {/*LIGHT COMMERCIAL  BATHROOM */}
+                {/*LIGHT COMMERCIAL  BATHROOM */}
+                {/*LIGHT COMMERCIAL  BATHROOM */}
+                {/*LIGHT COMMERCIAL BATHROOM */}
 
                 <div className={styles.bathroomsDiv}>
                   <div className={styles.name}>
@@ -807,6 +863,13 @@ export default function Main() {
                       <>
                         {lightCommercialSelectedOfficeBathRoomsValue === "" && (
                           <p>Select</p>
+                        )}
+                      </>
+
+                      <>
+                        {lightCommercialSelectedOfficeBathRoomsValue ===
+                          "None" && (
+                          <p>{lightCommercialSelectedOfficeBathRoomsValue}</p>
                         )}
                       </>
 
@@ -846,6 +909,15 @@ export default function Main() {
                     {selectedOfficeBathRooms && (
                       <div className={styles.selectBedRoomsMain}>
                         <div className={styles.selectBedRooms}>
+                          <p
+                            onClick={
+                              handlelightCommercialSelectedOfficeBathRoomsValueNone
+                            }
+                            value={lightCommercialSelectedOfficeBathRoomsValue}
+                          >
+                            None
+                          </p>
+
                           <p
                             onClick={
                               handlelightCommercialSelectedOfficeBathRoomsValue1
