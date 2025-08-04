@@ -43,7 +43,7 @@ export default function Main() {
   const [selectBathRooms, setSelectBathRooms] = useState(false);
   const [selectedOffice, setSelectedOffice] = useState(false);
   const [selectedOfficeBathRooms, setSelectedOfficeBathRooms] = useState(false);
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpenCheck, setIsOpenCheck] = useState(false);
   const [residential, setResidential] = useState(true);
   const [recurring, setRecurring] = useState(true);
   const [oneTime, setOneTime] = useState(false);
@@ -286,21 +286,30 @@ export default function Main() {
   function handleFirstName(e) {
     setFirstName(e.target.value);
     firstName.length >= 0 && setIsOpen1(false);
+    !firstName.length ? setIsOpenCheck(false) : setIsOpenCheck(false);
   }
 
   function handleSubmitForm() {
-    !firstName.length ? setIsOpen1(true) : setIsOpen1(false);
+    !firstName.length && setIsOpenCheck(false);
+    if (!firstName.length) return setIsOpen1(true);
+    setFirstName("");
+
+    setIsOpenCheck(true);
   }
 
   return (
     <div className={styles.mainDiv}>
       <div>
         <div className={styles.checkMarkMain}>
-          <p className={styles.checkMark}>&#10004;</p>
+          {!isOpenCheck ? (
+            <p className={styles.checkMark}>&#10004;</p>
+          ) : (
+            <p className={styles.checkMark1}></p>
+          )}
 
           <p className={styles.borderLine}></p>
 
-          {isOpen ? (
+          {isOpenCheck ? (
             <p className={styles.checkMark}> &#10004;</p>
           ) : (
             <p className={styles.checkMark1}></p>
