@@ -40,11 +40,15 @@ export default function Main() {
   function handleResidential() {
     setResidential(true);
     setLightCommercial(false);
+    setSelectedOffice(false);
+    setSelectedOfficeBathRooms(false);
   }
 
   function handleCommercial() {
     setResidential(false);
     setOneTime(false);
+    setSelectBedRooms(false);
+    setSelectBathRooms(false);
     // setRecurring(false);
     setLightCommercial(true);
   }
