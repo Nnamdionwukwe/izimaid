@@ -7,8 +7,6 @@ export default function Main() {
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
-  const [selectBedRoomsValue, setSelectBedRoomsValue] = useState("");
-  const [selectBathRoomsValue, setSelectBathRoomsValue] = useState("");
   const [zipCode, setZipCode] = useState("");
   const [servicesAddress, setServiceAddress] = useState("");
   const [apartmentOrSuite, setApartmentOrSuite] = useState("");
@@ -16,6 +14,8 @@ export default function Main() {
     useState("");
   const [lightCommercialOfficeSquareFeet, setLightCommercialOfficeSquareFeet] =
     useState("");
+  const [selectBedRoomsValue, setSelectBedRoomsValue] = useState("");
+  const [selectBathRoomsValue, setSelectBathRoomsValue] = useState("");
 
   const [
     lightCommercialSelectedOfficeValue,
@@ -35,9 +35,15 @@ export default function Main() {
 
   //NORMAL TOGGLE STATE
   const [isOpen1, setIsOpen1] = useState(false);
-  const [isOpen2, setIsOpen2] = useState(true);
-  const [isOpen3, setIsOpen3] = useState(true);
-  const [isOpen4, setIsOpen4] = useState(true);
+  const [isOpen2, setIsOpen2] = useState(false);
+  const [isOpen3, setIsOpen3] = useState(false);
+  const [isOpen4, setIsOpen4] = useState(false);
+  const [isOpen5, setIsOpen5] = useState(false);
+  const [isOpen6, setIsOpen6] = useState(false);
+  const [isOpen7, setIsOpen7] = useState(false);
+  const [isOpen8, setIsOpen8] = useState(false);
+  const [isOpen9, setIsOpen9] = useState(false);
+  const [isOpen10, setIsOpen10] = useState(false);
 
   const [selectBedRooms, setSelectBedRooms] = useState(false);
   const [selectBathRooms, setSelectBathRooms] = useState(false);
@@ -112,26 +118,44 @@ export default function Main() {
   function handleSelectedBedRoomsValueNone() {
     setSelectBedRoomsValue("none");
     setSelectBedRooms(false);
+
+    //CALL THE SELECTED BEDROOMS FUNCTION
+    handleResidentialBedRooms();
   }
   function handleSelectedBedRoomsValue1() {
     setSelectBedRoomsValue(1);
     setSelectBedRooms(false);
+
+    //CALL THE SELECTED BEDROOMS FUNCTION
+    handleResidentialBedRooms();
   }
   function handleSelectedBedRoomsValue2() {
     setSelectBedRoomsValue(2);
     setSelectBedRooms(false);
+
+    //CALL THE SELECTED BEDROOMS FUNCTION
+    handleResidentialBedRooms();
   }
   function handleSelectedBedRoomsValue3() {
     setSelectBedRoomsValue(3);
     setSelectBedRooms(false);
+
+    //CALL THE SELECTED BEDROOMS FUNCTION
+    handleResidentialBedRooms();
   }
   function handleSelectedBedRoomsValue4() {
     setSelectBedRoomsValue(4);
     setSelectBedRooms(false);
+
+    //CALL THE SELECTED BEDROOMS FUNCTION
+    handleResidentialBedRooms();
   }
   function handleSelectedBedRoomsValue5() {
     setSelectBedRoomsValue(5);
     setSelectBedRooms(false);
+
+    //CALL THE SELECTED BEDROOMS FUNCTION
+    handleResidentialBedRooms();
   }
 
   //BATHROOM
@@ -283,19 +307,75 @@ export default function Main() {
     setLightCommercialRecurring("");
   }
 
-  //INPUT FORMS
-  //INPUT FORMS
-  //INPUT FORMS
+  //FIRST NAME INPUT FORMS
   function handleFirstName(e) {
     setFirstName(e.target.value);
     firstName.length >= 0 && setIsOpen1(false);
-    !firstName.length ? setIsOpenCheck(false) : setIsOpenCheck(false);
+    !firstName.length && setIsOpenCheck(false);
   }
 
+  //LAST NAME  INPUT FORMS
   function handleLastName(e) {
     setLastName(e.target.value);
-    lastName.length >= 0 && setIsOpen1(false);
-    !lastName.length ? setIsOpenCheck(false) : setIsOpenCheck(false);
+    lastName.length >= 0 && setIsOpen2(false);
+    !lastName.length && setIsOpenCheck(false);
+  }
+
+  //EMAIL ADRESS  INPUT FORMS
+  function handleEmailAddress(e) {
+    setEmail(e.target.value);
+    email.length >= 0 && setIsOpen3(false);
+    !email.length && setIsOpenCheck(false);
+  }
+
+  //PHONE NUMBER  INPUT FORMS
+  function handlePhoneNumber(e) {
+    setPhoneNumber(e.target.value);
+    phoneNumber.length >= 0 && setIsOpen4(false);
+    !phoneNumber.length && setIsOpenCheck(false);
+  }
+
+  //APARTMENT/SUITE   INPUT FORMS
+  function handleZipCode(e) {
+    setZipCode(e.target.value);
+    zipCode.length >= 0 && setIsOpen5(false);
+    !zipCode.length && setIsOpenCheck(false);
+  }
+
+  //SERVICE ADDRESS  INPUT FORMS
+  function handleServiceAddress(e) {
+    setServiceAddress(e.target.value);
+    servicesAddress.length >= 0 && setIsOpen6(false);
+    !servicesAddress.length && setIsOpenCheck(false);
+    // !servicesAddress.length ? setIsOpenCheck(false) : setIsOpenCheck(false);
+  }
+
+  //RESIDENTIAL HOME SQUARE FEET INPUT FORMS
+  function handleResidentialHomeSquareFeet(e) {
+    setResidentialHomeSquareFeet(e.target.value);
+    residentialHomeSquareFeet.length >= 0 && setIsOpen7(false);
+    !residentialHomeSquareFeet.length && setIsOpenCheck(false);
+  }
+
+  //LIGHT COMMERCIAL OFFICE SQUARE FEET INPUT FORMS
+  function handleLightCommercialOfficeSquareFeet(e) {
+    setLightCommercialOfficeSquareFeet(e.target.value);
+    lightCommercialOfficeSquareFeet.length >= 0 && setIsOpen8(false);
+    !lightCommercialOfficeSquareFeet.length && setIsOpenCheck(false);
+  }
+
+  //SELECT RESIDENTIAL BEDROOM VALUE INPUT FORMS
+  function handleResidentialBedRooms(e) {
+    // setSelectBathRooms(e.target.value);
+    selectBedRoomsValue.length >= 0 && setIsOpen9(false);
+    !selectBedRoomsValue.length && setIsOpenCheck(false);
+  }
+
+  //SELECT RESIDENTIAL BATHROOM VALUE INPUT FORM
+  function handleResidentialBathRoom(e) {
+    setLightCommercialOfficeSquareFeet(e.target.value);
+    lightCommercialOfficeSquareFeet.length >= 0 && setIsOpen10(false);
+    !lightCommercialOfficeSquareFeet.length && setIsOpenCheck(false);
   }
 
   //FORM SUBMIT BUTTON
@@ -303,14 +383,54 @@ export default function Main() {
   //FORM SUBMIT BUTTON
   function handleSubmitForm() {
     !firstName.length && setIsOpenCheck(false);
-    if (!firstName.length) return setIsOpen1(true);
-    setFirstName("");
+    !firstName.length && setIsOpen1(true);
 
     !lastName.length && setIsOpenCheck(false);
-    if (!lastName.length) return setIsOpen1(true);
-    setLastName("");
+    !lastName.length && setIsOpen2(true);
 
-    setIsOpenCheck(true);
+    !email.length && setIsOpenCheck(false);
+    !email.length && setIsOpen3(true);
+
+    !phoneNumber.length && setIsOpenCheck(false);
+    !phoneNumber.length && setIsOpen4(true);
+
+    !zipCode.length && setIsOpenCheck(false);
+    !zipCode.length && setIsOpen5(true);
+
+    !servicesAddress.length && setIsOpenCheck(false);
+    !servicesAddress.length && setIsOpen6(true);
+
+    !residentialHomeSquareFeet.length && setIsOpenCheck(false);
+    !residentialHomeSquareFeet.length && setIsOpen7(true);
+
+    !lightCommercialOfficeSquareFeet.length && setIsOpenCheck(false);
+    !lightCommercialOfficeSquareFeet.length && setIsOpen8(true);
+
+    !selectBedRoomsValue.length && setIsOpenCheck(false);
+    !selectBedRoomsValue.length && setIsOpen9(true);
+
+    if (
+      firstName.length >= 1 &&
+      lastName.length >= 1 &&
+      email.length >= 1 &&
+      phoneNumber.length >= 1 &&
+      servicesAddress.length >= 1 &&
+      zipCode.length >= 1 &&
+      residentialHomeSquareFeet.length >= 1 &&
+      lightCommercialOfficeSquareFeet.length >= 1 &&
+      selectBedRoomsValue.length >= 1
+    ) {
+      setIsOpenCheck(true),
+        setFirstName(""),
+        setLastName(""),
+        setEmail(""),
+        setPhoneNumber(""),
+        setServiceAddress(""),
+        setZipCode(""),
+        setSelectBedRoomsValue("");
+    } else {
+      setIsOpenCheck(false);
+    }
   }
 
   return (
@@ -374,7 +494,7 @@ export default function Main() {
               />
             </div>
 
-            {isOpen1 && <p className={styles.error}>Enter the last name</p>}
+            {isOpen2 && <p className={styles.error}>Enter the last name</p>}
           </div>
 
           <div>
@@ -387,10 +507,13 @@ export default function Main() {
                 type="email"
                 placeholder="ex. mike.nnamdi@example.com"
                 value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                onChange={handleEmailAddress}
                 className={styles.inputField}
               />
             </div>
+            {isOpen3 && (
+              <p className={styles.error}>Enter a valid email address</p>
+            )}
           </div>
 
           <div>
@@ -403,10 +526,11 @@ export default function Main() {
                 type="number"
                 placeholder="ex. +234 555 555 5555"
                 value={phoneNumber}
-                onChange={(e) => setPhoneNumber(e.target.value)}
+                onChange={handlePhoneNumber}
                 className={styles.inputField}
               />
             </div>
+            {isOpen4 && <p className={styles.error}>Enter the phone number</p>}
           </div>
 
           <div className={styles.yesDiv}>
@@ -441,10 +565,11 @@ export default function Main() {
                 type="number"
                 placeholder="ex. 900001"
                 value={zipCode}
-                onChange={(e) => setZipCode(e.target.value)}
+                onChange={handleZipCode}
                 className={styles.inputField}
               />
             </div>
+            {isOpen5 && <p className={styles.error}>Enter a valid ZIP code</p>}
           </div>
 
           <div>
@@ -457,10 +582,13 @@ export default function Main() {
                 type="address"
                 placeholder="ex. 1234 Example St Abuja, FCT"
                 value={servicesAddress}
-                onChange={(e) => setServiceAddress(e.target.value)}
+                onChange={handleServiceAddress}
                 className={styles.inputField}
               />
             </div>
+            {isOpen6 && (
+              <p className={styles.error}>Enter a valid service address</p>
+            )}
           </div>
 
           <div>
@@ -566,12 +694,13 @@ export default function Main() {
                     type="text"
                     placeholder="2000"
                     value={residentialHomeSquareFeet}
-                    onChange={(e) =>
-                      setResidentialHomeSquareFeet(e.target.value)
-                    }
+                    onChange={handleResidentialHomeSquareFeet}
                     className={styles.inputField}
                   />
                 </div>
+                {isOpen7 && (
+                  <p className={styles.error}>Enter a valid square feet</p>
+                )}
               </div>
 
               <div className={styles.bedroomsDivMain}>
@@ -668,6 +797,10 @@ export default function Main() {
                       </div>
                     )}
                   </div>
+
+                  {isOpen9 && (
+                    <p className={styles.error}>Please select an option</p>
+                  )}
                 </div>
 
                 {/* BATHROOM */}
@@ -725,6 +858,10 @@ export default function Main() {
 
                       {selectBathRooms ? <p>&uarr;</p> : <p> &darr;</p>}
                     </div>
+
+                    {isOpen10 && (
+                      <p className={styles.error}>Please select an option</p>
+                    )}
 
                     {selectBathRooms && (
                       <div className={styles.selectBedRoomsMain}>
@@ -793,12 +930,13 @@ export default function Main() {
                     type="text"
                     placeholder="2000"
                     value={lightCommercialOfficeSquareFeet}
-                    onChange={(e) =>
-                      setLightCommercialOfficeSquareFeet(e.target.value)
-                    }
+                    onChange={handleLightCommercialOfficeSquareFeet}
                     className={styles.inputField}
                   />
                 </div>
+                {isOpen8 && (
+                  <p className={styles.error}>Enter a valid square feet</p>
+                )}
               </div>
 
               {/*LIGHT COMMERCIAL  OFFICES */}
@@ -865,6 +1003,10 @@ export default function Main() {
 
                       {selectedOffice ? <p>&uarr;</p> : <p> &darr;</p>}
                     </div>
+
+                    {isOpen6 && (
+                      <p className={styles.error}>Please select an option</p>
+                    )}
 
                     {selectedOffice && (
                       <div className={styles.selectBedRoomsMain}>
