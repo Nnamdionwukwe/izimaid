@@ -34,7 +34,7 @@ export default function Main() {
     useState("yes");
 
   //NORMAL TOGGLE STATE
-  const [isOpen1, setIsOpen1] = useState(true);
+  const [isOpen1, setIsOpen1] = useState(false);
   const [isOpen2, setIsOpen2] = useState(true);
   const [isOpen3, setIsOpen3] = useState(true);
   const [isOpen4, setIsOpen4] = useState(true);
@@ -283,6 +283,15 @@ export default function Main() {
     setLightCommercialRecurring("");
   }
 
+  function handleFirstName(e) {
+    setFirstName(e.target.value);
+    firstName.length >= 0 && setIsOpen1(false);
+  }
+
+  function handleSubmitForm() {
+    !firstName.length ? setIsOpen1(true) : setIsOpen1(false);
+  }
+
   return (
     <div className={styles.mainDiv}>
       <div>
@@ -317,7 +326,7 @@ export default function Main() {
                 type="name"
                 placeholder="ex. Mike"
                 value={firstName}
-                onChange={(e) => setFirstName(e.target.value)}
+                onChange={handleFirstName}
                 className={styles.inputField}
               />
             </div>
@@ -1181,11 +1190,11 @@ export default function Main() {
         </p>
       </div>
 
-      <div className={styles.submitButton}>
+      <form onClick={handleSubmitForm} className={styles.submitButton}>
         <h4>Submit and Continue</h4>
 
         <p>&rarr;</p>
-      </div>
+      </form>
 
       <div>
         <p className={styles.term}>
