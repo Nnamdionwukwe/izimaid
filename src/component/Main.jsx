@@ -34,6 +34,11 @@ export default function Main() {
     useState("yes");
 
   //NORMAL TOGGLE STATE
+  const [isOpen1, setIsOpen1] = useState(true);
+  const [isOpen2, setIsOpen2] = useState(true);
+  const [isOpen3, setIsOpen3] = useState(true);
+  const [isOpen4, setIsOpen4] = useState(true);
+
   const [selectBedRooms, setSelectBedRooms] = useState(false);
   const [selectBathRooms, setSelectBathRooms] = useState(false);
   const [selectedOffice, setSelectedOffice] = useState(false);
@@ -316,6 +321,7 @@ export default function Main() {
                 className={styles.inputField}
               />
             </div>
+            {isOpen1 && <p className={styles.error}>Enter the first name</p>}
           </div>
 
           <div>
