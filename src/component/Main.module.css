@@ -204,6 +204,11 @@
 }
 
 .selectBedRoomsMain {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: 20px;
+  width: 40%;
   background: rgb(227, 224, 224);
   margin-top: -1px;
   padding: 0px 12px 12px 12px;

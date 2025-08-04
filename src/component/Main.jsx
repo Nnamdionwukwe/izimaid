@@ -152,7 +152,7 @@ export default function Main() {
 
   function handleLightCommercialSelectedOffice() {
     setSelectedOffice((is) => !is);
-    // setSelectedOffice(false);
+    setSelectedOfficeBathRooms(false);
   }
 
   function lightCommercialSelectedOfficeValue1() {
@@ -174,6 +174,39 @@ export default function Main() {
   function lightCommercialSelectedOfficeValue5() {
     setLightCommercialSelectedOfficeValue(5);
     setSelectedOffice(false);
+  }
+
+  ///LIGHT COMMERCIAL OFFICES BATHROOM
+  //LIGHT COMMERCIAL OFFICES ATHROOM
+  ///LIGHT COMMERCIAL OFFICES BATHROOM
+  ///LIGHT COMMERCIAL OFFICES BATHROOM
+  ///LIGHT COMMERCIAL OFFICES BATHROOM
+  ///LIGHT COMMERCIAL OFFICES BATHROOM
+
+  function handleLightCommercialSelectedOfficeBathRooms() {
+    setSelectedOfficeBathRooms((is) => !is);
+    setSelectedOffice(false);
+  }
+
+  function handlelightCommercialSelectedOfficeBathRoomsValue1() {
+    setLightCommercialSelectedOfficeBathRoomsValue(1);
+    setSelectedOfficeBathRooms(false);
+  }
+  function handlelightCommercialSelectedOfficeBathRoomsValue2() {
+    setLightCommercialSelectedOfficeBathRoomsValue(2);
+    setSelectedOfficeBathRooms(false);
+  }
+  function handlelightCommercialSelectedOfficeBathRoomsValue3() {
+    setLightCommercialSelectedOfficeBathRoomsValue(3);
+    setSelectedOfficeBathRooms(false);
+  }
+  function handlelightCommercialSelectedOfficeBathRoomsValue4() {
+    setLightCommercialSelectedOfficeBathRoomsValue(4);
+    setSelectedOfficeBathRooms(false);
+  }
+  function handlelightCommercialSelectedOfficeBathRoomsValue5() {
+    setLightCommercialSelectedOfficeBathRoomsValue(5);
+    setSelectedOfficeBathRooms(false);
   }
 
   //LIGHT COMMERCIAL RECURRING
@@ -661,9 +694,6 @@ export default function Main() {
                 <div className={styles.bedroomsDiv}>
                   <div className={styles.name}>
                     <h4>Offices*</h4>
-                    {/* <p>{selectBathRoomsValue}</p>
-
-                    <p>{selectBedRoomsValue}</p> */}
                   </div>
 
                   <div>
@@ -767,76 +797,90 @@ export default function Main() {
 
                   <div>
                     <div
-                      onClick={handleSelectBathRooms}
+                      onClick={handleLightCommercialSelectedOfficeBathRooms}
                       className={styles.select}
                     >
-                      <>{selectBathRoomsValue === "" && <p>Select</p>}</>
-
                       <>
-                        {selectBathRoomsValue === 1 && (
-                          <p>{selectBathRoomsValue}</p>
+                        {lightCommercialSelectedOfficeBathRoomsValue === "" && (
+                          <p>Select</p>
                         )}
                       </>
 
                       <>
-                        {selectBathRoomsValue === 2 && (
-                          <p>{selectBathRoomsValue}</p>
+                        {lightCommercialSelectedOfficeBathRoomsValue === 1 && (
+                          <p>{lightCommercialSelectedOfficeBathRoomsValue}</p>
                         )}
                       </>
 
                       <>
-                        {selectBathRoomsValue === 3 && (
-                          <p>{selectBathRoomsValue}</p>
+                        {lightCommercialSelectedOfficeBathRoomsValue === 2 && (
+                          <p>{lightCommercialSelectedOfficeBathRoomsValue}</p>
                         )}
                       </>
 
                       <>
-                        {selectBathRoomsValue === 4 && (
-                          <p>{selectBathRoomsValue}</p>
+                        {lightCommercialSelectedOfficeBathRoomsValue === 3 && (
+                          <p>{lightCommercialSelectedOfficeBathRoomsValue}</p>
                         )}
                       </>
 
                       <>
-                        {selectBathRoomsValue === 5 && (
-                          <p>{selectBathRoomsValue}</p>
+                        {lightCommercialSelectedOfficeBathRoomsValue === 4 && (
+                          <p>{lightCommercialSelectedOfficeBathRoomsValue}</p>
                         )}
                       </>
 
-                      {selectBathRooms ? <p>&uarr;</p> : <p> &darr;</p>}
+                      <>
+                        {lightCommercialSelectedOfficeBathRoomsValue === 5 && (
+                          <p>{lightCommercialSelectedOfficeBathRoomsValue}</p>
+                        )}
+                      </>
+
+                      {selectedOfficeBathRooms ? <p>&uarr;</p> : <p> &darr;</p>}
                     </div>
 
-                    {selectBathRooms && (
+                    {selectedOfficeBathRooms && (
                       <div className={styles.selectBedRoomsMain}>
                         <div className={styles.selectBedRooms}>
                           <p
-                            onClick={handleSelectedBathRoomsValue1}
-                            value={selectBathRoomsValue}
+                            onClick={
+                              handlelightCommercialSelectedOfficeBathRoomsValue1
+                            }
+                            value={lightCommercialSelectedOfficeBathRoomsValue}
                           >
                             1
                           </p>
 
                           <p
-                            onClick={handleSelectedBathRoomsValue2}
-                            value={selectBathRoomsValue}
+                            onClick={
+                              handlelightCommercialSelectedOfficeBathRoomsValue2
+                            }
+                            value={lightCommercialSelectedOfficeBathRoomsValue}
                           >
                             2
                           </p>
 
                           <p
-                            onClick={handleSelectedBathRoomsValue3}
-                            value={selectBathRoomsValue}
+                            onClick={
+                              handlelightCommercialSelectedOfficeBathRoomsValue3
+                            }
+                            value={lightCommercialSelectedOfficeBathRoomsValue}
                           >
                             3
                           </p>
                           <p
-                            onClick={handleSelectedBathRoomsValue4}
-                            value={selectBathRoomsValue}
+                            onClick={
+                              handlelightCommercialSelectedOfficeBathRoomsValue4
+                            }
+                            value={lightCommercialSelectedOfficeBathRoomsValue}
                           >
                             4
                           </p>
                           <p
-                            onClick={handleSelectedBathRoomsValue5}
-                            value={selectBathRoomsValue}
+                            onClick={
+                              handlelightCommercialSelectedOfficeBathRoomsValue5
+                            }
+                            value={lightCommercialSelectedOfficeBathRoomsValue}
                           >
                             5
                           </p>
