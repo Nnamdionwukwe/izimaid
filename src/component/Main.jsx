@@ -1200,7 +1200,7 @@ export default function Main() {
       </div>
 
       <form onClick={handleSubmitForm} className={styles.submitButton}>
-        <h4>Submit and Continue</h4>
+        {!isOpenCheck ? <h4>Submit and Continue</h4> : <h4>Form Submitted</h4>}
 
         <p>&rarr;</p>
       </form>
