@@ -8,7 +8,9 @@ export default function Main() {
   const [email, setEmail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [selectBedRoomsValue, setSelectBedRoomsValue] = useState("");
-  const [selectBathRoomsValue, setSelectBathRoomsValue] = useState("");
+  const [zipCode, setZipCode] = useState("");
+  const [servicesAddress, setServiceAddress] = useState("");
+  const [apartmentOrSuite, setApartmentOrSuite] = useState("");
 
   const [
     lightCommercialSelectedOfficeValue,
@@ -383,13 +385,15 @@ export default function Main() {
 
           <div>
             <div className={styles.name}>
-              <h4>ZIP Code*</h4>
+              <h4>ZIP Code* {zipCode} </h4>
             </div>
 
             <div className={styles.inputField}>
               <input
-                type="text"
+                type="number"
                 placeholder="ex. 900001"
+                value={zipCode}
+                onChange={(e) => setZipCode(e.target.value)}
                 className={styles.inputField}
               />
             </div>
@@ -397,13 +401,15 @@ export default function Main() {
 
           <div>
             <div className={styles.name}>
-              <h4>Service Address*</h4>
+              <h4>Service Address* {servicesAddress} </h4>
             </div>
 
             <div className={styles.inputField}>
               <input
-                type="text"
+                type="address"
                 placeholder="ex. 1234 Example St Abuja, FCT"
+                value={servicesAddress}
+                onChange={(e) => setServiceAddress(e.target.value)}
                 className={styles.inputField}
               />
             </div>
@@ -411,13 +417,15 @@ export default function Main() {
 
           <div>
             <div className={styles.name}>
-              <h4>Apartment/Suite (optional)</h4>
+              <h4>Apartment/Suite (optional) {apartmentOrSuite}</h4>
             </div>
 
             <div className={styles.inputField}>
               <input
                 type="text"
                 placeholder="ex. 123, Suite A, Unit 6B"
+                value={apartmentOrSuite}
+                onChange={(e) => setApartmentOrSuite(e.target.value)}
                 className={styles.inputField}
               />
             </div>
