@@ -299,7 +299,7 @@ export default function Main() {
 
           <div>
             <div className={styles.name}>
-              <h4>First Name* {firstName} </h4>
+              <h4>First Name*</h4>
             </div>
 
             <div className={styles.inputField}>
@@ -315,7 +315,7 @@ export default function Main() {
 
           <div>
             <div className={styles.name}>
-              <h4>Last Name* {lastName} </h4>
+              <h4>Last Name*</h4>
             </div>
 
             <div className={styles.inputField}>
@@ -331,7 +331,7 @@ export default function Main() {
 
           <div>
             <div className={styles.name}>
-              <h4>Email* {email} </h4>
+              <h4>Email*</h4>
             </div>
 
             <div className={styles.inputField}>
@@ -347,7 +347,7 @@ export default function Main() {
 
           <div>
             <div className={styles.name}>
-              <h4>Phone Number* {phoneNumber} </h4>
+              <h4>Phone Number*</h4>
             </div>
 
             <div className={styles.inputField}>
@@ -385,7 +385,7 @@ export default function Main() {
 
           <div>
             <div className={styles.name}>
-              <h4>ZIP Code* {zipCode} </h4>
+              <h4>ZIP Code*</h4>
             </div>
 
             <div className={styles.inputField}>
@@ -401,7 +401,7 @@ export default function Main() {
 
           <div>
             <div className={styles.name}>
-              <h4>Service Address* {servicesAddress} </h4>
+              <h4>Service Address*</h4>
             </div>
 
             <div className={styles.inputField}>
@@ -417,7 +417,7 @@ export default function Main() {
 
           <div>
             <div className={styles.name}>
-              <h4>Apartment/Suite (optional) {apartmentOrSuite}</h4>
+              <h4>Apartment/Suite (optional)</h4>
             </div>
 
             <div className={styles.inputField}>
