@@ -8,9 +8,14 @@ export default function Main() {
   const [email, setEmail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [selectBedRoomsValue, setSelectBedRoomsValue] = useState("");
+  const [selectBathRoomsValue, setSelectBathRoomsValue] = useState("");
   const [zipCode, setZipCode] = useState("");
   const [servicesAddress, setServiceAddress] = useState("");
   const [apartmentOrSuite, setApartmentOrSuite] = useState("");
+  const [residentialHomeSquareFeet, setResidentialHomeSquareFeet] =
+    useState("");
+  const [lightCommercialOfficeSquareFeet, setLightCommercialOfficeSquareFeet] =
+    useState("");
 
   const [
     lightCommercialSelectedOfficeValue,
@@ -68,15 +73,15 @@ export default function Main() {
     setRecurring(true);
   }
 
-  function handleClickOneTime2() {
-    // setOneTime(true);
-    // setRecurring(false);
-  }
+  // function handleClickOneTime2() {
+  //   // setOneTime(true);
+  //   // setRecurring(false);
+  // }
 
-  function handleRecurring2() {
-    // setOneTime(false);
-    // setRecurring(true);
-  }
+  // function handleRecurring2() {
+  //   // setOneTime(false);
+  //   // setRecurring(true);
+  // }
 
   function handleOneWeek() {
     setOneWeek(true);
@@ -517,6 +522,10 @@ export default function Main() {
                   <input
                     type="text"
                     placeholder="2000"
+                    value={residentialHomeSquareFeet}
+                    onChange={(e) =>
+                      setResidentialHomeSquareFeet(e.target.value)
+                    }
                     className={styles.inputField}
                   />
                 </div>
@@ -740,6 +749,10 @@ export default function Main() {
                   <input
                     type="text"
                     placeholder="2000"
+                    value={lightCommercialOfficeSquareFeet}
+                    onChange={(e) =>
+                      setLightCommercialOfficeSquareFeet(e.target.value)
+                    }
                     className={styles.inputField}
                   />
                 </div>
