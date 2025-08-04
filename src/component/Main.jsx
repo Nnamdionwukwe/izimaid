@@ -283,16 +283,32 @@ export default function Main() {
     setLightCommercialRecurring("");
   }
 
+  //INPUT FORMS
+  //INPUT FORMS
+  //INPUT FORMS
   function handleFirstName(e) {
     setFirstName(e.target.value);
     firstName.length >= 0 && setIsOpen1(false);
     !firstName.length ? setIsOpenCheck(false) : setIsOpenCheck(false);
   }
 
+  function handleLastName(e) {
+    setLastName(e.target.value);
+    lastName.length >= 0 && setIsOpen1(false);
+    !lastName.length ? setIsOpenCheck(false) : setIsOpenCheck(false);
+  }
+
+  //FORM SUBMIT BUTTON
+  //FORM SUBMIT BUTTON
+  //FORM SUBMIT BUTTON
   function handleSubmitForm() {
     !firstName.length && setIsOpenCheck(false);
     if (!firstName.length) return setIsOpen1(true);
     setFirstName("");
+
+    !lastName.length && setIsOpenCheck(false);
+    if (!lastName.length) return setIsOpen1(true);
+    setLastName("");
 
     setIsOpenCheck(true);
   }
@@ -339,6 +355,7 @@ export default function Main() {
                 className={styles.inputField}
               />
             </div>
+
             {isOpen1 && <p className={styles.error}>Enter the first name</p>}
           </div>
 
@@ -352,10 +369,12 @@ export default function Main() {
                 type="name"
                 placeholder="ex. Nnamdi"
                 value={lastName}
-                onChange={(e) => setLastName(e.target.value)}
+                onChange={handleLastName}
                 className={styles.inputField}
               />
             </div>
+
+            {isOpen1 && <p className={styles.error}>Enter the first name</p>}
           </div>
 
           <div>
