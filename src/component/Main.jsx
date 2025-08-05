@@ -117,7 +117,7 @@ export default function Main() {
   }
 
   function handleSelectedBedRoomsValueNone() {
-    setSelectBedRoomsValue("none");
+    setSelectBedRoomsValue("None");
     setSelectBedRooms(false);
 
     //SETS THE WARNING BACK TO FALSE
@@ -441,6 +441,12 @@ export default function Main() {
 
     !selectBedRoomsValue.length && setIsOpenCheck(false);
     !selectBedRoomsValue.length && setIsOpen9(true);
+    // selectBedRoomsValue === "None" && setIsOpen9(false);
+    selectBedRoomsValue === 1 && setIsOpen9(false);
+    selectBedRoomsValue === 2 && setIsOpen9(false);
+    selectBedRoomsValue === 3 && setIsOpen9(false);
+    selectBedRoomsValue === 4 && setIsOpen9(false);
+    selectBedRoomsValue === 5 && setIsOpen9(false);
 
     setFormSubmit(true);
 
@@ -453,7 +459,9 @@ export default function Main() {
       servicesAddress.length >= 1 &&
       residentialHomeSquareFeet.length >= 1 &&
       lightCommercialOfficeSquareFeet.length >= 1 &&
-      selectBedRoomsValue === 1
+      selectBedRoomsValue >= 1
+      // selectBedRoomsValue.length
+      // selectBedRoomsValue === "None"
     ) {
       setIsOpenCheck(true),
         setFirstName(""),
@@ -461,9 +469,12 @@ export default function Main() {
         setEmail(""),
         setPhoneNumber(""),
         setZipCode(""),
-        setServiceAddress("");
-      setResidentialHomeSquareFeet(""), setLightCommercialOfficeSquareFeet("");
-      setSelectBedRoomsValue(""), setFormSubmit(false);
+        setServiceAddress(""),
+        setApartmentOrSuite(""),
+        setResidentialHomeSquareFeet(""),
+        setLightCommercialOfficeSquareFeet(""),
+        setSelectBedRoomsValue(""),
+        setFormSubmit(false);
     } else {
       setIsOpenCheck(false);
     }
@@ -752,7 +763,11 @@ export default function Main() {
                     >
                       <>{selectBedRoomsValue === "" && <p>Select</p>}</>
 
-                      <>{selectBedRoomsValue === "none" && <p>None</p>}</>
+                      <>
+                        {selectBedRoomsValue === "None" && (
+                          <p>{selectBedRoomsValue}</p>
+                        )}
+                      </>
 
                       <>
                         {selectBedRoomsValue === 1 && (
@@ -1040,9 +1055,9 @@ export default function Main() {
                       {selectedOffice ? <p>&uarr;</p> : <p> &darr;</p>}
                     </div>
 
-                    {isOpen6 && (
+                    {/* {isOpen6 && (
                       <p className={styles.error}>Please select an option</p>
-                    )}
+                    )} */}
 
                     {selectedOffice && (
                       <div className={styles.selectBedRoomsMain}>
