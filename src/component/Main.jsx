@@ -44,6 +44,7 @@ export default function Main() {
   const [isOpen8, setIsOpen8] = useState(false);
   const [isOpen9, setIsOpen9] = useState(false);
   const [isOpen10, setIsOpen10] = useState(false);
+  const [formSubmit, setFormSubmit] = useState(false);
 
   const [selectBedRooms, setSelectBedRooms] = useState(false);
   const [selectBathRooms, setSelectBathRooms] = useState(false);
@@ -119,40 +120,63 @@ export default function Main() {
     setSelectBedRoomsValue("none");
     setSelectBedRooms(false);
 
+    //SETS THE WARNING BACK TO FALSE
+    setIsOpen9(false);
+
     //CALL THE SELECTED BEDROOMS FUNCTION
     handleResidentialBedRooms();
   }
+
   function handleSelectedBedRoomsValue1() {
     setSelectBedRoomsValue(1);
     setSelectBedRooms(false);
 
+    //SETS THE WARNING BACK TO FALSE
+    setIsOpen9(false);
+
     //CALL THE SELECTED BEDROOMS FUNCTION
     handleResidentialBedRooms();
   }
+
   function handleSelectedBedRoomsValue2() {
     setSelectBedRoomsValue(2);
     setSelectBedRooms(false);
 
+    //SETS THE WARNING BACK TO FALSE
+    setIsOpen9(false);
+
     //CALL THE SELECTED BEDROOMS FUNCTION
     handleResidentialBedRooms();
   }
+
   function handleSelectedBedRoomsValue3() {
     setSelectBedRoomsValue(3);
     setSelectBedRooms(false);
 
-    //CALL THE SELECTED BEDROOMS FUNCTION
-    handleResidentialBedRooms();
-  }
-  function handleSelectedBedRoomsValue4() {
-    setSelectBedRoomsValue(4);
-    setSelectBedRooms(false);
+    //SETS THE WARNING BACK TO FALSE
+    setIsOpen9(false);
 
     //CALL THE SELECTED BEDROOMS FUNCTION
     handleResidentialBedRooms();
   }
+
+  function handleSelectedBedRoomsValue4() {
+    setSelectBedRoomsValue(4);
+    setSelectBedRooms(false);
+
+    //SETS THE WARNING BACK TO FALSE
+    setIsOpen9(false);
+
+    //CALL THE SELECTED BEDROOMS FUNCTION
+    handleResidentialBedRooms();
+  }
+
   function handleSelectedBedRoomsValue5() {
     setSelectBedRoomsValue(5);
     setSelectBedRooms(false);
+
+    //SETS THE WARNING BACK TO FALSE
+    setIsOpen9(false);
 
     //CALL THE SELECTED BEDROOMS FUNCTION
     handleResidentialBedRooms();
@@ -364,16 +388,25 @@ export default function Main() {
     !lightCommercialOfficeSquareFeet.length && setIsOpenCheck(false);
   }
 
+  //  function handleSelectedBedRoomsValueNone() {
+  //   setSelectBedRoomsValue("none");
+  //   setSelectBedRooms(false);
+  //   setIsOpen9(false);
+
+  //   //CALL THE SELECTED BEDROOMS FUNCTION
+  //   handleResidentialBedRooms();
+  // }
+
   //SELECT RESIDENTIAL BEDROOM VALUE INPUT FORMS
-  function handleResidentialBedRooms(e) {
-    // setSelectBathRooms(e.target.value);
+  function handleResidentialBedRooms() {
+    // setSelectBedRoomsValue(e.target.value);
     selectBedRoomsValue.length >= 0 && setIsOpen9(false);
     !selectBedRoomsValue.length && setIsOpenCheck(false);
   }
 
   //SELECT RESIDENTIAL BATHROOM VALUE INPUT FORM
-  function handleResidentialBathRoom(e) {
-    setLightCommercialOfficeSquareFeet(e.target.value);
+  function handleResidentialBathRoom() {
+    // setLightCommercialOfficeSquareFeet(e.target.value);
     lightCommercialOfficeSquareFeet.length >= 0 && setIsOpen10(false);
     !lightCommercialOfficeSquareFeet.length && setIsOpenCheck(false);
   }
@@ -409,25 +442,28 @@ export default function Main() {
     !selectBedRoomsValue.length && setIsOpenCheck(false);
     !selectBedRoomsValue.length && setIsOpen9(true);
 
+    setFormSubmit(true);
+
     if (
       firstName.length >= 1 &&
       lastName.length >= 1 &&
       email.length >= 1 &&
       phoneNumber.length >= 1 &&
-      servicesAddress.length >= 1 &&
       zipCode.length >= 1 &&
+      servicesAddress.length >= 1 &&
       residentialHomeSquareFeet.length >= 1 &&
       lightCommercialOfficeSquareFeet.length >= 1 &&
-      selectBedRoomsValue.length >= 1
+      selectBedRoomsValue === 1
     ) {
       setIsOpenCheck(true),
         setFirstName(""),
         setLastName(""),
         setEmail(""),
         setPhoneNumber(""),
-        setServiceAddress(""),
         setZipCode(""),
-        setSelectBedRoomsValue("");
+        setServiceAddress("");
+      setResidentialHomeSquareFeet(""), setLightCommercialOfficeSquareFeet("");
+      setSelectBedRoomsValue(""), setFormSubmit(false);
     } else {
       setIsOpenCheck(false);
     }
@@ -1365,6 +1401,10 @@ export default function Main() {
 
         <p>&rarr;</p>
       </form>
+
+      {formSubmit && (
+        <p className={styles.error}>Please fill out the indicated parts</p>
+      )}
 
       <div>
         <p className={styles.term}>
