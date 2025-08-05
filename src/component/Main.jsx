@@ -283,7 +283,7 @@ export default function Main() {
 
     setIsOpen11(false);
 
-    //CALL THE SELECTED BEDROOMS FUNCTION
+    //CALL THE SELECTED LIGHT COMMERCIAL OFFICE FUNCTION
     handleLightCommercialOffices();
   }
 
@@ -293,7 +293,7 @@ export default function Main() {
 
     setIsOpen11(false);
 
-    //CALL THE SELECTED BEDROOMS FUNCTION
+    //CALL THE SELECTED LIGHT COMMERCIAL OFFICE FUNCTION
     handleLightCommercialOffices();
   }
 
@@ -303,7 +303,7 @@ export default function Main() {
 
     setIsOpen11(false);
 
-    //CALL THE SELECTED BEDROOMS FUNCTION
+    //CALL THE SELECTED LIGHT COMMERCIAL OFFICE FUNCTION
     handleLightCommercialOffices();
   }
 
@@ -313,7 +313,7 @@ export default function Main() {
 
     setIsOpen11(false);
 
-    //CALL THE SELECTED BEDROOMS FUNCTION
+    //CALL THE SELECTED LIGHT COMMERCIAL OFFICE FUNCTION
     handleLightCommercialOffices();
   }
 
@@ -323,7 +323,7 @@ export default function Main() {
 
     setIsOpen11(false);
 
-    //CALL THE SELECTED BEDROOMS FUNCTION
+    //CALL THE SELECTED LIGHT COMMERCIAL OFFICE FUNCTION
     handleLightCommercialOffices();
   }
 
@@ -342,26 +342,61 @@ export default function Main() {
   function handlelightCommercialSelectedOfficeBathRoomsValueNone() {
     setLightCommercialSelectedOfficeBathRoomsValue("None");
     setSelectedOfficeBathRooms(false);
+
+    setIsOpen12(false);
+
+    //CALL THE SELECTED LIGHT COMMERCIAL OFFICE BATHROOM FUNCTION
+    handleLightCommercialBathRooms();
   }
+
   function handlelightCommercialSelectedOfficeBathRoomsValue1() {
     setLightCommercialSelectedOfficeBathRoomsValue(1);
     setSelectedOfficeBathRooms(false);
+
+    setIsOpen12(false);
+
+    //CALL THE SELECTED LIGHT COMMERCIAL OFFICE BATHROOM FUNCTION
+    handleLightCommercialBathRooms();
   }
+
   function handlelightCommercialSelectedOfficeBathRoomsValue2() {
     setLightCommercialSelectedOfficeBathRoomsValue(2);
     setSelectedOfficeBathRooms(false);
+
+    setIsOpen12(false);
+
+    //CALL THE SELECTED LIGHT COMMERCIAL OFFICE BATHROOM FUNCTION
+    handleLightCommercialBathRooms();
   }
+
   function handlelightCommercialSelectedOfficeBathRoomsValue3() {
     setLightCommercialSelectedOfficeBathRoomsValue(3);
     setSelectedOfficeBathRooms(false);
+
+    setIsOpen12(false);
+
+    //CALL THE SELECTED LIGHT COMMERCIAL OFFICE BATHROOM FUNCTION
+    handleLightCommercialBathRooms();
   }
+
   function handlelightCommercialSelectedOfficeBathRoomsValue4() {
     setLightCommercialSelectedOfficeBathRoomsValue(4);
     setSelectedOfficeBathRooms(false);
+
+    setIsOpen12(false);
+
+    //CALL THE SELECTED LIGHT COMMERCIAL OFFICE BATHROOM FUNCTION
+    handleLightCommercialBathRooms();
   }
+
   function handlelightCommercialSelectedOfficeBathRoomsValue5() {
     setLightCommercialSelectedOfficeBathRoomsValue(5);
     setSelectedOfficeBathRooms(false);
+
+    setIsOpen12(false);
+
+    //CALL THE SELECTED LIGHT COMMERCIAL OFFICE BATHROOM FUNCTION
+    handleLightCommercialBathRooms();
   }
 
   //LIGHT COMMERCIAL RECURRING
@@ -550,6 +585,16 @@ export default function Main() {
     lightCommercialSelectedOfficeValue === 4 && setIsOpen11(false);
     lightCommercialSelectedOfficeValue === 5 && setIsOpen11(false);
 
+    !lightCommercialSelectedOfficeBathRoomsValue.length &&
+      setIsOpenCheck(false);
+    !lightCommercialSelectedOfficeBathRoomsValue.length && setIsOpen12(true);
+    // lightCommercialSelectedOfficeBathRoomsValue === "None" && setIsOpen9(false);
+    lightCommercialSelectedOfficeBathRoomsValue === 1 && setIsOpen12(false);
+    lightCommercialSelectedOfficeBathRoomsValue === 2 && setIsOpen12(false);
+    lightCommercialSelectedOfficeBathRoomsValue === 3 && setIsOpen12(false);
+    lightCommercialSelectedOfficeBathRoomsValue === 4 && setIsOpen12(false);
+    lightCommercialSelectedOfficeBathRoomsValue === 5 && setIsOpen12(false);
+
     setFormSubmit(true);
 
     if (
@@ -563,7 +608,8 @@ export default function Main() {
       lightCommercialOfficeSquareFeet.length >= 1 &&
       selectBedRoomsValue >= 1 &&
       selectBathRoomsValue >= 1 &&
-      lightCommercialSelectedOfficeValue >= 1
+      lightCommercialSelectedOfficeValue >= 1 &&
+      lightCommercialSelectedOfficeBathRoomsValue >= 1
       // selectBedRoomsValue.length
       // selectBedRoomsValue === "None"
     ) {
@@ -580,6 +626,7 @@ export default function Main() {
         setSelectBedRoomsValue(""),
         setSelectBathRoomsValue(""),
         setLightCommercialSelectedOfficeValue(""),
+        setLightCommercialSelectedOfficeBathRoomsValue(""),
         setFormSubmit(false);
     } else {
       setIsOpenCheck(false);
