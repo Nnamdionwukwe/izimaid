@@ -33,6 +33,8 @@ export default function Main() {
   const [lightCommercialOneTimeClean, setLightCommercialOneTimeClean] =
     useState("yes");
 
+  const [textMeMessages, setTextMeMessages] = useState("");
+
   //NORMAL TOGGLE STATE
   const [isOpen1, setIsOpen1] = useState(false);
   const [isOpen2, setIsOpen2] = useState(false);
@@ -46,6 +48,7 @@ export default function Main() {
   const [isOpen10, setIsOpen10] = useState(false);
   const [isOpen11, setIsOpen11] = useState(false);
   const [isOpen12, setIsOpen12] = useState(false);
+  const [toggleRadio, setToggleRadio] = useState(false);
   const [formSubmit, setFormSubmit] = useState(false);
 
   const [selectBedRooms, setSelectBedRooms] = useState(false);
@@ -530,6 +533,14 @@ export default function Main() {
       setIsOpenCheck(false);
   }
 
+  //YES TEXT ME MESSAGES FUNCTION
+  function handleTextMeMessages() {
+    setToggleRadio((is) => !is);
+    !toggleRadio && setTextMeMessages("Yes send me service reminders");
+
+    toggleRadio && setTextMeMessages("No don't send me service reminders");
+  }
+
   //FORM SUBMIT BUTTON
   //FORM SUBMIT BUTTON
   //FORM SUBMIT BUTTON
@@ -735,13 +746,19 @@ export default function Main() {
 
           <div className={styles.yesDiv}>
             <div className={styles.checkbox}>
-              <input type="checkbox" />
+              <input
+                value={textMeMessages}
+                onClick={handleTextMeMessages}
+                type="checkbox"
+              />
             </div>
 
             <div className={styles.yes}>
               <p>Yes! You can text me service reminders and other messages.</p>
             </div>
           </div>
+
+          {textMeMessages}
 
           <div className={styles.privacy}>
             <p>
