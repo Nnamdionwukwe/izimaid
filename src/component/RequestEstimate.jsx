@@ -13,7 +13,7 @@ export default function RequestEstimate() {
         <FreeEstimateHeader />
       </div>
 
-      <div>
+      <div className={styles.mainDivMain}>
         <Main />
       </div>
 
