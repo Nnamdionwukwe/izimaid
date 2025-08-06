@@ -9,6 +9,7 @@
   .checkMarkMain {
     display: flex;
     align-items: center;
+    justify-content: center;
   }
 
   .checkMark {
@@ -306,8 +307,37 @@
   }
 }
 
+@media screen and (min-width: 577px) {
+  .checkMarkMain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    margin: 0px 20px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .mainDiv {
-    background: red;
+    box-shadow: none;
+  }
+
+  .checkMarkMain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+}
+
+@media screen and (min-width: 1112px) {
+  .mainDiv {
+    margin: 40px 10px 0px 10px;
+    padding: 25px 25px 0px 25px;
+    box-shadow: 1px 2px 3px 4px rgb(225, 224, 224);
+    border-radius: 5px;
   }
 }

@@ -134,6 +134,29 @@
   } */
 }
 
+@media screen and (min-width: 768px) {
+  .mainDivMain {
+    /* background: gray; */
+    padding: 40px 35px 20px 35px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .mainDivMain {
+    display: flex;
+    justify-items: center;
+    flex: 1;
+    /* background: gray; */
+    padding: 40px 5px 20px 5px;
+  }
+}
+
+@media screen and (min-width: 1112px) {
+  .mainDivMain {
+    margin: 40px 50px 20px 50px;
+  }
+}
+
 @media screen and (max-width: 990px) {
   .number {
     display: none;
