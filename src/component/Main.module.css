@@ -332,6 +332,11 @@
     justify-content: center;
     max-width: 600px;
   }
+
+  .mainDivMain {
+    display: flex;
+    align-items: center;
+  }
 }
 
 @media screen and (min-width: 992px) {
