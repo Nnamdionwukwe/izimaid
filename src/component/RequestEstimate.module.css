@@ -143,6 +143,16 @@
 
 @media screen and (min-width: 992px) {
   .mainDivMain {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .mainDivMainFull {
+    display: none;
+  }
+
+  .mainDivMain {
     display: flex;
     justify-items: center;
     flex: 1;

@@ -331,6 +331,9 @@
 }
 
 @media screen and (min-width: 992px) {
+  .mainDiv {
+    /* display: none; */
+  }
 }
 
 @media screen and (min-width: 1112px) {
