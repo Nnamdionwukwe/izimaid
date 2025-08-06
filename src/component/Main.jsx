@@ -758,8 +758,6 @@ export default function Main() {
             </div>
           </div>
 
-          {textMeMessages}
-
           <div className={styles.privacy}>
             <p>
               By checking this box, I agree to opt in to receive automated SMS
