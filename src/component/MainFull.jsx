@@ -647,7 +647,6 @@ export default function MainFull() {
   return (
     <div className={styles.mainDiv}>
       <div>
-        <h1>FULL HOME</h1>
         <div className={styles.checkMarkMain}>
           {!isOpenCheck ? (
             <p className={styles.checkMark}>&#10004;</p>
