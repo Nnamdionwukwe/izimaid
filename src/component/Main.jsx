@@ -1,4 +1,5 @@
 import { useState } from "react";
+import axios from "axios";
 import styles from "./Main.module.css";
 
 export default function Main() {
@@ -544,103 +545,120 @@ export default function Main() {
   //FORM SUBMIT BUTTON
   //FORM SUBMIT BUTTON
   //FORM SUBMIT BUTTON
-  function handleSubmitForm() {
-    !firstName.length && setIsOpenCheck(false);
-    !firstName.length && setIsOpen1(true);
+  // function handleSubmitForm(e) {
+  //   e.preventDefault();
 
-    !lastName.length && setIsOpenCheck(false);
-    !lastName.length && setIsOpen2(true);
+  //   !firstName.length && setIsOpenCheck(false);
+  //   !firstName.length && setIsOpen1(true);
 
-    !email.length && setIsOpenCheck(false);
-    !email.length && setIsOpen3(true);
+  //   !lastName.length && setIsOpenCheck(false);
+  //   !lastName.length && setIsOpen2(true);
 
-    !phoneNumber.length && setIsOpenCheck(false);
-    !phoneNumber.length && setIsOpen4(true);
+  //   !email.length && setIsOpenCheck(false);
+  //   !email.length && setIsOpen3(true);
 
-    !zipCode.length && setIsOpenCheck(false);
-    !zipCode.length && setIsOpen5(true);
+  //   !phoneNumber.length && setIsOpenCheck(false);
+  //   !phoneNumber.length && setIsOpen4(true);
 
-    !servicesAddress.length && setIsOpenCheck(false);
-    !servicesAddress.length && setIsOpen6(true);
+  //   !zipCode.length && setIsOpenCheck(false);
+  //   !zipCode.length && setIsOpen5(true);
 
-    !residentialHomeSquareFeet.length && setIsOpenCheck(false);
-    !residentialHomeSquareFeet.length && setIsOpen7(true);
+  //   !servicesAddress.length && setIsOpenCheck(false);
+  //   !servicesAddress.length && setIsOpen6(true);
 
-    !lightCommercialOfficeSquareFeet.length && setIsOpenCheck(false);
-    !lightCommercialOfficeSquareFeet.length && setIsOpen8(true);
+  //   !residentialHomeSquareFeet.length && setIsOpenCheck(false);
+  //   !residentialHomeSquareFeet.length && setIsOpen7(true);
 
-    !selectBedRoomsValue.length && setIsOpenCheck(false);
-    !selectBedRoomsValue.length && setIsOpen9(true);
-    // selectBedRoomsValue === "None" && setIsOpen9(false);
-    selectBedRoomsValue === 1 && setIsOpen9(false);
-    selectBedRoomsValue === 2 && setIsOpen9(false);
-    selectBedRoomsValue === 3 && setIsOpen9(false);
-    selectBedRoomsValue === 4 && setIsOpen9(false);
-    selectBedRoomsValue === 5 && setIsOpen9(false);
+  //   !lightCommercialOfficeSquareFeet.length && setIsOpenCheck(false);
+  //   !lightCommercialOfficeSquareFeet.length && setIsOpen8(true);
 
-    !selectBathRoomsValue.length && setIsOpenCheck(false);
-    !selectBathRoomsValue.length && setIsOpen10(true);
-    // selectBathRoomsValue === "None" && setIsOpen9(false);
-    selectBathRoomsValue === 1 && setIsOpen10(false);
-    selectBathRoomsValue === 2 && setIsOpen10(false);
-    selectBathRoomsValue === 3 && setIsOpen10(false);
-    selectBathRoomsValue === 4 && setIsOpen10(false);
-    selectBathRoomsValue === 5 && setIsOpen10(false);
+  //   !selectBedRoomsValue.length && setIsOpenCheck(false);
+  //   !selectBedRoomsValue.length && setIsOpen9(true);
+  //   // selectBedRoomsValue === "None" && setIsOpen9(false);
+  //   selectBedRoomsValue === 1 && setIsOpen9(false);
+  //   selectBedRoomsValue === 2 && setIsOpen9(false);
+  //   selectBedRoomsValue === 3 && setIsOpen9(false);
+  //   selectBedRoomsValue === 4 && setIsOpen9(false);
+  //   selectBedRoomsValue === 5 && setIsOpen9(false);
 
-    !lightCommercialSelectedOfficeValue.length && setIsOpenCheck(false);
-    !lightCommercialSelectedOfficeValue.length && setIsOpen11(true);
-    // lightCommercialSelectedOfficeValue === "None" && setIsOpen9(false);
-    lightCommercialSelectedOfficeValue === 1 && setIsOpen11(false);
-    lightCommercialSelectedOfficeValue === 2 && setIsOpen11(false);
-    lightCommercialSelectedOfficeValue === 3 && setIsOpen11(false);
-    lightCommercialSelectedOfficeValue === 4 && setIsOpen11(false);
-    lightCommercialSelectedOfficeValue === 5 && setIsOpen11(false);
+  //   !selectBathRoomsValue.length && setIsOpenCheck(false);
+  //   !selectBathRoomsValue.length && setIsOpen10(true);
+  //   // selectBathRoomsValue === "None" && setIsOpen9(false);
+  //   selectBathRoomsValue === 1 && setIsOpen10(false);
+  //   selectBathRoomsValue === 2 && setIsOpen10(false);
+  //   selectBathRoomsValue === 3 && setIsOpen10(false);
+  //   selectBathRoomsValue === 4 && setIsOpen10(false);
+  //   selectBathRoomsValue === 5 && setIsOpen10(false);
 
-    !lightCommercialSelectedOfficeBathRoomsValue.length &&
-      setIsOpenCheck(false);
-    !lightCommercialSelectedOfficeBathRoomsValue.length && setIsOpen12(true);
-    // lightCommercialSelectedOfficeBathRoomsValue === "None" && setIsOpen9(false);
-    lightCommercialSelectedOfficeBathRoomsValue === 1 && setIsOpen12(false);
-    lightCommercialSelectedOfficeBathRoomsValue === 2 && setIsOpen12(false);
-    lightCommercialSelectedOfficeBathRoomsValue === 3 && setIsOpen12(false);
-    lightCommercialSelectedOfficeBathRoomsValue === 4 && setIsOpen12(false);
-    lightCommercialSelectedOfficeBathRoomsValue === 5 && setIsOpen12(false);
+  //   !lightCommercialSelectedOfficeValue.length && setIsOpenCheck(false);
+  //   !lightCommercialSelectedOfficeValue.length && setIsOpen11(true);
+  //   // lightCommercialSelectedOfficeValue === "None" && setIsOpen9(false);
+  //   lightCommercialSelectedOfficeValue === 1 && setIsOpen11(false);
+  //   lightCommercialSelectedOfficeValue === 2 && setIsOpen11(false);
+  //   lightCommercialSelectedOfficeValue === 3 && setIsOpen11(false);
+  //   lightCommercialSelectedOfficeValue === 4 && setIsOpen11(false);
+  //   lightCommercialSelectedOfficeValue === 5 && setIsOpen11(false);
 
-    setFormSubmit(true);
+  //   !lightCommercialSelectedOfficeBathRoomsValue.length &&
+  //     setIsOpenCheck(false);
+  //   !lightCommercialSelectedOfficeBathRoomsValue.length && setIsOpen12(true);
+  //   // lightCommercialSelectedOfficeBathRoomsValue === "None" && setIsOpen9(false);
+  //   lightCommercialSelectedOfficeBathRoomsValue === 1 && setIsOpen12(false);
+  //   lightCommercialSelectedOfficeBathRoomsValue === 2 && setIsOpen12(false);
+  //   lightCommercialSelectedOfficeBathRoomsValue === 3 && setIsOpen12(false);
+  //   lightCommercialSelectedOfficeBathRoomsValue === 4 && setIsOpen12(false);
+  //   lightCommercialSelectedOfficeBathRoomsValue === 5 && setIsOpen12(false);
 
-    if (
-      firstName.length >= 1 &&
-      lastName.length >= 1 &&
-      email.length >= 1 &&
-      phoneNumber.length >= 1 &&
-      zipCode.length >= 1 &&
-      servicesAddress.length >= 1 &&
-      residentialHomeSquareFeet.length >= 1 &&
-      lightCommercialOfficeSquareFeet.length >= 1 &&
-      selectBedRoomsValue >= 1 &&
-      selectBathRoomsValue >= 1 &&
-      lightCommercialSelectedOfficeValue >= 1 &&
-      lightCommercialSelectedOfficeBathRoomsValue >= 1
-      // selectBedRoomsValue.length
-      // selectBedRoomsValue === "None"
-    ) {
-      setIsOpenCheck(true),
-        setFirstName(""),
-        setLastName(""),
-        setEmail(""),
-        setPhoneNumber(""),
-        setZipCode(""),
-        setServiceAddress(""),
-        setApartmentOrSuite(""),
-        setResidentialHomeSquareFeet(""),
-        setLightCommercialOfficeSquareFeet(""),
-        setSelectBedRoomsValue(""),
-        setSelectBathRoomsValue(""),
-        setLightCommercialSelectedOfficeValue(""),
-        setLightCommercialSelectedOfficeBathRoomsValue(""),
-        setFormSubmit(false);
-    } else {
-      setIsOpenCheck(false);
+  //   setFormSubmit(true);
+
+  //   if (
+  //     firstName.length >= 1 &&
+  //     lastName.length >= 1 &&
+  //     email.length >= 1 &&
+  //     phoneNumber.length >= 1 &&
+  //     zipCode.length >= 1 &&
+  //     servicesAddress.length >= 1 &&
+  //     residentialHomeSquareFeet.length >= 1 &&
+  //     lightCommercialOfficeSquareFeet.length >= 1 &&
+  //     selectBedRoomsValue >= 1 &&
+  //     selectBathRoomsValue >= 1 &&
+  //     lightCommercialSelectedOfficeValue >= 1 &&
+  //     lightCommercialSelectedOfficeBathRoomsValue >= 1
+  //     // selectBedRoomsValue.length
+  //     // selectBedRoomsValue === "None"
+  //   ) {
+  //     setIsOpenCheck(true),
+  //       setFirstName(""),
+  //       setLastName(""),
+  //       setEmail(""),
+  //       setPhoneNumber(""),
+  //       setZipCode(""),
+  //       setServiceAddress(""),
+  //       setApartmentOrSuite(""),
+  //       setResidentialHomeSquareFeet(""),
+  //       setLightCommercialOfficeSquareFeet(""),
+  //       setSelectBedRoomsValue(""),
+  //       setSelectBathRoomsValue(""),
+  //       setLightCommercialSelectedOfficeValue(""),
+  //       setLightCommercialSelectedOfficeBathRoomsValue(""),
+  //       setFormSubmit(false);
+  //   } else {
+  //     setIsOpenCheck(false);
+  //   }
+  // }
+
+  async function Submit(e) {
+    e.preventDefault();
+
+    try {
+      await axios.post("http://localhost:8000/", {
+        firstName,
+        lastName,
+        email,
+        phoneNumber,
+      });
+    } catch (e) {
+      console.log(e);
     }
   }
 
@@ -1583,7 +1601,7 @@ export default function Main() {
         </p>
       </div>
 
-      <form onClick={handleSubmitForm} className={styles.submitButton}>
+      <form onClick={Submit} className={styles.submitButton}>
         {!isOpenCheck ? <h4>Submit and Continue</h4> : <h4>Form Submitted</h4>}
 
         <p>&rarr;</p>
