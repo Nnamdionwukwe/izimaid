@@ -46,10 +46,15 @@ const newSchema = new mongoose.Schema({
 
   apartmentOrSuite: {
     type: String,
-    required: true,
+    // required: true,
   },
 
   residentialHomeSquareFeet: {
+    type: String,
+    required: true,
+  },
+
+  lightCommercialOfficeSquareFeet: {
     type: String,
     required: true,
   },
@@ -76,17 +81,17 @@ const newSchema = new mongoose.Schema({
 
   lightCommercialRecurring: {
     type: String,
-    required: true,
+    // required: true,
   },
 
   lightCommercialOneTimeClean: {
     type: String,
-    required: true,
+    // required: true,
   },
 
   textMeMessages: {
     type: String,
-    required: true,
+    // required: true,
   },
 });
 

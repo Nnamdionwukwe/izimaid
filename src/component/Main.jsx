@@ -653,6 +653,7 @@ export default function Main() {
           servicesAddress,
           apartmentOrSuite,
           residentialHomeSquareFeet,
+          lightCommercialOfficeSquareFeet,
           selectBedRoomsValue,
           selectBathRoomsValue,
           lightCommercialSelectedOfficeValue,
@@ -669,22 +670,32 @@ export default function Main() {
     }
   }
 
-  // async function Submit(e) {
-  //   e.preventDefault();
+  async function Submit(e) {
+    e.preventDefault();
 
-  //   try {
-  //     await axios.post("http://localhost:8000/", {
-  //       firstName,
-  //       lastName,
-  //       email,
-  //       phoneNumber,
-  //     });
-  //   } catch (e) {
-  //     console.log(e);
-  //     console.log(e);
-  //     console.log(e);
-  //   }
-  // }
+    try {
+      await axios.post("http://localhost:8000/", {
+        firstName,
+        lastName,
+        email,
+        phoneNumber,
+        zipCode,
+        servicesAddress,
+        apartmentOrSuite,
+        residentialHomeSquareFeet,
+        lightCommercialOfficeSquareFeet,
+        selectBedRoomsValue,
+        selectBathRoomsValue,
+        lightCommercialSelectedOfficeValue,
+        lightCommercialSelectedOfficeBathRoomsValue,
+        lightCommercialRecurring,
+        lightCommercialOneTimeClean,
+        textMeMessages,
+      });
+    } catch (e) {
+      console.log(e);
+    }
+  }
 
   return (
     <div className={styles.mainDiv}>
