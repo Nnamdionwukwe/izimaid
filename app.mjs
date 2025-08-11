@@ -14,13 +14,41 @@ app.get("/", cors(), (req, res) => {
 });
 
 app.post("/", async (req, res) => {
-  const { firstName, lastName, email, phoneNumber } = req.body;
+  const {
+    firstName,
+    lastName,
+    email,
+    phoneNumber,
+    zipCode,
+    servicesAddress,
+    apartmentOrSuite,
+    residentialHomeSquareFeet,
+    selectBedRoomsValue,
+    selectBathRoomsValue,
+    lightCommercialSelectedOfficeValue,
+    lightCommercialSelectedOfficeBathRoomsValue,
+    lightCommercialRecurring,
+    lightCommercialOneTimeClean,
+    textMeMessages,
+  } = req.body;
 
   const data = {
     firstName: firstName,
     lastName: lastName,
     email: email,
     phoneNumber: phoneNumber,
+    zipCode: zipCode,
+    servicesAddress: servicesAddress,
+    apartmentOrSuite: apartmentOrSuite,
+    residentialHomeSquareFeet: residentialHomeSquareFeet,
+    selectBedRoomsValue: selectBedRoomsValue,
+    selectBathRoomsValue: selectBathRoomsValue,
+    lightCommercialSelectedOfficeValue: lightCommercialSelectedOfficeValue,
+    lightCommercialSelectedOfficeBathRoomsValue:
+      lightCommercialSelectedOfficeBathRoomsValue,
+    lightCommercialRecurring: lightCommercialRecurring,
+    lightCommercialOneTimeClean: lightCommercialOneTimeClean,
+    textMeMessages: textMeMessages,
   };
 
   await collection.insertMany([data]);

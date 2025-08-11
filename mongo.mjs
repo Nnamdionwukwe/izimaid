@@ -33,6 +33,61 @@ const newSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+
+  zipCode: {
+    type: String,
+    required: true,
+  },
+
+  servicesAddress: {
+    type: String,
+    required: true,
+  },
+
+  apartmentOrSuite: {
+    type: String,
+    required: true,
+  },
+
+  residentialHomeSquareFeet: {
+    type: String,
+    required: true,
+  },
+
+  selectBedRoomsValue: {
+    type: String,
+    required: true,
+  },
+
+  selectBathRoomsValue: {
+    type: String,
+    required: true,
+  },
+
+  lightCommercialSelectedOfficeValue: {
+    type: String,
+    required: true,
+  },
+
+  lightCommercialSelectedOfficeBathRoomsValue: {
+    type: String,
+    required: true,
+  },
+
+  lightCommercialRecurring: {
+    type: String,
+    required: true,
+  },
+
+  lightCommercialOneTimeClean: {
+    type: String,
+    required: true,
+  },
+
+  textMeMessages: {
+    type: String,
+    required: true,
+  },
 });
 
 export const collection = mongoose.model("collection", newSchema);
