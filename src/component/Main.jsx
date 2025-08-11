@@ -659,6 +659,8 @@ export default function Main() {
       });
     } catch (e) {
       console.log(e);
+      console.log(e);
+      console.log(e);
     }
   }
 
