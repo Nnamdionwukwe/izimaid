@@ -8,15 +8,12 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgb(233, 231, 231);
+    background: rgb(35, 33, 33);
     z-index: 200;
-    opacity: 0.9;
+    opacity: 0.98;
   }
 
   .localIzimaidMainDiv {
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
     background: white;
     height: 22em;
     width: 29em;
@@ -292,6 +289,60 @@
   .header {
     background-color: green;
     display: none;
+  }
+
+  .localIzimaidMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(35, 33, 33);
+    z-index: 200;
+    opacity: 0.98;
+  }
+
+  .localIzimaidMainDiv {
+    background: white;
+    height: 30em;
+    width: 38em;
+    z-index: 300;
+    opacity: 3;
+    border-radius: 7px;
+  }
+
+  .localIzimaidMainDivSub {
+    position: relative;
+  }
+
+  .timesHover {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 15px;
+    cursor: pointer;
+  }
+
+  .timesHover h4 {
+    border: 2px solid rgb(6, 6, 60);
+    border-radius: 100%;
+    padding: 1px 6.5px 0.5px 6.5px;
+    background: white;
+  }
+
+  .logoDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+  }
+
+  .logo2 {
+    width: 100px;
+    object-fit: cover;
   }
 
   .thirdHeader2 {
