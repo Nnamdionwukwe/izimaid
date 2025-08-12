@@ -33,7 +33,7 @@ export default function ThirdHeader() {
             </div>
 
             <div className={styles.more}>
-              <a href="/why-hire-us">Learn More</a>
+              <Link to="/why-hire-us">Learn More</Link>
             </div>
           </div>
         </>
