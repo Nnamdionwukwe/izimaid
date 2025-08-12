@@ -15,7 +15,7 @@
 
   .localIzimaidMainDiv {
     background: white;
-    height: 22em;
+    height: 23em;
     width: 29em;
     z-index: 300;
     opacity: 3;
@@ -87,6 +87,11 @@
     flex: 1;
     border: none;
     outline: none;
+  }
+
+  .timesInput {
+    margin-right: 8px;
+    cursor: pointer;
   }
 
   .zip {

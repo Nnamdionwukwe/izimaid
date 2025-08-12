@@ -10,8 +10,38 @@ import WhyHireUs from "./WhyHireUs";
 import { useState } from "react";
 
 export default function SubHeader() {
+  const [locationInput, setLocationInput] = useState("");
+  const [clearInput, setClearInput] = useState(false);
   const [findLocalIzimaid, setFindLocalIzimaid] = useState(false);
-  const [isOpen, setIsOpen] = useState(false);
+  const [pleaseEnter, setPleaseEnter] = useState(false);
+  const [invalidZip, setInvalidZip] = useState(false);
+
+  function handleInput(e) {
+    setLocationInput(e.target.value);
+
+    if (locationInput.length > 1) {
+      setPleaseEnter(false);
+    } else {
+      setPleaseEnter(false);
+      setInvalidZip(true);
+      setClearInput(true);
+    }
+
+    // if (locationInput.length < 1) {
+    //   setInvalidZip(false);
+    //   setClearInput(false);
+    // }
+  }
+
+  function handleClearInput() {
+    setLocationInput("");
+    locationInput.length === "";
+    setClearInput(false);
+  }
+
+  function handlePleaseButton() {
+    invalidZip ? setPleaseEnter(false) : setPleaseEnter(true);
+  }
 
   return (
     <>
@@ -64,7 +94,20 @@ export default function SubHeader() {
                 </div>
 
                 <div className={styles.ZIPcode}>
-                  <input type="text" placeholder="Enter ZIP Code" />
+                  <input
+                    onChange={handleInput}
+                    type="text"
+                    placeholder="Enter ZIP Code"
+                  />
+
+                  {clearInput && (
+                    <h3
+                      onClick={handleClearInput}
+                      className={styles.timesInput}
+                    >
+                      &times;
+                    </h3>
+                  )}
 
                   <div className={styles.location}>
                     <i class="fa fa-map-marker" aria-hidden="true"></i>
@@ -73,11 +116,15 @@ export default function SubHeader() {
                   </div>
                 </div>
 
-                {isOpen && (
+                {pleaseEnter && (
                   <h5 className={styles.zip}>Please enter a zip code</h5>
                 )}
 
-                <div onClick={() => setIsOpen(true)} className={styles.help}>
+                {invalidZip && (
+                  <h5 className={styles.zip}> Invalid zip code format</h5>
+                )}
+
+                <div onClick={handlePleaseButton} className={styles.help}>
                   <h4>Find Local Help</h4>
                 </div>
 
