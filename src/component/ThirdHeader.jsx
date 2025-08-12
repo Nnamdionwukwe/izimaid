@@ -33,7 +33,9 @@ export default function ThirdHeader() {
             </div>
 
             <div className={styles.more}>
-              <Link to="/why-hire-us">Learn More</Link>
+              <Link to="/https://izimaid-sage.vercel.app/why-hire-us">
+                Learn More
+              </Link>
             </div>
           </div>
         </>
