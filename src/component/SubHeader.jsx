@@ -111,11 +111,59 @@ export default function SubHeader() {
               <p className={styles.thirdPara3}>Own a Franchise</p>
             </div>
 
-            <div className={styles.thirdHeader3}>
+            <div
+              className={styles.thirdHeader3}
+              onClick={() => setFindLocalIzimaid(true)}
+            >
               <i class="fa fa-map-marker" aria-hidden="true"></i>
 
               <p>Find My Local IziMaid</p>
             </div>
+
+            {findLocalIzimaid && (
+              <div className={styles.localIzimaidMain}>
+                <div className={styles.localIzimaidMainDiv}>
+                  <div className={styles.localIzimaidMainDivSub}>
+                    <div
+                      onClick={() => setFindLocalIzimaid(false)}
+                      className={styles.timesHover}
+                    >
+                      <h4>&times;</h4>
+                    </div>
+
+                    <div className={styles.logoDiv}>
+                      <img
+                        className={styles.logo2}
+                        alt="Logo"
+                        src="izimaid.jpg"
+                      />
+                    </div>
+
+                    <div className={styles.located}>
+                      <h4>Tell us where you are located</h4>
+                    </div>
+
+                    <div className={styles.ZIPcode}>
+                      <input type="text" placeholder="Enter ZIP Code" />
+
+                      <div className={styles.location}>
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+
+                        <h5>Use My Location</h5>
+                      </div>
+                    </div>
+
+                    <div className={styles.help}>
+                      <h4>Find Local Help</h4>
+                    </div>
+
+                    <div className={styles.field}>
+                      <p>*indecates a reqiured field</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
         </div>
 
