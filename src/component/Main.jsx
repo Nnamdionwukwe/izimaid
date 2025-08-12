@@ -733,7 +733,7 @@ export default function Main() {
             <div className={styles.inputField}>
               <input
                 type="name"
-                placeholder="ex. John"
+                placeholder="ex. IziBest"
                 value={firstName}
                 onChange={handleFirstName}
                 className={styles.inputField}
@@ -751,7 +751,7 @@ export default function Main() {
             <div className={styles.inputField}>
               <input
                 type="name"
-                placeholder="ex. Doe"
+                placeholder="ex. Interior"
                 value={lastName}
                 onChange={handleLastName}
                 className={styles.inputField}
@@ -769,7 +769,7 @@ export default function Main() {
             <div className={styles.inputField}>
               <input
                 type="email"
-                placeholder="ex. john.doe@example.com"
+                placeholder="ex. izibestinterior1@gmail.com"
                 value={email}
                 onChange={handleEmailAddress}
                 className={styles.inputField}
