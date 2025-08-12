@@ -71,6 +71,14 @@ export default function SubHeader() {
                     <h5>Use My Location</h5>
                   </div>
                 </div>
+
+                <div className={styles.help}>
+                  <h4>Find Local Help</h4>
+                </div>
+
+                <div className={styles.field}>
+                  <p>*indecates a reqiured field</p>
+                </div>
               </div>
             </div>
           </div>

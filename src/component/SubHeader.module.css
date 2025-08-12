@@ -109,6 +109,32 @@
     font-size: 12px;
   }
 
+  .help {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    flex: 1;
+    border: 1px solid rgb(216, 213, 213);
+    margin: 20px 15px 0px 15px;
+    padding: 0px 10px;
+    background: rgb(6, 6, 60);
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+  }
+
+  .help:hover {
+    background: rgb(4, 4, 36);
+  }
+
+  .field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+  }
+
   .SubMain {
     border-top: 1px solid rgb(230, 226, 226);
     padding-top: 10px;
