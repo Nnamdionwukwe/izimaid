@@ -7,8 +7,11 @@ import Practically from "./Practically";
 import Residential from "./Residential";
 import styles from "./SubHeader.module.css";
 import WhyHireUs from "./WhyHireUs";
+import { useState } from "react";
 
 export default function SubHeader() {
+  const [findLocalIzimaid, setFindLocalIzimaid] = useState(false);
+
   return (
     <>
       <div className={styles.header}>
@@ -31,11 +34,47 @@ export default function SubHeader() {
           </div>
         </div>
 
-        <div className={styles.thirdHeader}>
+        <div
+          onClick={() => setFindLocalIzimaid(true)}
+          className={styles.thirdHeader}
+        >
           <i class="fa fa-map-marker" aria-hidden="true"></i>
 
           <p>Find My Local IziMaid</p>
         </div>
+
+        {findLocalIzimaid && (
+          <div className={styles.localIzimaidMain}>
+            <div className={styles.localIzimaidMainDiv}>
+              <div className={styles.localIzimaidMainDivSub}>
+                <div
+                  onClick={() => setFindLocalIzimaid(false)}
+                  className={styles.timesHover}
+                >
+                  <h4>&times;</h4>
+                </div>
+
+                <div className={styles.logoDiv}>
+                  <img className={styles.logo2} alt="Logo" src="izimaid.jpg" />
+                </div>
+
+                <div className={styles.located}>
+                  <h4>Tell us where you are located</h4>
+                </div>
+
+                <div className={styles.ZIPcode}>
+                  <input type="text" placeholder="Enter ZIP Code" />
+
+                  <div className={styles.location}>
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+
+                    <h4>Use My Location</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
 
       <div className={styles.thirdHeaderMain}>
