@@ -11,13 +11,12 @@ function App() {
 
         <Route path="/request-a-free-estimate" element={<RequestEstimate />} />
 
-        <Route
-          path="/https://izimaid-sage.vercel.app/why-hire-us"
-          element={<LearnMore />}
-        />
+        <Route path="/why-hire-us" element={<LearnMore />} />
       </Routes>
     </BrowserRouter>
   );
 }
+
+//          path="https://izimaid-sage.vercel.app/why-hire-us"
 
 export default App;

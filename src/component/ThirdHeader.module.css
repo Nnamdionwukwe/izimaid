@@ -43,6 +43,11 @@
     font-weight: bold;
     color: rgb(187, 19, 47);
   }
+
+  .link {
+    color: rgb(187, 19, 47);
+    text-decoration: none;
+  }
 }
 
 @media screen and (min-width: 577px) {
