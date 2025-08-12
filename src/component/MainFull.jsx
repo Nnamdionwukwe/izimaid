@@ -1,7 +1,8 @@
 import { useState } from "react";
+import axios from "axios";
 import styles from "./Main.module.css";
 
-export default function MainFull() {
+export default function Main() {
   //SENDING TO BACKEND
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -31,7 +32,7 @@ export default function MainFull() {
     useState("weekly");
 
   const [lightCommercialOneTimeClean, setLightCommercialOneTimeClean] =
-    useState("yes");
+    useState("");
 
   const [textMeMessages, setTextMeMessages] = useState("");
 
@@ -122,7 +123,7 @@ export default function MainFull() {
   }
 
   function handleSelectedBedRoomsValueNone() {
-    setSelectBedRoomsValue("None");
+    setSelectBedRoomsValue(0);
     setSelectBedRooms(false);
 
     //SETS THE WARNING BACK TO FALSE
@@ -200,7 +201,7 @@ export default function MainFull() {
   }
 
   function handleSelectedBathRoomsValueNone() {
-    setSelectBathRoomsValue("none");
+    setSelectBathRoomsValue(0);
     setSelectBathRooms(false);
 
     setIsOpen10(false);
@@ -271,7 +272,7 @@ export default function MainFull() {
   }
 
   function lightCommercialSelectedOfficeValueNone() {
-    setLightCommercialSelectedOfficeValue("none");
+    setLightCommercialSelectedOfficeValue(0);
     setSelectedOffice(false);
 
     setIsOpen11(false);
@@ -343,7 +344,7 @@ export default function MainFull() {
   }
 
   function handlelightCommercialSelectedOfficeBathRoomsValueNone() {
-    setLightCommercialSelectedOfficeBathRoomsValue("None");
+    setLightCommercialSelectedOfficeBathRoomsValue(0);
     setSelectedOfficeBathRooms(false);
 
     setIsOpen12(false);
@@ -415,12 +416,12 @@ export default function MainFull() {
   }
 
   function handleOtherWeek() {
-    setLightCommercialRecurring("everyOtherWeek");
+    setLightCommercialRecurring("every Other Week");
     setLightCommercialOneTimeClean("");
     setLightCommercialOneTimeClean("");
   }
   function handle4Weeks() {
-    setLightCommercialRecurring("onceIn4Weeks");
+    setLightCommercialRecurring("once In 4 Weeks");
     setLightCommercialOneTimeClean("");
     setLightCommercialOneTimeClean("");
   }
@@ -544,7 +545,9 @@ export default function MainFull() {
   //FORM SUBMIT BUTTON
   //FORM SUBMIT BUTTON
   //FORM SUBMIT BUTTON
-  function handleSubmitForm() {
+  async function handleSubmitForm(e) {
+    e.preventDefault();
+
     !firstName.length && setIsOpenCheck(false);
     !firstName.length && setIsOpen1(true);
 
@@ -571,7 +574,7 @@ export default function MainFull() {
 
     !selectBedRoomsValue.length && setIsOpenCheck(false);
     !selectBedRoomsValue.length && setIsOpen9(true);
-    // selectBedRoomsValue === "None" && setIsOpen9(false);
+    selectBedRoomsValue === 0 && setIsOpen9(false);
     selectBedRoomsValue === 1 && setIsOpen9(false);
     selectBedRoomsValue === 2 && setIsOpen9(false);
     selectBedRoomsValue === 3 && setIsOpen9(false);
@@ -580,7 +583,7 @@ export default function MainFull() {
 
     !selectBathRoomsValue.length && setIsOpenCheck(false);
     !selectBathRoomsValue.length && setIsOpen10(true);
-    // selectBathRoomsValue === "None" && setIsOpen9(false);
+    selectBathRoomsValue === 0 && setIsOpen10(false);
     selectBathRoomsValue === 1 && setIsOpen10(false);
     selectBathRoomsValue === 2 && setIsOpen10(false);
     selectBathRoomsValue === 3 && setIsOpen10(false);
@@ -589,7 +592,7 @@ export default function MainFull() {
 
     !lightCommercialSelectedOfficeValue.length && setIsOpenCheck(false);
     !lightCommercialSelectedOfficeValue.length && setIsOpen11(true);
-    // lightCommercialSelectedOfficeValue === "None" && setIsOpen9(false);
+    lightCommercialSelectedOfficeValue === 0 && setIsOpen11(false);
     lightCommercialSelectedOfficeValue === 1 && setIsOpen11(false);
     lightCommercialSelectedOfficeValue === 2 && setIsOpen11(false);
     lightCommercialSelectedOfficeValue === 3 && setIsOpen11(false);
@@ -599,7 +602,7 @@ export default function MainFull() {
     !lightCommercialSelectedOfficeBathRoomsValue.length &&
       setIsOpenCheck(false);
     !lightCommercialSelectedOfficeBathRoomsValue.length && setIsOpen12(true);
-    // lightCommercialSelectedOfficeBathRoomsValue === "None" && setIsOpen9(false);
+    lightCommercialSelectedOfficeBathRoomsValue === 0 && setIsOpen12(false);
     lightCommercialSelectedOfficeBathRoomsValue === 1 && setIsOpen12(false);
     lightCommercialSelectedOfficeBathRoomsValue === 2 && setIsOpen12(false);
     lightCommercialSelectedOfficeBathRoomsValue === 3 && setIsOpen12(false);
@@ -617,12 +620,12 @@ export default function MainFull() {
       servicesAddress.length >= 1 &&
       residentialHomeSquareFeet.length >= 1 &&
       lightCommercialOfficeSquareFeet.length >= 1 &&
-      selectBedRoomsValue >= 1 &&
-      selectBathRoomsValue >= 1 &&
-      lightCommercialSelectedOfficeValue >= 1 &&
-      lightCommercialSelectedOfficeBathRoomsValue >= 1
+      selectBedRoomsValue <= 5 &&
+      selectBathRoomsValue <= 5 &&
+      lightCommercialSelectedOfficeValue <= 5 &&
+      lightCommercialSelectedOfficeBathRoomsValue <= 5
+      // selectBedRoomsValue === 0
       // selectBedRoomsValue.length
-      // selectBedRoomsValue === "None"
     ) {
       setIsOpenCheck(true),
         setFirstName(""),
@@ -639,8 +642,58 @@ export default function MainFull() {
         setLightCommercialSelectedOfficeValue(""),
         setLightCommercialSelectedOfficeBathRoomsValue(""),
         setFormSubmit(false);
+
+      try {
+        await axios.post("http://localhost:8000/", {
+          firstName,
+          lastName,
+          email,
+          phoneNumber,
+          zipCode,
+          servicesAddress,
+          apartmentOrSuite,
+          residentialHomeSquareFeet,
+          lightCommercialOfficeSquareFeet,
+          selectBedRoomsValue,
+          selectBathRoomsValue,
+          lightCommercialSelectedOfficeValue,
+          lightCommercialSelectedOfficeBathRoomsValue,
+          lightCommercialRecurring,
+          lightCommercialOneTimeClean,
+          textMeMessages,
+        });
+      } catch (e) {
+        console.log(e);
+      }
     } else {
       setIsOpenCheck(false);
+    }
+  }
+
+  async function Submit(e) {
+    e.preventDefault();
+
+    try {
+      await axios.post("http://localhost:8000/", {
+        firstName,
+        lastName,
+        email,
+        phoneNumber,
+        zipCode,
+        servicesAddress,
+        apartmentOrSuite,
+        residentialHomeSquareFeet,
+        lightCommercialOfficeSquareFeet,
+        selectBedRoomsValue,
+        selectBathRoomsValue,
+        lightCommercialSelectedOfficeValue,
+        lightCommercialSelectedOfficeBathRoomsValue,
+        lightCommercialRecurring,
+        lightCommercialOneTimeClean,
+        textMeMessages,
+      });
+    } catch (e) {
+      console.log(e);
     }
   }
 
