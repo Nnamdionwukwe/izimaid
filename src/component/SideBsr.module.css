@@ -81,6 +81,8 @@
   height: 50px;
   margin-right: 20px;
   cursor: pointer;
+  text-decoration: none;
+  color: white;
 }
 
 .sub1 i {

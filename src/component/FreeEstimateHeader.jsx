@@ -13,10 +13,10 @@ export default function FreeEstimateHeader() {
             <h1>0803 058 8774</h1>
           </div>
 
-          <div className={styles.sub2}>
+          <a href="tel: +2348030588774" className={styles.sub2}>
             <i class="fa fa-phone" aria-hidden="true"></i>
             <p>Call Us</p>
-          </div>
+          </a>
         </div>
       </div>
 
