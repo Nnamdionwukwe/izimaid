@@ -44,6 +44,7 @@
   display: flex;
   align-items: center;
   color: rgb(204, 25, 55);
+  text-decoration: none;
 }
 
 .call i {

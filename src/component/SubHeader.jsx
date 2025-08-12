@@ -134,9 +134,9 @@ export default function SubHeader() {
               </div>
             </div>
 
-            <div>
+            <a className={styles.numberDiv} href="tel: +2348030588774">
               <p className={styles.number}>0803 0588 774</p>
-            </div>
+            </a>
           </div>
         </div>
       </div>

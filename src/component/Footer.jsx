@@ -9,10 +9,12 @@ export default function Footer() {
           <a href="https://izimaid-sage.vercel.app">
             <img className={styles.logo} alt="Logo" src="izimaid.jpg" />
           </a>
-          <div className={styles.call}>
+
+          <a href="tel: +2348030588774" className={styles.call}>
             <i class="fa-solid fa-phone"></i>
+
             <h2>0803 058 8774</h2>
-          </div>
+          </a>
           <div className={styles.icons}>
             <i class="fa-brands fa-facebook"></i>
             <i class="fa-brands fa-instagram"></i>
