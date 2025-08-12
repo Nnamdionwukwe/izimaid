@@ -11,7 +11,7 @@ export default function Footer() {
           </a>
           <div className={styles.call}>
             <i class="fa-solid fa-phone"></i>
-            <h2>0803 058 8779</h2>
+            <h2>0803 058 8774</h2>
           </div>
           <div className={styles.icons}>
             <i class="fa-brands fa-facebook"></i>
