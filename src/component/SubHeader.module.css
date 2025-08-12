@@ -89,6 +89,12 @@
     outline: none;
   }
 
+  .zip {
+    color: rgb(233, 42, 42);
+    margin-top: 8px;
+    margin-left: 15px;
+  }
+
   .location {
     display: flex;
     justify-content: center;

@@ -11,6 +11,7 @@ import { useState } from "react";
 
 export default function SubHeader() {
   const [findLocalIzimaid, setFindLocalIzimaid] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <>
@@ -72,7 +73,11 @@ export default function SubHeader() {
                   </div>
                 </div>
 
-                <div className={styles.help}>
+                {isOpen && (
+                  <h5 className={styles.zip}>Please enter a zip code</h5>
+                )}
+
+                <div onClick={() => setIsOpen(true)} className={styles.help}>
                   <h4>Find Local Help</h4>
                 </div>
 
