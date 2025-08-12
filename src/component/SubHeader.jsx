@@ -19,6 +19,11 @@ export default function SubHeader() {
   function handleInput(e) {
     setLocationInput(e.target.value);
 
+    if (!locationInput.length) {
+      setInvalidZip(false);
+      setClearInput(false);
+    }
+
     if (locationInput.length > 1) {
       setPleaseEnter(false);
     } else {
@@ -26,21 +31,19 @@ export default function SubHeader() {
       setInvalidZip(true);
       setClearInput(true);
     }
-
-    // if (locationInput.length < 1) {
-    //   setInvalidZip(false);
-    //   setClearInput(false);
-    // }
   }
 
   function handleClearInput() {
     setLocationInput("");
-    locationInput.length === "";
     setClearInput(false);
+    setInvalidZip(false);
   }
 
-  function handlePleaseButton() {
-    invalidZip ? setPleaseEnter(false) : setPleaseEnter(true);
+  function handleSubmitLocation() {
+    // locationInput.length && setPleaseEnter(false);
+    invalidZip && locationInput.length
+      ? setPleaseEnter(false)
+      : setPleaseEnter(true);
   }
 
   return (
@@ -124,7 +127,7 @@ export default function SubHeader() {
                   <h5 className={styles.zip}> Invalid zip code format</h5>
                 )}
 
-                <div onClick={handlePleaseButton} className={styles.help}>
+                <div onClick={handleSubmitLocation} className={styles.help}>
                   <h4>Find Local Help</h4>
                 </div>
 
