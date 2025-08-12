@@ -77,7 +77,7 @@ export default function SubHeader() {
                 </div>
 
                 <div className={styles.field}>
-                  <p>*indecates a reqiured field</p>
+                  <p>*indicates a reqiured field</p>
                 </div>
               </div>
             </div>
@@ -158,7 +158,7 @@ export default function SubHeader() {
                     </div>
 
                     <div className={styles.field}>
-                      <p>*indecates a reqiured field</p>
+                      <p>*indicates a reqiured field</p>
                     </div>
                   </div>
                 </div>
