@@ -199,7 +199,20 @@ export default function SubHeader() {
                     </div>
 
                     <div className={styles.ZIPcode}>
-                      <input type="text" placeholder="Enter ZIP Code" />
+                      <input
+                        onChange={handleInput}
+                        type="text"
+                        placeholder="Enter ZIP Code"
+                      />
+
+                      {clearInput && (
+                        <h3
+                          onClick={handleClearInput}
+                          className={styles.timesInput}
+                        >
+                          &times;
+                        </h3>
+                      )}
 
                       <div className={styles.location}>
                         <i class="fa fa-map-marker" aria-hidden="true"></i>
@@ -208,8 +221,16 @@ export default function SubHeader() {
                       </div>
                     </div>
 
+                    {pleaseEnter && (
+                      <h5 className={styles.zip}>Please enter a zip code</h5>
+                    )}
+
+                    {invalidZip && (
+                      <h5 className={styles.zip}> Invalid zip code format</h5>
+                    )}
+
                     <div className={styles.help}>
-                      <h4>Find Local Help</h4>
+                      <h4 onClick={handleSubmitLocation}>Find Local Help</h4>
                     </div>
 
                     <div className={styles.field}>
