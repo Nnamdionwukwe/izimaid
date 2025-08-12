@@ -68,7 +68,7 @@ export default function SubHeader() {
                   <div className={styles.location}>
                     <i class="fa fa-map-marker" aria-hidden="true"></i>
 
-                    <h4>Use My Location</h4>
+                    <h5>Use My Location</h5>
                   </div>
                 </div>
               </div>

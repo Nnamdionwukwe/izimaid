@@ -96,6 +96,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background: rgb(6, 6, 60);
+    height: 30px;
+    color: white;
+    cursor: pointer;
+    padding: 0px 10px;
+    border-radius: 7px;
+  }
+
+  .location i {
+    margin-right: 10px;
+    font-size: 12px;
   }
 
   .SubMain {
