@@ -788,7 +788,7 @@ export default function Main() {
             <div className={styles.inputField}>
               <input
                 type="number"
-                placeholder="ex. +234 555 555 5555"
+                placeholder="ex. +234 803 058 8774"
                 value={phoneNumber}
                 onChange={handlePhoneNumber}
                 className={styles.inputField}
