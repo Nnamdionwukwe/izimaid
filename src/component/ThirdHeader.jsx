@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styles from "./ThirdHeader.module.css";
+import { Link } from "react-router-dom";
 
 export default function ThirdHeader() {
   const [isOpen, setIsOpen] = useState(true);
@@ -32,7 +33,7 @@ export default function ThirdHeader() {
             </div>
 
             <div className={styles.more}>
-              <p>Learn More</p>
+              <a href="/why-hire-us">Learn More</a>
             </div>
           </div>
         </>
