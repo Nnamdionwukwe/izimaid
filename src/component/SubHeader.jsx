@@ -20,14 +20,10 @@ export default function SubHeader() {
               <p className={styles.subP}>Request a Free Estimate</p>
             </Link>
 
-            <div className={styles.sub2}>
+            <a href="tel: +2348037748573" className={styles.sub2}>
               <i class="fa fa-phone" aria-hidden="true"></i>
-              <p>
-                <a className={styles.a} href="tel: +2348037748573">
-                  Call Us
-                </a>
-              </p>
-            </div>
+              <p>Call Us</p>
+            </a>
           </div>
 
           <div className={styles.minsDiv}>
