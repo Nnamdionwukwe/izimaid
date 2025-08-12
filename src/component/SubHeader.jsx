@@ -23,7 +23,9 @@ export default function SubHeader() {
             <div className={styles.sub2}>
               <i class="fa fa-phone" aria-hidden="true"></i>
               <p>
-                <a href="tel: +2348037748573"> Call Us</a>
+                <a className={styles.a} href="tel: +2348037748573">
+                  Call Us
+                </a>
               </p>
             </div>
           </div>
