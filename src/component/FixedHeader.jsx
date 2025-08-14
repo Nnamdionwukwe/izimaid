@@ -1,7 +1,6 @@
 import { useState } from "react";
 import styles from "./FixedHeader.module.css";
 import SideBar from "./SideBar";
-import { Link } from "react-router-dom";
 
 export default function FixedHeader() {
   const [isOpen, setIsOpen] = useState(false);

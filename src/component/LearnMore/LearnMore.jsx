@@ -1,7 +1,8 @@
-import FirstHeader from "./FirstHeader";
-import FixedHeader from "./FixedHeader";
-import styles from "./MainHeader.module.css";
-import SubHeader from "./SubHeader";
+import FirstHeader from "../FirstHeader";
+import FixedHeader from "../FixedHeader";
+import styles from "../MainHeader.module.css";
+import SubHeader from "../SubHeader";
+import Home from "./Home";
 
 export default function LearnMore() {
   return (
@@ -15,6 +16,10 @@ export default function LearnMore() {
 
         <div className={styles.fixedHeadr}>
           <SubHeader />
+        </div>
+
+        <div>
+          <Home />
         </div>
       </div>
     </>

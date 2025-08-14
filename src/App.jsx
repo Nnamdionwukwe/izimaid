@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./component/HomePage";
 import RequestEstimate from "./component/RequestEstimate";
-import LearnMore from "./component/LearnMore";
+import LearnMore from "./component/LearnMore/LearnMore";
 
 function App() {
   return (

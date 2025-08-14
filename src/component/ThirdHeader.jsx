@@ -18,7 +18,7 @@ export default function ThirdHeader() {
 
                 <div className={styles.spark}>
                   <p>
-                    Sparking homes start with us - let us handle the cleaning!
+                    Sparkling homes start with us - let us handle the cleaning!
                   </p>
                 </div>
               </div>
@@ -52,7 +52,7 @@ export default function ThirdHeader() {
 
                 <div className={styles.spark}>
                   <p>
-                    Sparking homes start with us - let us handle the cleaning!
+                    Sparkling homes start with us - let us handle the cleaning!
                   </p>
                 </div>
 
